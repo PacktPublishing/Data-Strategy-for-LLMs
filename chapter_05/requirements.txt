@@ -2,7 +2,7 @@
 chromadb==0.5.5
 python-dotenv==1.0.1
 tiktoken==0.7.0
-requests==2.32.3
+requests==2.32.4
 beautifulsoup4==4.12.3
 pypdf==4.2.0
 wikipedia-api==0.6.0
