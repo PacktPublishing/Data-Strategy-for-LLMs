@@ -41,8 +41,8 @@ env/
 ENV/
 .venv/
 .env/
-chapter_01/venv_chapter_01
-chapter_01/venv_chapter_01/
+# Old chapter_01 environment (removed - now using data_strategy_env)
+data_strategy_env/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -108,3 +108,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .rag_env/
+.env_example    
+
