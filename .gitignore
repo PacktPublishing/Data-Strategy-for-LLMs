@@ -41,6 +41,7 @@ env/
 ENV/
 .venv/
 .env/
+chapter_01/venv_chapter_01/
 
 # Jupyter Notebook
 .ipynb_checkpoints
