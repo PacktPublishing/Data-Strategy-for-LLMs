@@ -1,58 +1,83 @@
 # Chapter 1 — Environment Setup and Notebooks
 
-This chapter ships with self-contained setup scripts and a dedicated Python virtual environment so you can run the notebooks reproducibly.
+This chapter uses the book-wide shared environment setup from the repository root.
 
-## What gets created
-- Virtual environment: `chapter_01/venv_chapter_01`
-- Requirements are installed from: `chapter_01/setup/requirements.txt`
-- Jupyter kernel is registered as: `Python (Chapter 1)` (internal name: `chapter-01`)
+## Prerequisites
 
-## Run the setup
+**Complete the book-wide setup first** (from repository root):
 
 macOS/Linux:
 ```bash
-bash chapter_01/setup/chapter_01_setup.sh
+bash setup/setup_mac.sh
 ```
 
 Windows (PowerShell):
 ```powershell
-powershell -ExecutionPolicy Bypass -File chapter_01/setup/chapter_01_setup.ps1
+powershell -ExecutionPolicy Bypass -File setup/setup_windows.ps1
 ```
 
-## Smart auto-activation (default)
-- If you run the script from an interactive terminal (not CI/notebook), it will automatically open a new shell with the environment activated.
-- To force activation explicitly:
-  - macOS/Linux: `bash chapter_01/setup/chapter_01_setup.sh --activate-shell`
-  - Windows: `powershell -ExecutionPolicy Bypass -File chapter_01/setup/chapter_01_setup.ps1 -ActivateShell`
-- To skip activation:
-  - macOS/Linux: `bash chapter_01/setup/chapter_01_setup.sh --no-activate`
-  - Windows: run without `-ActivateShell` (default).
+This creates:
+- Shared environment: `data_strategy_env/` (Python 3.12)
+- Jupyter kernel: "Python (Data Strategy Book)"
+- API keys: Automatically configured during setup
 
-Manual activation (if needed):
-- macOS/Linux: `source chapter_01/venv_chapter_01/bin/activate`
-- Windows (PowerShell): `.\\chapter_01\\venv_chapter_01\\Scripts\\Activate.ps1`
+## Running the Notebooks
 
-## Using the environment in notebooks
-The setup scripts register the environment as a Jupyter kernel named `Python (Chapter 1)`.
+1. **Activate the shared environment**:
+   ```bash
+   # macOS/Linux
+   source data_strategy_env/bin/activate
+   
+   # Windows (PowerShell)
+   .\data_strategy_env\Scripts\Activate.ps1
+   ```
 
-- In VS Code: click “Select Kernel” (top-right) → choose `Python (Chapter 1)`.
-- In JupyterLab: Kernel → Change Kernel → `Python (Chapter 1)`.
+2. **Launch Jupyter and select kernel**:
+   - Open notebooks in `Jupyter_Notebooks/`
+   - Select kernel: **"Python (Data Strategy Book)"**
+   - If kernel not visible: Command Palette → "Developer: Reload Window"
 
-### Troubleshooting: Kernel not showing up
-- In VS Code, the Jupyter extension caches kernels. Use Command Palette → **Developer: Reload Window**, then reopen the notebook and select `Python (Chapter 1)`.
-- Ensure the kernelspec exists at `~/Library/Jupyter/kernels/chapter-01/kernel.json` (macOS). It should point to `chapter_01/venv_chapter_01/bin/python`.
-- If launching Jupyter from terminal, install Jupyter in the venv and launch via:
-  - `chapter_01/venv_chapter_01/bin/python -m pip install jupyterlab`
-  - `chapter_01/venv_chapter_01/bin/jupyter lab`
+## Using the Environment in Notebooks
+The setup script registers the environment as a Jupyter kernel named **"Python (Data Strategy Book)"**.
+- Open Command Palette (Mac: Cmd+Shift+P) (Windows: Ctrl+Shift+P), 
+- run: Developer: Reload Window (Mac: Cmd+Shift+P; or press Cmd+P, type '>Developer: Reload Window (Windows: Ctrl+P, type '>Developer: Reload Window')')
+
+![reload_window](images/reload_window.png)
+
+- After reload, click Select Kernel (top-right)
+
+![select_kernel](images/select_kernel.png)
+
+- Choose Jupyter Kernel
+
+![jupyter_kernel](images/jupyter_kernel.png)
+
+- Choose `Python (Data Strategy Book)`
+
+![select_python_data](images/select_python_data.png)
+
+- Run ALL cells:
+
+![run_all_cells](images/run_all.png)
+
+- If you did not add the API key to the .env file, or during the setup, you will receive a pop-up to enter your OpenAI API key
+
+![openai_api_key](images/api_key.png)
+
+We already explained how to get an OpenAI API key in the root README.
 
 Quick verification cell inside a notebook:
 ```python
 import sys, pkgutil
 print(sys.executable)
-print("in venv_chapter_01:", "venv_chapter_01" in sys.executable)
+print("in data_strategy_env:", "data_strategy_env" in sys.executable)
 for m in ["openai", "chromadb"]:
     print(m, "OK" if pkgutil.find_loader(m) else "MISSING")
 ```
+### Troubleshooting: Kernel not showing up
+- **Kernel not showing**: Reload VS Code/Jupyter and reopen notebooks
+- **API key errors**: Ensure `.env` file is in repository root with valid keys
+- **Import errors**: Verify you're using the "Python (Data Strategy Book)" kernel
 
 ## Notebooks
 - `chapter_01/Jupyter_Notebooks/Chapter_1_Setup_Advanced.ipynb`
