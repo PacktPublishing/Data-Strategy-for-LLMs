@@ -116,7 +116,14 @@ data/chroma_db/
 chapter_05/data/chroma_db/
 ch4_db/
 
-# Executed notebook outputs
-*.executed.ipynb
+  # Executed notebook outputs
+ *.executed.ipynb
+/tools/
+/data/
+
+# Public repo cleanliness
+# Exclude runtime traces from publication
+/chapter5/traces/
 tools/
+/tools/
 data/
