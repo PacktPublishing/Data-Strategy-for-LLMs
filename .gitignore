@@ -110,3 +110,12 @@ yarn-error.log*
 .rag_env/
 .env_example    
 
+# --- Project data artifacts ---
+# ChromaDB persistent stores (root and legacy locations)
+data/chroma_db/
+chapter_05/data/chroma_db/
+ch4_db/
+
+# Executed notebook outputs
+*.executed.ipynb
+tools/
