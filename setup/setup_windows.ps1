@@ -1,14 +1,14 @@
 # Data Strategy for LLMs - Book-wide setup script (Windows PowerShell)
 # Creates a shared environment for all chapters
 
-function Write-Info    { param([string]$m) Write-Host $m -ForegroundColor Cyan }
-function Write-Success { param([string]$m) Write-Host $m -ForegroundColor Green }
-function Write-Error   { param([string]$m) Write-Host $m -ForegroundColor Red }
-
 # --- Params ---
 param(
   [switch]$ActivateShell
 )
+
+function Write-Info    { param([string]$m) Write-Host $m -ForegroundColor Cyan }
+function Write-Success { param([string]$m) Write-Host $m -ForegroundColor Green }
+function Write-Error   { param([string]$m) Write-Host $m -ForegroundColor Red }
 
 # Resolve script and repository directories
 $ScriptDir = Split-Path -Path $MyInvocation.MyCommand.Path -Parent
@@ -18,23 +18,30 @@ $ReqFile   = Join-Path $ScriptDir 'requirements.txt'
 
 Write-Info "Setting up Data Strategy for LLMs book environment..."
 
-# 1) Resolve preferred Python 3.12 interpreter
-Write-Info "Resolving Python (prefer 3.12) ..."
-$py312 = $null
+# 1) Resolve required Python 3.12 interpreter
+Write-Info "Resolving Python (require 3.12) ..."
+$py = $null
+$pyver = $null
 
 if (Get-Command py -ErrorAction SilentlyContinue) {
-  # Windows Python launcher supports explicit 3.12 selection
-  $py312 = 'py -3.12'
-}
-elseif (Get-Command python -ErrorAction SilentlyContinue) {
-  # Fallback to 'python' but verify version
-  try {
-    $ver = (& python -c "import sys; print('.'.join(map(str, sys.version_info[:2])))")
-    if ($ver -eq '3.12') { $py312 = 'python' }
-  } catch {}
+    $versionCheck = py -3.12 --version 2>&1
+    if ($versionCheck -match "Python 3\.12") {
+		# Windows Python launcher supports explicit 3.12 selection
+		$py = 'py'
+		$pyver = '-3.12'
+    }
 }
 
-if (-not $py312) {
+if (-not $py) {
+	# Fallback to 'python' but verify version
+	$versionCheck = python --version 2>&1
+    if ($versionCheck -match "Python 3\.12") {
+		$py = 'python'
+		$pyver = ''
+    }
+}
+
+if (-not $py) {
   Write-Error "Python 3.12 not found. Please install Python 3.12 (e.g., from python.org or via the Python launcher) and re-run."
   Write-Info  "If you have Chocolatey, you can try: choco install python --version=3.12.x"
   exit 1
@@ -43,7 +50,7 @@ if (-not $py312) {
 # 2) Create shared venv for entire book
 if (-not (Test-Path -Path $VenvDir)) {
   Write-Info "Creating shared virtual environment at: $VenvDir"
-  & $py312 -m venv "$VenvDir"
+  & $py $py_ver -m venv "$VenvDir"
 } else {
   Write-Success "Virtual environment already exists at: $VenvDir"
 }
