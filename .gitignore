@@ -119,3 +119,4 @@ ch4_db/
 # Executed notebook outputs
 *.executed.ipynb
 tools/
+data/
