@@ -11,8 +11,10 @@ jupyter
 
 # Vector database and ML dependencies
 chromadb==0.5.5
-sentence-transformers
 tiktoken==0.7.0
+
+# Telemetry stack (keep stable to avoid noisy prints)
+posthog<3
 
 # Web scraping and document processing
 beautifulsoup4==4.12.3

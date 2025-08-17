@@ -12,11 +12,27 @@ echo_error()   { echo -e "\033[1;31m$1\033[0m"; }
 # --- Args / Defaults ---
 ACTIVATE_SHELL=0
 FORCE_NO_ACTIVATE=0
-if [[ "${1:-}" == "--activate-shell" ]]; then
-  ACTIVATE_SHELL=1
-elif [[ "${1:-}" == "--no-activate" ]]; then
-  FORCE_NO_ACTIVATE=1
-fi
+RECREATE_ENV=0
+CLEAN_DB=0
+
+for arg in "$@"; do
+  case "$arg" in
+    --activate-shell)
+      ACTIVATE_SHELL=1
+      ;;
+    --no-activate)
+      FORCE_NO_ACTIVATE=1
+      ;;
+    --recreate-env)
+      RECREATE_ENV=1
+      ;;
+    --clean-db)
+      CLEAN_DB=1
+      ;;
+    *)
+      ;;
+  esac
+done
 
 # Ensure we run relative to this script
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -43,7 +59,12 @@ else
   echo_success "Python is available."
 fi
 
-# 2) Create shared venv for entire book
+# 2) Optionally recreate env, then create shared venv for entire book
+if [ "$RECREATE_ENV" -eq 1 ] && [ -d "$VENV_DIR" ]; then
+  echo_info "Recreating virtual environment (removing $VENV_DIR) ..."
+  rm -rf "$VENV_DIR"
+fi
+
 if [ ! -d "$VENV_DIR" ]; then
   echo_info "Creating shared virtual environment at: $VENV_DIR"
   # Resolve preferred Python 3.12 binary
@@ -78,8 +99,10 @@ fi
 
 echo_success "All packages installed successfully."
 
-# 4) Register this venv as a Jupyter kernel
+# 4) Register this venv as a Jupyter kernel (idempotent)
 echo_info "Registering Jupyter kernel: Python (Data Strategy Book)"
+# Try to remove any existing kernelspec with the same name to avoid dupes
+jupyter kernelspec uninstall -y data-strategy-book >/dev/null 2>&1 || true
 python -m ipykernel install --user --name data-strategy-book --display-name "Python (Data Strategy Book)" >/dev/null 2>&1 || true
 
 deactivate
@@ -88,7 +111,15 @@ echo_success "\nData Strategy for LLMs setup complete!"
 echo_info   "Activate with: source data_strategy_env/bin/activate"
 echo_info   "Jupyter kernel: Python (Data Strategy Book)"
 
-# 5) Prompt for OpenAI API key setup
+# 5) Optional: clean shared ChromaDB directory
+if [ "$CLEAN_DB" -eq 1 ]; then
+  DB_DIR="$REPO_ROOT/data/chroma_db"
+  echo_info "Cleaning shared ChromaDB directory at: $DB_DIR"
+  rm -rf "$DB_DIR"
+  echo_success "ChromaDB directory cleaned."
+fi
+
+# 6) Prompt for OpenAI API key setup
 echo_info "\n--- API Key Setup ---"
 if [ ! -f "$REPO_ROOT/.env" ]; then
   echo_info "Setting up API keys for the book..."
