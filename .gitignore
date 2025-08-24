@@ -114,5 +114,7 @@ traces/
 tools/
 /tools/
 data/chroma_db/
+data/rany/
+/data/rany/
 .Archive/
 scripts/
