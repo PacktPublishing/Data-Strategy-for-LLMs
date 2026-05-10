@@ -131,8 +131,8 @@ if [ ! -f "$REPO_ROOT/.env" ]; then
   
   if [ -n "$openai_key" ]; then
     # Basic format validation
-    if [[ ! "$openai_key" =~ ^sk-[a-zA-Z0-9]{48,}$ ]]; then
-      echo_error "Invalid API key format. OpenAI keys should start with 'sk-' followed by 48+ characters."
+    if [[ ! "$openai_key" =~ ^sk-[a-zA-Z0-9_-]{20,}$ ]]; then
+      echo_error "Invalid API key format. OpenAI keys should start with 'sk-' followed by 20+ characters."
       echo_info "Please check your key and try again manually by editing .env file."
     else
       # Create .env file from template
@@ -166,14 +166,14 @@ try:
     
     # Test with a minimal API call
     response = client.models.list()
-    print('✅ API key is valid and connection successful!')
+    print('API key is valid and connection successful!')
     print(f'Available models: {len(response.data)} models found')
     
 except ImportError as e:
-    print(f'⚠️  Could not import required modules: {e}')
+    print(f'Could not import required modules: {e}')
     print('API key saved but could not test connection.')
 except Exception as e:
-    print(f'❌ API key test failed: {e}')
+    print(f'API key test failed: {e}')
     print('Please check your API key and billing status at https://platform.openai.com/')
     print('Make sure you have credits available in your OpenAI account.')
 " 2>/dev/null || echo_info "API key saved but connection test skipped (openai package not available yet)."

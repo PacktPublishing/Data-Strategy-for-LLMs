@@ -5,6 +5,7 @@ This chapter is part of the Data Strategy for LLMs book and uses the shared book
 ## Prerequisites
 
 1. **Complete book-wide setup** (from repository root):
+
    ```bash
    # macOS/Linux
    bash setup/setup_mac.sh
@@ -18,6 +19,7 @@ This chapter is part of the Data Strategy for LLMs book and uses the shared book
 ## Running the Notebooks
 
 1. **Activate the shared environment**:
+
    ```bash
    # macOS/Linux
    source data_strategy_env/bin/activate

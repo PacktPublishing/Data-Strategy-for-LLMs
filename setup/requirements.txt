@@ -22,3 +22,7 @@ pypdf==4.2.0
 wikipedia-api==0.6.0
 biopython==1.83
 reportlab==4.2.2
+
+# Graph and visualization for Chapter 3 notebooks
+networkx
+matplotlib
