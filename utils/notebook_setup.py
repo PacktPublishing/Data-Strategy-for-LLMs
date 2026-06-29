@@ -145,6 +145,12 @@ def setup(packages=("openai",), need_openai: bool = True, pick_model: bool = Fal
     from openai import OpenAI
 
     client = OpenAI(api_key=api_key)
+    # Tolerate newer-model parameter rules (temperature/max_tokens) across model generations.
+    try:
+        from utils.models import patch_client_compat
+        patch_client_compat(client)
+    except Exception:
+        pass
     model = best_available_model(client) if pick_model else os.getenv("BASE_MODEL", "gpt-4o-mini")
     print("Setup complete.")
     return client, model
