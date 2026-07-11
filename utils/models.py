@@ -47,11 +47,15 @@ def patch_client_compat(client):
       - ``max_tokens``:  not supported -> the shim switches to
         ``max_completion_tokens`` (with headroom, since reasoning models spend
         tokens internally before producing output)
+      - empty output: if a reasoning model burns a small token budget on
+        internal reasoning and returns blank content, the shim grows
+        ``max_completion_tokens`` and retries until it gets real output
 
     This lets the book keep ``temperature=0.0`` in its evaluation code (the
     pedagogically-correct choice for deterministic scoring): on a model that
     accepts it, behaviour is unchanged; on a model that rejects it, the call is
-    retried once without the offending parameter instead of raising a 400.
+    retried without the offending parameters (in a short loop, since the API
+    reports them one at a time) instead of raising a 400.
 
     Idempotent. Returns the same client for convenience.
     """
@@ -60,23 +64,71 @@ def patch_client_compat(client):
         return client
     _original_create = completions.create
 
-    def _safe_create(*args, **kwargs):
+    def _looks_truncated_empty(resp):
+        """True if the model returned no text because it hit the token cap.
+
+        Reasoning models spend tokens internally before writing output; if the
+        budget is too small they finish with ``finish_reason == "length"`` and
+        empty content, which is recoverable by growing the budget. An empty
+        answer that finished normally (``"stop"``) is a real answer, not a
+        truncation, so we leave it alone. Anything we cannot introspect (e.g. a
+        streaming response) is treated as fine.
+        """
         try:
-            return _original_create(*args, **kwargs)
-        except Exception as e:
-            msg = str(e)
-            retry = dict(kwargs)
-            changed = False
-            if "temperature" in msg and "temperature" in retry:
-                retry.pop("temperature", None)
-                changed = True
-            if "max_tokens" in msg and "max_tokens" in retry:
-                mt = retry.pop("max_tokens", None)
-                retry["max_completion_tokens"] = max(int(mt or 0), 256)
-                changed = True
-            if changed:
-                return _original_create(*args, **retry)
-            raise
+            choice = resp.choices[0]
+            content = getattr(choice.message, "content", None)
+            finish = getattr(choice, "finish_reason", None)
+            empty = content is None or (isinstance(content, str) and not content.strip())
+            return bool(empty) and finish == "length"
+        except Exception:
+            return False
+
+    def _create_sanitized(args, attempt):
+        # Newer models can reject several parameters at once, but the API reports
+        # them one at a time. Retry in a bounded loop, sanitizing whichever
+        # parameter the latest error names, so calls that pass both an
+        # unsupported ``temperature`` and ``max_tokens`` still recover. Mutates
+        # ``attempt`` in place so later retries skip the already-fixed params.
+        for _ in range(4):
+            try:
+                return _original_create(*args, **attempt)
+            except Exception as e:
+                msg = str(e)
+                changed = False
+                if "temperature" in msg and "temperature" in attempt:
+                    attempt.pop("temperature", None)
+                    changed = True
+                if "max_tokens" in msg and "max_tokens" in attempt:
+                    mt = attempt.pop("max_tokens", None)
+                    attempt["max_completion_tokens"] = max(int(mt or 0), 256)
+                    changed = True
+                if not changed:
+                    raise
+        return _original_create(*args, **attempt)
+
+    def _safe_create(*args, **kwargs):
+        # Two layers of self-healing:
+        #  1. Params: newer models reject temperature/max_tokens one at a time,
+        #     so _create_sanitized retries, dropping each named param.
+        #  2. Empty output: reasoning models can burn the whole token budget on
+        #     internal reasoning and return blank content (finish_reason ==
+        #     "length"). When that happens we grow max_completion_tokens and try
+        #     again, so a too-small cap (e.g. max_tokens=5) heals itself instead
+        #     of silently yielding blank answers.
+        attempt = dict(kwargs)
+        resp = _create_sanitized(args, attempt)
+        for _ in range(4):
+            if not _looks_truncated_empty(resp):
+                return resp
+            cap = attempt.get("max_completion_tokens")
+            if cap is None:
+                return resp
+            new_cap = min(int(cap) * 4, 8192)
+            if new_cap <= int(cap):
+                return resp
+            attempt["max_completion_tokens"] = new_cap
+            resp = _create_sanitized(args, attempt)
+        return resp
 
     completions.create = _safe_create
     completions._compat_patched = True
