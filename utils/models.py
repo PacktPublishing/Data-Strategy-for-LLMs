@@ -215,3 +215,152 @@ def get_best_available_model(client):
     print(f"Selected model: {_BOOTSTRAP_MODEL}  (bootstrap seed, first run)")
     _save_cache([_BOOTSTRAP_MODEL], _BOOTSTRAP_MODEL)
     return _BOOTSTRAP_MODEL
+
+
+# ---------------------------------------------------------------------------
+# Smallest / cheapest model discovery
+#
+# There is no OpenAI API that labels a model by size or price, so this ranks by
+# NAME MARKERS instead of exact versions. Substrings are used on purpose: a dated
+# version dying (e.g. "gpt-3.5-turbo-0125") does not break discovery, because the
+# marker "turbo" still matches its successor. Used to demonstrate quality drift
+# from a weak generator -- the exact pick does not matter as long as it is weaker
+# than the model doing the evaluation.
+# ---------------------------------------------------------------------------
+
+# Size markers ordered smallest/cheapest first. Add new ones (e.g. a future
+# "pico") at the front; never list exact versions here.
+SIZE_MARKERS = ["nano", "mini", "small", "lite", "flash", "haiku", "turbo"]
+
+# Model ids that are not chat/completion models -- never pick these as a generator.
+_NON_CHAT = [
+    "embedding", "whisper", "tts", "audio", "image", "dall-e", "dalle",
+    "moderation", "realtime", "transcribe", "sora", "search",
+]
+
+
+def _is_chat_model(model_id):
+    m = model_id.lower()
+    return not any(bad in m for bad in _NON_CHAT)
+
+
+def _smallness_rank(model_id):
+    """Lower is smaller/cheaper, based on name markers (not exact versions)."""
+    m = model_id.lower()
+    for i, marker in enumerate(SIZE_MARKERS):
+        if marker in m:
+            return i
+    return len(SIZE_MARKERS)  # no size marker -> treat as a large model
+
+
+def _save_cache_key(key, value):
+    """Read-modify-write a named value into the shared cache without clobbering
+    the keys used by get_best_available_model()."""
+    cache = _cache_path()
+    try:
+        data = {}
+        if cache.exists():
+            data = json.loads(cache.read_text())
+        data.setdefault("keys", {})[key] = {
+            "value": value,
+            "updated": datetime.now().isoformat(),
+        }
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        cache.write_text(json.dumps(data, indent=2))
+    except Exception:
+        pass
+
+
+def _load_cache_key(key):
+    cache = _cache_path()
+    try:
+        if cache.exists():
+            data = json.loads(cache.read_text())
+            return data.get("keys", {}).get(key, {}).get("value")
+    except Exception:
+        pass
+    return None
+
+
+def get_smallest_available_model(client, exclude=None):
+    """
+    Find the smallest/cheapest available chat model. Self-updating.
+
+    Strategy (mirrors get_best_available_model, but aims low instead of high):
+      1. List models live, keep only chat-capable ids
+      2. Prefer ids carrying a size marker (nano < mini < small < ... < turbo)
+      3. If none are marked, fall back to the OLDEST known family available
+         (the tail of the newest-first ranking), which is the cheapest tier
+      4. On API failure, use the cached last-good pick
+      5. Return None only if discovery fails and there is no cache
+
+    Args:
+        client:  An initialized openai.OpenAI client instance.
+        exclude: Optional iterable of model ids to skip (e.g. the judge model,
+                 so the generator is not the same model doing the scoring).
+
+    Returns:
+        str | None: A model id, or None if nothing could be resolved.
+    """
+    exclude = set(exclude or [])
+
+    try:
+        available = [m.id for m in client.models.list() if _is_chat_model(m.id)]
+        candidates = [m for m in available if m not in exclude]
+
+        marked = [m for m in candidates if _smallness_rank(m) < len(SIZE_MARKERS)]
+        if marked:
+            # Smallest marker first; alphabetical tie-break keeps it deterministic
+            # and tends to favor older, cheaper families.
+            marked.sort(key=lambda m: (_smallness_rank(m), m))
+            selected = marked[0]
+            _save_cache_key("smallest", selected)
+            print(f"Smallest model: {selected}  (live, {len(marked)} small candidates)")
+            return selected
+
+        # No size-marked model in the account -> oldest known family is cheapest.
+        ranked = _rank_models(set(candidates))
+        if ranked:
+            selected = ranked[-1]
+            _save_cache_key("smallest", selected)
+            print(f"Smallest model: {selected}  (live, oldest known family)")
+            return selected
+        print("  No small-model candidates found in account")
+    except Exception as e:
+        print(f"  Live discovery failed: {e}")
+
+    cached = _load_cache_key("smallest")
+    if cached:
+        print(f"Smallest model: {cached}  (cached)")
+        return cached
+
+    print("  Could not resolve a small model")
+    return None
+
+
+def get_small_models(client, exclude=None):
+    """
+    Return a ranked list of small/cheap chat models available on the account.
+
+    Same name-marker heuristics as get_smallest_available_model (smallest first),
+    but returns the whole list instead of a single pick, so callers can build a
+    multi-model comparison table. Uses substrings, never hardcoded versions, so it
+    keeps working as specific dated models retire.
+
+    Args:
+        client:  An initialized openai.OpenAI client instance.
+        exclude: Optional iterable of model ids to skip.
+
+    Returns:
+        list[str]: Small model ids, smallest/cheapest first. Empty on failure.
+    """
+    exclude = set(exclude or [])
+    try:
+        available = [m.id for m in client.models.list() if _is_chat_model(m.id)]
+        candidates = [m for m in available if m not in exclude]
+        marked = [m for m in candidates if _smallness_rank(m) < len(SIZE_MARKERS)]
+        marked.sort(key=lambda m: (_smallness_rank(m), m))
+        return marked
+    except Exception as e:
+        print(f"  Live discovery failed: {e}")
+        return []

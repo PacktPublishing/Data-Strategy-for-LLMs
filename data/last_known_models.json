@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-09T22:03:35.027185",
+  "updated": "2026-07-13T20:46:57.455662",
   "selected": "gpt-5.5",
   "ranked": [
     "gpt-5.5",
@@ -13,6 +13,9 @@
     "o4-mini-deep-research-2025-06-26",
     "o4-mini-deep-research",
     "o4-mini-2025-04-16",
+    "gpt-5.6-terra",
+    "gpt-5.6-sol",
+    "gpt-5.6-luna",
     "gpt-5.5-pro-2026-04-23",
     "gpt-5.5-pro",
     "gpt-5.5-2026-04-23",
