@@ -20,28 +20,24 @@ Write-Info "Setting up Data Strategy for LLMs book environment..."
 
 # 1) Resolve required Python 3.12 interpreter
 Write-Info "Resolving Python (require 3.12) ..."
-$py = $null
-$pyver = $null
+$pythonExe = $null
 
 if (Get-Command py -ErrorAction SilentlyContinue) {
     $versionCheck = py -3.12 --version 2>&1
     if ($versionCheck -match "Python 3\.12") {
-		# Windows Python launcher supports explicit 3.12 selection
-		$py = 'py'
-		$pyver = '-3.12'
+        $pythonExe = (py -3.12 -c "import sys; print(sys.executable)").Trim()
     }
 }
 
-if (-not $py) {
+if (-not $pythonExe) {
 	# Fallback to 'python' but verify version
 	$versionCheck = python --version 2>&1
     if ($versionCheck -match "Python 3\.12") {
-		$py = 'python'
-		$pyver = ''
+        $pythonExe = (Get-Command python).Source
     }
 }
 
-if (-not $py) {
+if (-not $pythonExe) {
   Write-Error "Python 3.12 not found. Please install Python 3.12 (e.g., from python.org or via the Python launcher) and re-run."
   Write-Info  "If you have Chocolatey, you can try: choco install python --version=3.12.x"
   exit 1
@@ -50,7 +46,7 @@ if (-not $py) {
 # 2) Create shared venv for entire book
 if (-not (Test-Path -Path $VenvDir)) {
   Write-Info "Creating shared virtual environment at: $VenvDir"
-  & $py $py_ver -m venv "$VenvDir"
+  & $pythonExe -m venv "$VenvDir"
 } else {
   Write-Success "Virtual environment already exists at: $VenvDir"
 }

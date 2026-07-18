@@ -1,0 +1,4 @@
+knowledge_type,source_system,owner,question_scope
+travel_policy,HR Portal,People Operations,Travel rules and approvals
+vacation_calculation,HR Portal,People Operations,Vacation calculation rules
+vacation_balance,HRIS,HR Systems,Current employee vacation balances
