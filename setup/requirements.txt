@@ -12,6 +12,10 @@ jupyter
 # Vector database and ML dependencies
 chromadb==0.5.5
 tiktoken==0.7.0
+torch
+transformers
+peft
+ipywidgets
 
 # Telemetry stack (keep stable to avoid noisy prints)
 posthog<3
