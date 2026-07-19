@@ -1,0 +1,4 @@
+{
+  "base_model": "distilgpt2",
+  "model_dir": "/Users/rany/code/Packt-Data-Strategy-for-LLMs/chapter_07/datasets/sft_model"
+}
