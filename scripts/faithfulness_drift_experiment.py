@@ -112,10 +112,10 @@ Answer: {answer}
 Score these three dimensions:
 1. Faithfulness: Does the answer ONLY use information from the source? (5 = fully grounded, 1 = hallucinated)
 2. Relevance: Does the answer address the question? (5 = directly answers, 1 = off topic)
-3. Accuracy: Is the answer factually correct given the source? (5 = fully correct, 1 = wrong)
+3. Correctness: Does the answer agree with the facts stated in the source? (5 = fully correct, 1 = factually wrong)
 
 Return ONLY valid JSON:
-{{"faithfulness": N, "relevance": N, "accuracy": N, "justification": "one sentence"}}"""
+{{"faithfulness": N, "relevance": N, "correctness": N, "justification": "one sentence"}}"""
     kwargs = {"model": STRONG, "messages": [{"role": "user", "content": prompt}], "temperature": 0.0}
     resp = client.chat.completions.create(**kwargs)
     content = resp.choices[0].message.content.strip()
@@ -161,7 +161,7 @@ def run_trial(model, temperature, style="strict"):
         print(f"\n  Q: {q}")
         print(f"  Source: {SOURCES[label]}")
         print(f"  Answer: {ans}")
-        print(f"  Faith={scores['faithfulness']} Rel={scores['relevance']} Acc={scores['accuracy']}{flag}")
+        print(f"  Faith={scores['faithfulness']} Rel={scores['relevance']} Corr={scores['correctness']}{flag}")
         print(f"  Why: {scores['justification']}")
         if scores["faithfulness"] < 4:
             drifts += 1
