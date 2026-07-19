@@ -17,7 +17,7 @@ powershell -ExecutionPolicy Bypass -File setup/setup_windows.ps1
 ```
 
 This creates:
-- Shared environment: `data_strategy_env/` (Python 3.12)
+- Shared environment: `data_strategy_env/` (uses the newest supported Python on your machine, 3.10 or later, and installs one automatically if none is found)
 - Jupyter kernel: "Python (Data Strategy Book)"
 - API keys: Automatically configured during setup
 
@@ -68,11 +68,11 @@ We already explained how to get an OpenAI API key in the root README.
 
 Quick verification cell inside a notebook:
 ```python
-import sys, pkgutil
+import sys, importlib.util
 print(sys.executable)
 print("in data_strategy_env:", "data_strategy_env" in sys.executable)
 for m in ["openai", "chromadb"]:
-    print(m, "OK" if pkgutil.find_loader(m) else "MISSING")
+    print(m, "OK" if importlib.util.find_spec(m) else "MISSING")
 ```
 ### Troubleshooting: Kernel not showing up
 - **Kernel not showing**: Reload VS Code/Jupyter and reopen notebooks
@@ -80,7 +80,6 @@ for m in ["openai", "chromadb"]:
 - **Import errors**: Verify you're using the "Python (Data Strategy Book)" kernel
 
 ## Notebooks
-- `chapter_01/Jupyter_Notebooks/Chapter_1_Setup_Advanced.ipynb`
-- `chapter_01/Jupyter_Notebooks/Chapter_1_Step_By_Step.ipynb`
+- `chapter_01/Jupyter_Notebooks/Chapter_01_Notebook.ipynb`
 
-We recommend selecting the `Python (Chapter 1)` kernel before running cells for a clean, reproducible environment.
+We recommend selecting the `Python (Data Strategy Book)` kernel before running cells for a clean, reproducible environment.

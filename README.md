@@ -120,7 +120,7 @@ source data_strategy_env/bin/activate
 We already explained how to get an OpenAI API key in the first section of this README.
 
 ## What Gets Created
-- **Shared environment**: `data_strategy_env/` (Python 3.12)
+- **Shared environment**: `data_strategy_env/` (the newest supported Python on your machine, 3.10 or later)
 - **Jupyter kernel**: "Python (Data Strategy Book)"
 - **API keys**: Loaded automatically from `.env` file
 - **All dependencies**: Consolidated across all chapters
@@ -132,7 +132,7 @@ Each chapter contains:
 - Supporting data files and resources
 
 ## Requirements
-- Python 3.12 (automatically installed via setup scripts)
+- Python 3.10 or newer (the setup script finds the newest supported version on your machine and installs one if needed)
 - OpenAI API key (required for most chapters)
 - Optional: OpenRouter, Anthropic API keys for advanced features
 
