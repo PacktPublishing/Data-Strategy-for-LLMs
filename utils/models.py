@@ -182,12 +182,43 @@ def _load_cache():
     return [], None, None
 
 
-def get_best_available_model(client):
+def _model_responds(client, model_id):
+    """Probe a model with a tiny call. True if it answers without raising.
+
+    A model can appear in ``client.models.list()`` yet reject a real request:
+    it may have just been deprecated, not be enabled for this account, or be
+    region-gated. Listing is not the same as access. We only trust a model we
+    can actually invoke. An empty-but-valid reply (some reasoning models spend
+    the whole tiny budget thinking) still counts as responding -- only an
+    exception means "not usable".
+    """
+    for params in ({"max_completion_tokens": 16}, {"max_tokens": 16}):
+        try:
+            client.chat.completions.create(
+                model=model_id,
+                messages=[{"role": "user", "content": "ping"}],
+                **params,
+            )
+            return True
+        except Exception:
+            continue  # older models reject max_completion_tokens -> retry legacy param
+    return False
+
+
+def get_best_available_model(client, verify=True, max_probes=6):
     """
     Find the best available OpenAI model. Fully self-updating.
 
     Args:
-        client: An initialized openai.OpenAI client instance.
+        client:     An initialized openai.OpenAI client instance.
+        verify:     When True (default), probe candidates in rank order and
+                    return the first that actually answers, so a model that is
+                    listed but not invocable (e.g. just deprecated) is skipped
+                    instead of being handed back and crashing the notebook on
+                    the next call. Set False for the old list-only behaviour.
+        max_probes: How many top-ranked candidates to probe before giving up
+                    and returning the highest-ranked name (keeps a broken
+                    account from probing dozens of models).
 
     Returns:
         str: The model ID to use (e.g. "gpt-5.5", "o4-mini").
@@ -198,6 +229,15 @@ def get_best_available_model(client):
         ranked = _rank_models(available)
         if ranked:
             selected = ranked[0]
+            if verify:
+                # Prefer the highest-ranked model that truly answers. If none of
+                # the top candidates do, fall back to ranked[0] so behaviour
+                # matches the old default and the caller's error handling can
+                # surface the real problem (billing, auth, outage).
+                for candidate in ranked[:max_probes]:
+                    if _model_responds(client, candidate):
+                        selected = candidate
+                        break
             _save_cache(ranked, selected)
             print(f"Selected model: {selected}  (live, {len(ranked)} candidates)")
             return selected
