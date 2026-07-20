@@ -1,0 +1,4 @@
+{"example_id": "CONV-001:travel_booking", "instruction": "Please book my trip to Berlin next month.", "response": "Your economy itinerary is booked for May 12-15. Confirmation: BER-481."}
+{"example_id": "CONV-001:vacation_balance", "instruction": "Also, how many vacation days do I have left?", "response": "You have 8.5 vacation days remaining."}
+{"example_id": "CONV-002:password_reset", "instruction": "I cannot sign in after changing phones.", "response": "Use the temporary registration pass sent to your corporate email to register the new phone. The old registration has been removed."}
+{"example_id": "CONV-005:expense_exception", "instruction": "My hotel receipt is missing. Can I still submit the expense?", "response": "Submit a missing-receipt declaration with the $180 expense and attach the hotel's confirmation that a replacement is unavailable."}

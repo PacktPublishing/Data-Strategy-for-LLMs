@@ -1,0 +1,3 @@
+conversation_id,task_id,reasons
+CONV-003,invoice_correction,intermediate steps are incomplete
+CONV-004,laptop_failure,outcome is not successful
