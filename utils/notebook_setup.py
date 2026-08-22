@@ -106,25 +106,11 @@ def load_openai_key() -> str:
         return key
 
 
-def best_available_model(
-    client,
-    preferred=("gpt-4o", "gpt-4o-mini", "gpt-4-turbo", "gpt-4", "gpt-3.5-turbo"),
-) -> str:
-    """Pick the best currently-available model instead of hardcoding a stale one."""
-    try:
-        available = {m.id for m in client.models.list()}
-        for model in preferred:
-            if model in available:
-                print(f"Selected model: {model}")
-                return model
-        gpt = sorted((m for m in available if m.startswith("gpt-")), reverse=True)
-        if gpt:
-            print(f"Selected model: {gpt[0]}")
-            return gpt[0]
-    except Exception as e:
-        print(f"Could not list models: {e}")
-    print("Fallback model: gpt-3.5-turbo")
-    return "gpt-3.5-turbo"
+def best_available_model(client) -> str:
+    """Pick a verified model using the book-wide discovery and cache policy."""
+    from utils.models import get_best_available_model
+
+    return get_best_available_model(client)
 
 
 def setup(packages=("openai",), need_openai: bool = True, pick_model: bool = False):
