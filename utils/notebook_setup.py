@@ -113,6 +113,33 @@ def best_available_model(client) -> str:
     return get_best_available_model(client)
 
 
+def select_and_test_model(
+    client,
+    preferred=("gpt-4o", "gpt-4.1", "gpt-4o-mini", "gpt-4-turbo", "gpt-4", "gpt-3.5-turbo"),
+) -> str:
+    """Discover the latest valid model at runtime, TEST it, and self-heal.
+
+    Like ``best_available_model`` but proves the choice with a one-token call and
+    falls back to the next candidate if the key cannot actually use it. Never
+    hardcode a model name (see the notebook-model self-heal rule).
+    """
+    available = {m.id for m in client.models.list()}
+    ordered = [m for m in preferred if m in available]
+    ordered += sorted(
+        (m for m in available if m.startswith("gpt-") and m not in ordered), reverse=True
+    )
+    for name in ordered:
+        try:
+            client.chat.completions.create(
+                model=name, messages=[{"role": "user", "content": "ping"}], max_tokens=1
+            )
+            print(f"Selected and tested model: {name}")
+            return name
+        except Exception as err:
+            print(f"Skipping {name} ({type(err).__name__})")
+    raise RuntimeError("No usable chat model found for this API key.")
+
+
 def setup(packages=("openai",), need_openai: bool = True, pick_model: bool = False):
     """Install packages into the kernel, load the API key, and return ``(client, model)``.
 
