@@ -1,7 +1,7 @@
 # AGENTS
 
 > Tool-neutral instructions for AI coding agents (Claude Code, Windsurf, Cursor, and others) working
-> in this repository. This is the code repository for the book *Data Strategy for LLMs*.
+> in this repository. This is the code repository for the book _Data Strategy for LLMs_.
 
 ## Notebook conventions
 
@@ -27,6 +27,10 @@ client, MODEL = setup(["openai"], pick_model=True)
 
 Reference implementation: `utils/notebook_setup.py` (`select_and_test_model`, `best_available_model`).
 Live example: `chapter_11/Jupyter_Notebooks/Chapter_11_Financial_Agent_Notebook.ipynb` (Setup cell).
+
+### Keep instructions collapsible without hiding code
+
+Put explanatory Markdown before code in closed HTML `<details>` blocks with a clear `<summary>`. Keep the code cell outside the block so readers can collapse every explanation and still see and run all code. Do not use Markdown heading folding as a substitute because collapsing a heading also hides the code cells in that section.
 
 ## Why this file exists
 
