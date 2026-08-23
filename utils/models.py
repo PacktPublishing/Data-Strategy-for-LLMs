@@ -22,6 +22,7 @@ from datetime import datetime
 
 # Model families ordered newest first. Add new families at the top.
 MODEL_PRIORITY = [
+    "gpt-5.6-sol", "gpt-5.6-terra",         # 5.6 family (Aug 2026)
     "gpt-5.5", "gpt-5.5-mini",              # 5.5 family (May 2026)
     "gpt-5.4-mini", "gpt-5.4",              # 5.4 family (Mar 2026)
     "gpt-5.3",                                # 5.3 family (Mar 2026)
