@@ -226,7 +226,8 @@ if [ ! -f "$REPO_ROOT/.env" ]; then
   echo_info "Get your key from: https://platform.openai.com/api-keys"
   echo ""
 
-  read -p "Enter your OpenAI API key (starts with sk-): " openai_key
+  read -r -s -p "Enter your OpenAI API key (starts with sk-, input stays hidden): " openai_key
+  echo ""
 
   if [ -n "$openai_key" ]; then
     # Basic format validation (covers both sk- and sk-proj- keys)

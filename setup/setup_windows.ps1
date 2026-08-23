@@ -205,7 +205,9 @@ if (-not (Test-Path -Path $envFile)) {
   Write-Info "Get your key from: https://platform.openai.com/api-keys"
   Write-Host ""
 
-  $openaiKey = Read-Host "Enter your OpenAI API key (starts with sk-)"
+  $secureKey = Read-Host "Enter your OpenAI API key (starts with sk-, input stays hidden)" -AsSecureString
+  $openaiKey = [Runtime.InteropServices.Marshal]::PtrToStringAuto(
+    [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureKey))
 
   if ($openaiKey) {
     # Basic format validation (covers both sk- and sk-proj- keys)
