@@ -1,0 +1,159 @@
+task,input_preview,A,B,C,D,gold_letter,gold_text_preview,_full_input,_full_gold_text
+general_knowledge,"Q: What are people opening when they wake up?
+  choice: mouth
+  choice: brain
+  choice: freezer
+  choice: book
+  choice: legs
+  choice: ear
+  choice: nose
+  choice: foot
+  choice: eyes
+  choice: head
+A:",eyes,mouth,freezer,legs,A,eyes,"Q: What are people opening when they wake up?
+  choice: mouth
+  choice: brain
+  choice: freezer
+  choice: book
+  choice: legs
+  choice: ear
+  choice: nose
+  choice: foot
+  choice: eyes
+  choice: head
+A:",eyes
+general_knowledge,"Q: What is the largest volcano on Earth?
+  choice: Everest
+  choice: Mauna Loa
+  choice: Elbrus
+  choice: Vesuvius
+  choice: Eyjafjallajökull
+  choice: Krakatoa
+  choice: Fagradalsfjall
+  choice: Olympus
+A:",Mauna Loa,Everest,Eyjafjallajökull,Fagradalsfjall,A,Mauna Loa,"Q: What is the largest volcano on Earth?
+  choice: Everest
+  choice: Mauna Loa
+  choice: Elbrus
+  choice: Vesuvius
+  choice: Eyjafjallajökull
+  choice: Krakatoa
+  choice: Fagradalsfjall
+  choice: Olympus
+A:",Mauna Loa
+general_knowledge,"Q: How many tails does a cat have?
+  choice: four
+  choice: nine
+  choice: three
+  choice: none
+  choice: six
+  choice: one
+  choice: two
+A:",two,four,six,three,,one,"Q: How many tails does a cat have?
+  choice: four
+  choice: nine
+  choice: three
+  choice: none
+  choice: six
+  choice: one
+  choice: two
+A:",one
+general_knowledge,"Q: Which is the name of the study of the heart and circulatory system?
+  choice: cardiology
+  choice: physics
+  choice: anthropology
+  choice: taxonomy
+  choice: chemistry
+  choice: mathematics
+  choice: computer science",cardiology,chemistry,anthropology,computer science,A,cardiology,"Q: Which is the name of the study of the heart and circulatory system?
+  choice: cardiology
+  choice: physics
+  choice: anthropology
+  choice: taxonomy
+  choice: chemistry
+  choice: mathematics
+  choice: computer science
+  choice: research
+A:",cardiology
+general_knowledge,"Q: How many whiskers does a human have?
+  choice: four
+  choice: nine
+  choice: three
+  choice: none
+  choice: six
+  choice: one
+  choice: two
+A:",two,four,six,three,,none,"Q: How many whiskers does a human have?
+  choice: four
+  choice: nine
+  choice: three
+  choice: none
+  choice: six
+  choice: one
+  choice: two
+A:",none
+general_knowledge,"Q: How many days are in a leap year?
+  choice: 123
+  choice: 364
+  choice: 1
+  choice: 366
+  choice: 29
+  choice: 31
+  choice: 30
+  choice: 365
+A:",366,365,364,31,A,366,"Q: How many days are in a leap year?
+  choice: 123
+  choice: 364
+  choice: 1
+  choice: 366
+  choice: 29
+  choice: 31
+  choice: 30
+  choice: 365
+A:",366
+general_knowledge,"Q: What is the name of the shape with eight sides?
+  choice: square
+  choice: hexagon
+  choice: prism
+  choice: decagon
+  choice: rhomboid
+  choice: icosahedron
+  choice: triangle
+  choice: pentagon
+  choice: octagon
+  c",octagon,pentagon,quadrilateral,triangle,A,octagon,"Q: What is the name of the shape with eight sides?
+  choice: square
+  choice: hexagon
+  choice: prism
+  choice: decagon
+  choice: rhomboid
+  choice: icosahedron
+  choice: triangle
+  choice: pentagon
+  choice: octagon
+  choice: quadrilateral
+A:",octagon
+general_knowledge,"Q: What color is the sky on a clear sunny day?
+  choice: no color
+  choice: black
+  choice: white
+  choice: yellow
+  choice: cyan
+  choice: blue
+  choice: transparent
+  choice: grey
+  choice: red
+  choice: green
+  choice",red,blue,purple,black,B,blue,"Q: What color is the sky on a clear sunny day?
+  choice: no color
+  choice: black
+  choice: white
+  choice: yellow
+  choice: cyan
+  choice: blue
+  choice: transparent
+  choice: grey
+  choice: red
+  choice: green
+  choice: purple
+A:",blue

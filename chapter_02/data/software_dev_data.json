@@ -1,0 +1,140 @@
+{
+  "params": {
+    "github_topic": "fastapi",
+    "github_language": "Python",
+    "repo_limit": 3,
+    "pypi_packages": [
+      "fastapi",
+      "pydantic",
+      "uvicorn"
+    ],
+    "stack_tag": "fastapi",
+    "stack_limit": 5
+  },
+  "fetched_at_utc": "2026-09-29T02:56:31.221514Z",
+  "sources": {
+    "github": [],
+    "pypi": [
+      {
+        "package": "fastapi",
+        "latest_version": "0.141.1",
+        "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+        "author": null,
+        "license": null,
+        "project_urls": {
+          "Changelog": "https://fastapi.tiangolo.com/release-notes/",
+          "Documentation": "https://fastapi.tiangolo.com/",
+          "Homepage": "https://github.com/fastapi/fastapi",
+          "Issues": "https://github.com/fastapi/fastapi/issues",
+          "Repository": "https://github.com/fastapi/fastapi"
+        },
+        "home_page": null,
+        "requires_python": ">=3.10",
+        "uploaded_at": "2026-07-29T17:18:04.364385Z"
+      },
+      {
+        "package": "pydantic",
+        "latest_version": "2.13.5",
+        "summary": "Data validation using Python type hints",
+        "author": null,
+        "license": null,
+        "project_urls": {
+          "Changelog": "https://docs.pydantic.dev/latest/changelog/",
+          "Documentation": "https://docs.pydantic.dev",
+          "Funding": "https://github.com/sponsors/samuelcolvin",
+          "Homepage": "https://github.com/pydantic/pydantic",
+          "Source": "https://github.com/pydantic/pydantic"
+        },
+        "home_page": null,
+        "requires_python": ">=3.9",
+        "uploaded_at": "2026-08-28T14:03:59.136157Z"
+      },
+      {
+        "package": "uvicorn",
+        "latest_version": "0.54.0",
+        "summary": "The lightning-fast ASGI server.",
+        "author": null,
+        "license": null,
+        "project_urls": {
+          "Changelog": "https://uvicorn.dev/release-notes",
+          "Funding": "https://github.com/sponsors/Kludex",
+          "Homepage": "https://uvicorn.dev/",
+          "Source": "https://github.com/Kludex/uvicorn"
+        },
+        "home_page": null,
+        "requires_python": ">=3.10",
+        "uploaded_at": "2026-09-25T06:52:35.829563Z"
+      }
+    ],
+    "stack_overflow": [
+      {
+        "question_id": 74933095,
+        "title": "FastAPI pydantic response_model",
+        "link": "https://stackoverflow.com/questions/74933095/fastapi-pydantic-response-model",
+        "creation_date": "2022-12-27T18:48:56Z",
+        "score": 0,
+        "is_answered": true,
+        "tags": [
+          "python",
+          "fastapi",
+          "uvicorn"
+        ]
+      },
+      {
+        "question_id": 77566386,
+        "title": "How can I use dynamically defined enums in FastAPI/Pydantic models run on Uvicorn?",
+        "link": "https://stackoverflow.com/questions/77566386/how-can-i-use-dynamically-defined-enums-in-fastapi-pydantic-models-run-on-uvicor",
+        "creation_date": "2023-11-28T18:39:39Z",
+        "score": 3,
+        "is_answered": true,
+        "tags": [
+          "python",
+          "dynamic",
+          "fastapi",
+          "pydantic",
+          "uvicorn"
+        ]
+      },
+      {
+        "question_id": 80004839,
+        "title": "Is there a better alternative to using os.getenv() for FastAPI settings?",
+        "link": "https://stackoverflow.com/questions/80004839/is-there-a-better-alternative-to-using-os-getenv-for-fastapi-settings",
+        "creation_date": "2026-09-22T04:54:18Z",
+        "score": -4,
+        "is_answered": true,
+        "tags": [
+          "tooling-recommendation",
+          "python",
+          "fastapi"
+        ]
+      },
+      {
+        "question_id": 79999108,
+        "title": "How can I prevent duplicate Celery tasks when a FastAPI endpoint is retried?",
+        "link": "https://stackoverflow.com/questions/79999108/how-can-i-prevent-duplicate-celery-tasks-when-a-fastapi-endpoint-is-retried",
+        "creation_date": "2026-08-29T00:12:50Z",
+        "score": 3,
+        "is_answered": true,
+        "tags": [
+          "python",
+          "postgresql",
+          "fastapi"
+        ]
+      },
+      {
+        "question_id": 75554263,
+        "title": "beanie.exceptions.CollectionWasNotInitialized error",
+        "link": "https://stackoverflow.com/questions/75554263/beanie-exceptions-collectionwasnotinitialized-error",
+        "creation_date": "2023-02-24T08:35:58Z",
+        "score": 4,
+        "is_answered": true,
+        "tags": [
+          "python",
+          "mongodb",
+          "fastapi",
+          "odm"
+        ]
+      }
+    ]
+  }
+}

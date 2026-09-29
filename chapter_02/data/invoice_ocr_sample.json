@@ -1,0 +1,27 @@
+{
+  "pdf_path": "../data/invoice_sample.pdf",
+  "pages_total": 1,
+  "dpi": 400,
+  "lang": "eng",
+  "extraction_method": "ocr",
+  "extracted": {
+    "invoice_number": "INV-3337",
+    "order_number": "12345",
+    "invoice_date": "January 25, 2016",
+    "due_date": "January 31, 2016",
+    "total_due": "93.50",
+    "emails": [
+      "admin@slicedinvoices.com",
+      "test@test.com"
+    ]
+  },
+  "confidence_estimates": {
+    "invoice_number": 90.0,
+    "order_number": 96.0,
+    "invoice_date": 96.0,
+    "due_date": 95.8,
+    "total_due": 96.0,
+    "emails": 79.5
+  },
+  "preview_text": "G Sliced nvotces\nInvoice\nInvoice Number INV-3337\nFrom:\nDEMO - Sliced Invoices Order Number 12345\nSuite 5A-1204 Invoice Date January 25, 2016\n123 Somewhere Street Due Date January 31, 2016\nYour City AZ 12345\n. oo, Total Due $93.50\nadmin @slicedinvoices.com\nTo:\nTest Business\n123 Somewhere St\nMelbourne, VIC 3000\ntest@test.com\nWeb Design °\nSub Total $85.00\nANZ Bank\nACC # 1234 1234\nBSB # 4321 432\nPayment is due within 30 days from date of invoice. Late payment is subject to fees of 5% per month.\nThanks for choosing DEMO - Sliced Invoices | admin@slicedinvoices.com\nPage 1/1"
+}

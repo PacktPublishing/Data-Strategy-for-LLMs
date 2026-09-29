@@ -1,0 +1,502 @@
+[
+  {
+    "source": "Crossref",
+    "title": "Towards Natural Language Reasoning and Hybrid Querying over Virtual Knowledge Graphs",
+    "authors": [
+      "Indeewari Balasooriya",
+      "Anna Dalla Vecchia",
+      "Elisa Quintarelli"
+    ],
+    "published": "2027-01-01",
+    "doi": "10.1007/978-3-032-39823-9_7",
+    "publisher": "Springer Nature Switzerland",
+    "venue": "Communications in Computer and Information Science",
+    "type": "book-chapter",
+    "url": "https://doi.org/10.1007/978-3-032-39823-9_7",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Knowledge-Based Conversational Recommendation with Large Language Models",
+    "authors": [
+      "Stefano Picchi"
+    ],
+    "published": "2027-01-01",
+    "doi": "10.1007/978-3-032-39823-9_27",
+    "publisher": "Springer Nature Switzerland",
+    "venue": "Communications in Computer and Information Science",
+    "type": "book-chapter",
+    "url": "https://doi.org/10.1007/978-3-032-39823-9_27",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Language Loss and Marginalization: Conceptual Foundations and Methodological Approach",
+    "authors": [
+      "Digambar M. Ghodke"
+    ],
+    "published": "2027-01-01",
+    "doi": "10.1007/978-3-032-35336-8_1",
+    "publisher": "Springer Nature Switzerland",
+    "venue": "Language Loss and Marginalisation in India",
+    "type": "book-chapter",
+    "url": "https://doi.org/10.1007/978-3-032-35336-8_1",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Enhancing Topic Modeling Through Adaptive Similarity Thresholding: The Case of Large-Scale Citizen Contributions",
+    "authors": [
+      "Sami Guembour",
+      "Catherine Dominguès",
+      "Sabine Ploux"
+    ],
+    "published": "2027-01-01",
+    "doi": "10.1007/978-3-032-39823-9_3",
+    "publisher": "Springer Nature Switzerland",
+    "venue": "Communications in Computer and Information Science",
+    "type": "book-chapter",
+    "url": "https://doi.org/10.1007/978-3-032-39823-9_3",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Living Safely with an Evolving Operational Environment",
+    "authors": [
+      "Tony Licu"
+    ],
+    "published": "2027-01-01",
+    "doi": "10.1007/978-3-032-29343-5_2",
+    "publisher": "Springer Nature Switzerland",
+    "venue": "SpringerBriefs in Applied Sciences and Technology",
+    "type": "book-chapter",
+    "url": "https://doi.org/10.1007/978-3-032-29343-5_2",
+    "abstract": "Abstract\n                  This paper reflects on the dual perspective of a safety manager turned operational leader in air traffic management. It highlights how safety has gradually lost visibility in Ultra-safe Systems, constrained by limited budgets, outdated Safety-I thinking, and a lack of practical tools. Operational realities—political pressure, delivery deadlines, and competing objectives—create continuous trade-offs where safety risks are being sidelined. Emerging challenges such as geopolitical instability, cybersecurity threats, digitalization, AI, and talent shortages further strain safety management. The paper proposes modernizing safety governance, integrating safety professionals into operational teams, leveraging AI for proactive analysis, strengthening education for engineers and managers, and nurturing a culture of transparency to enable more effective, resilient safety practices."
+  },
+  {
+    "source": "Crossref",
+    "title": "Class-Level Error Analysis and Systematic Evaluation of CNN-Based Models for French Mispronunciation Detection",
+    "authors": [
+      "Alberto Alva Alvarado",
+      "Miguel De-la-Torre",
+      "M. Ali Akber Dewan"
+    ],
+    "published": "2027-01-01",
+    "doi": "10.1007/978-3-032-37444-8_4",
+    "publisher": "Springer Nature Switzerland",
+    "venue": "Communications in Computer and Information Science",
+    "type": "book-chapter",
+    "url": "https://doi.org/10.1007/978-3-032-37444-8_4",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "PetroGuard: An End-To-End Large Vision Model for Full-Chain Safety Risk Recognition in Oil and Gas Production",
+    "authors": [
+      "Y. Wang",
+      "G. Lin",
+      "C. Wang",
+      "H. Liu",
+      "S. Liu",
+      "W. Yang"
+    ],
+    "published": "2026-09-29",
+    "doi": "10.2118/232167-ms",
+    "publisher": "SPE",
+    "venue": "GOTECH",
+    "type": "proceedings-article",
+    "url": "https://doi.org/10.2118/232167-ms",
+    "abstract": "Abstract\n                  Oil and gas production safety monitoring constitutes the core component for companies to consolidate their safety defenses. To address the key challenges of an incomplete safety data system and scarce valid risk data, this paper develops a full-chain safety risk identification system for oil and gas production, integrating risk system establishment, data quality assessment, and model training. Firstly, we construct a full-chain safety risk image database covering 11 scenario categories and 47 risk categories. Secondly, we propose a self-supervised learning based data cleaning algorithm to achieve efficient filtering of low-quality data. Finally, we design a two-stage training paradigm which consists of pre-training and fine-tuning to build a risk identification large vision model with 300M-parameter. Experimental results demonstrate that the self-supervised data cleaning algorithm can eliminate 34% of low-quality data and reduce labor costs by 61%. The model achieves mean recognition accuracy of 93% with a small number of labeled samples, providing crucial technical support for oil and gas production safety monitoring."
+  },
+  {
+    "source": "Crossref",
+    "title": "Implementing Social Emotional Learning in Rural Elementary Schools: Feasibility and Preliminary Outcomes from a Pilot Implementation of Sources of Strength",
+    "authors": [
+      "Anne Williford",
+      "Jamie R. Yoder",
+      "Cynthia McDermott",
+      "Nathaniel R. Riggs",
+      "Scott LoMurray",
+      "Matt Hofmeister",
+      "Aubrie Radford"
+    ],
+    "published": "2026-09-29",
+    "doi": "10.1007/s10566-026-09975-8",
+    "publisher": "Springer Science and Business Media LLC",
+    "venue": "Child &amp; Youth Care Forum",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1007/s10566-026-09975-8",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Machine Learning and Natural Language Processing for Mental Health Detection in Clinical Text: A Scoping Review",
+    "authors": [
+      "Xiaochen Ding",
+      "Charlene L.M. Lam",
+      "See Heng Yim",
+      "Amanda K. Cheung",
+      "Tatia M.C. Lee"
+    ],
+    "published": "2026-09-29",
+    "doi": "10.37766/inplasy2026.9.0118",
+    "publisher": "INPLASY - International Platform of Registered Systematic Review and Meta-analysis Protocols",
+    "venue": "",
+    "type": "report",
+    "url": "https://doi.org/10.37766/inplasy2026.9.0118",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Lost Circulation Prediction in Deep Naturally Fractured Reservoirs: Integrating Theory Models with Machine Learning Algorithms",
+    "authors": [
+      "Xian Shi",
+      "Qilong Fang",
+      "Xianbin Huang",
+      "Yuqiang Xu",
+      "Jincai Shen",
+      "Shu Jiang",
+      "Ahmad Ramezanzadeh"
+    ],
+    "published": "2026-09-29",
+    "doi": "10.2118/231991-ms",
+    "publisher": "SPE",
+    "venue": "GOTECH",
+    "type": "proceedings-article",
+    "url": "https://doi.org/10.2118/231991-ms",
+    "abstract": "Abstract\n                  Lost circulation is one of the most common incidents during drilling operations in naturally fractured formations. It not only results in significant losses of drilling mud but also increases non-productive time (NPT) and drilling costs. However, predicting lost circulation remains a challenging task, as the lost circulation pressure is governed by a complex array of influencing factors in intricate target formations. Therefore, different lost circulation models should be adapted to match distinct formation characteristics. In this study, we first integrate core data, well logs, and seismic data to map the locations and properties of natural fractures. Subsequently, detailed post-drilling data on lost circulation volume and rate are used to identify three possible types of lost circulation: permeable-induced lost circulation, hydraulic fracturing-induced lost circulation, and natural fracture-induced lost circulation. Based on comprehensive information about natural fractures and actual lost circulation events, appropriate theoretical models are selected for different depth intervals of the target formations, and actual drilling lost circulation data are used to validate these theoretical models. Furthermore, machine learning algorithms are employed to predict lost circulation. To enhance prediction efficiency, instead of training the algorithms using limited data from only a few wells in a specific region, a broad dataset encompassing various formation types is utilized for training. The trained machine learning models for lost circulation prediction are then evaluated by comparing their predictions with actual field data, using metrics such as mean squared error (MSE), mean absolute error (MAE), and coefficient of determination (R²). On the test dataset, the machine learning models achieve the following performance: For formations with permeable-induced lost circulation: MSE = 0.108, R² = 0.997; For formations with hydraulic fracturing-induced lost circulation: MSE = 0.042, R² = 0.986; For formations with natural fracture-induced lost circulation: MSE = 0.069, R² = 0.975. One field cases are also analyzed to demonstrate the practical utility of the machine learning models. The results indicate that the pre-drilling predicted values of formation lost circulation pressure show minimal deviation from actual measurements. The machine learning models exhibit high prediction accuracy, and their predictions are consistent with on-site application outcomes. The application of this machine learning-based lost circulation pressure prediction method can provide technical support for safe and efficient drilling in deep naturally fractured formations.\n                  \n                    Key Points\n                    Classify lost circulation into three types by mechanism, match three algorithms to build a system, breaking single-model limits for accurate layered prediction Field validation confirms model accuracy; optimized parameters avoid severe loss, cutting drilling cycle by 21.85 days and boosting efficiency Integrate multi-source data to clarify key indicators of each loss type, providing reliable technical support for deep fractured formation drilling"
+  },
+  {
+    "source": "Crossref",
+    "title": "The Other Declarations",
+    "authors": [
+      "Jeremy D. Bailey"
+    ],
+    "published": "2026-09-29",
+    "doi": "10.2307/jj.47334658",
+    "publisher": "University Press of Kansas",
+    "venue": "",
+    "type": "monograph",
+    "url": "https://doi.org/10.2307/jj.47334658",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "“Both Scathing and at the Same Time, Loving”",
+    "authors": [
+      "Emiko Dodo"
+    ],
+    "published": "2026-09-29",
+    "doi": "10.7227/jbr.12.5",
+    "publisher": "Manchester University Press",
+    "venue": "James Baldwin Review",
+    "type": "journal-article",
+    "url": "https://doi.org/10.7227/jbr.12.5",
+    "abstract": "Fire is a powerful metaphor in the American literary imagination. Through this\n                    metaphor, James Baldwin and Toni Morrison articulate their vision of love as a\n                    transformative force that gives life to language. This article argues that\n                    Baldwin and Morrison show how language, charged with fiery love, becomes a\n                    creative force capable of both destruction and nurturance. Reading\n                    A\n                        Mercy\n                    in dialogue with Baldwin’s later essays reveals how\n                    Morrison carries forward Baldwin’s mission to confront America’s\n                    racial myths through her reimagining of Baldwin’s fiery language,\n                    described by Morrison as “both scathing and at the same time,\n                    loving.” In\n                    A Mercy\n                    , Florens’s narrative set on\n                    fire embodies Morrison’s expansion of Baldwin’s understanding of\n                    Black people’s passionate relationship to language. Their shared metaphor\n                    of fire illuminates the interconnected literary legacies of language and love\n                    that bind their works across genres."
+  },
+  {
+    "source": "Crossref",
+    "title": "Enhancing Drilling Performance Using Real-Time Machine Learning Models: A Framework for Predicting Formation Transitions During Drilling Operations",
+    "authors": [
+      "R. M. Elgaddafi",
+      "R. Ahmed",
+      "B. Biltayib",
+      "K. Amadi",
+      "M. Al-Saba",
+      "T. Bouhanna",
+      "A. Al-Khamees",
+      "F. Masri"
+    ],
+    "published": "2026-09-29",
+    "doi": "10.2118/232114-ms",
+    "publisher": "SPE",
+    "venue": "GOTECH",
+    "type": "proceedings-article",
+    "url": "https://doi.org/10.2118/232114-ms",
+    "abstract": "Abstract\n                  Accurate real-time identification of formation transitions is essential for improving drilling efficiency and reducing nonproductive time, particularly in geologically complex environments. Accurate estimates of sonic and bulk density logs are crucial inputs for subsurface formation identification; however, acquiring these logs at high resolution in real time during drilling remains a significant challenge because the sensors are typically located more than 98 ft from the drill bit. To overcome this limitation, this study proposes a machine learning-based framework to predict lithological changes using near-bit measurements. The approach leverages logging-while-drilling (LWD) data and real-time drilling parameters to enable more reliable and proactive subsurface evaluation.\n                  In this study, 55,945 datasets from fifteen wells in the Volve Field were processed and analyzed using a systematic workflow. Twelve wells provided LWD and drilling parameters, while three included wireline logs and core data. The selection of input features was initially based on proximity to the drill bit and their dominant influence on the target variable. First, lithofacies were classified using an optimized k-nearest neighbors (KNN) algorithm based on Gamma Ray (GR), interval transit time (DT), and bulk density (RHOB) logs, and then calibrated against core-derived mineralogy for formation type identification. Subsequently, an XGBoost-based classification model (XGB-C) was developed to predict formation types using the logs. To address depth and time offsets, an optimized XGBoost-based regression model (XGB-R) was also trained to predict DT and RHOB logs using real-time drilling parameters (such as ROP and WOB) and GR measurements. Data from ten wells were used for model development (80% training, 20% testing), while two additional wells served as blind validation sets.\n                  Model evaluation results indicate that the proposed framework reliably forecasts lithology and formation transitions during real-time drilling. The XGBoost-based supervised classification (XGB-C) model achieved blind-test accuracy exceeding 83%, demonstrating robustness in lithofacies prediction. For sonic and density log prediction, the optimized XGBoost-based supervised regression model (XGB-R) demonstrated superior generalization performance compared to benchmark models, including Random Forest (RF) and CatBoost (CB). The XGB-R model accurately captured depth-dependent variations in both sonic and density logs in offset wells, achieving maximum mean absolute percentage errors (MAPE) of 7.67% and 6.84%, respectively.\n                  This study presents a robust, reliable machine learning framework for real-time prediction of formation transitions, reducing reliance on subjective human judgment. The approach offers a scalable solution for intelligent lithological interpretation and can be seamlessly integrated into real-time drilling advisory systems. Its implementation improves drilling efficiency in complex environments and substantially reduces non-productive time and overall operational costs."
+  },
+  {
+    "source": "Crossref",
+    "title": "The language of the Dungan Chinese Muslims in Central Asia: Marginalisation and resilience",
+    "authors": [
+      "Ding Hong",
+      "Ma Hongyu"
+    ],
+    "published": "2026-09-29",
+    "doi": "10.37839/mar2652-550x27.15",
+    "publisher": "Asia Institute, University of Melbourne",
+    "venue": "Melbourne Asia Review",
+    "type": "journal-article",
+    "url": "https://doi.org/10.37839/mar2652-550x27.15",
+    "abstract": "‘Dungan’ refers to a small group of the ethnic Chinese Muslim who fled from northwestern China to Central Asia in the 1870s. The Dungan language has undergone significant change through sustained contact with neighboring ethnic groups and has absorbed many elements from the dominant language in the region."
+  },
+  {
+    "source": "Crossref",
+    "title": "Table of Contents",
+    "authors": [],
+    "published": "2026-09-29",
+    "doi": "10.2307/jj.47334658.2",
+    "publisher": "University Press of Kansas",
+    "venue": "The Other Declarations",
+    "type": "book-chapter",
+    "url": "https://doi.org/10.2307/jj.47334658.2",
+    "abstract": ""
+  },
+  {
+    "source": "arXiv",
+    "title": "Steering Language Model Goals with Value Transplant",
+    "authors": [
+      "Pengcheng Jiang",
+      "Fabien Roger"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34056v1",
+    "abstract": "Reasoning models often act as if they pursue goals, but their efforts are not always directed toward what users intend, sometimes leading them to pursue unintended outcomes. Previous work has examined how models may internally track their progress toward their goals through a \"value axis.\" We study whether changing such a signal can retarget the model's search toward a different goal. We test value transplant: at each token, we shift the host model's activation along a candidate value axis by the donor-host difference in value coordinates (multiplied by a large scalar), aiming to redirect the host toward the donor's goal. We study this intervention in Qwen3-8B and GPT-OSS-20B models fine-tuned into honest and cheating variants. We test several candidate value axes, including a self-rating axis constructed from activations preceding high versus low elicited self-ratings of progress. The intervention works in both directions, with an honest donor reducing test-gaming in a cheating host and a cheating donor increasing test-gaming in an honest host, showing that this signal can influence which strategy the model follows. On solvable coding tasks, transplant from an honest donor also improves the cheating host's hidden-test performance. Value transplant also works across model families, providing preliminary evidence for the intervention in a setting relevant to model control."
+  },
+  {
+    "source": "arXiv",
+    "title": "PReCache: Efficient KV Cache Sharing for Multi-LoRA Agents via Low-Rank Precomputation and Neutral Reconstruction",
+    "authors": [
+      "Hyesung Jeon",
+      "Hyeongju Ha",
+      "Jae-Joon Kim"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34054v1",
+    "abstract": "Multi-LoRA agent systems enable efficient role specialization by sharing a common backbone model. However, each agent repeatedly processes the growing shared trajectory and constructs its own KV cache, introducing substantial memory and computation redundancy in long-horizon tasks. Existing KV cache sharing methods reduce this repeated prefill, but they either require additional training or architectural constraints or retain substantial model computation. Moreover, direct cache reuse causes the current agent to rely on cache states generated by the previous agent's adapter, weakening the role-specific behavior encoded by its own LoRA. We present PReCache, a training-free KV cache sharing framework with two designs, namely PreLRShared and ReBaseShared, that share the base cache computed using the pretrained weights and precompute a compact agent-specific low-rank (LR) cache. To remove repeated prefill, PreLRShared precomputes each agent's LR cache when the shared context is first processed, allowing the current agent to use its own LR cache without reprocessing context processed by previous agents. To improve sharing accuracy, ReBaseShared reconstructs the shared base cache from adapter-free hidden states, reducing the remaining error caused by the previous agent's adapted representation. To minimize its reconstruction cost, we propose two inference schemes tailored to single-stream inference and concurrent serving, performing the same reconstruction after each agent's turn or alongside its execution, respectively. Across multiple models and agent benchmarks, PreLRShared achieves up to a 3.1x TTFT speedup and a 2.3x improvement in per-request throughput over inference without KV cache sharing. ReBaseShared best preserves accuracy overall among the evaluated cache-sharing methods, with an average drop of only 1.1 points relative to inference without cache sharing."
+  },
+  {
+    "source": "arXiv",
+    "title": "Towards Interpretable Framework for Neural Audio Codecs via Sparse Autoencoders: Exploration toward Age, Gender, and Accent Steering",
+    "authors": [
+      "Shih-Heng Wang",
+      "Tiantian Feng",
+      "Aditya Kommineni",
+      "Huang-Cheng Chou",
+      "Bowen Yi",
+      "Xuan Shi",
+      "Shrikanth Narayanan"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34052v1",
+    "abstract": "Neural audio codecs (NACs) are widely used in speech generation and audio-language modeling, yet how they encode speaker-trait information remains poorly understood. Prior work applied sparse autoencoders (SAEs) to investigate accent information in NACs through task-level analysis. Here, we extend this analysis to the waveform level and to age, gender, and accent, using SAE steering to probe trait-related information in sparse activations. We identify trait-associated dimensions, modify their activations, and evaluate the resulting reconstructed speech. Across five NACs, steering the selected dimensions induces target-directed shifts in speaker-trait predictions. A random-dimension baseline on Mimi produces smaller shifts, supporting the relevance of the selected dimensions. However, responses vary across codecs, traits, and steering directions, and increasing steering strength does not consistently amplify the intended shifts. Steering also generally increases word error rates and lowers predicted perceptual quality. These findings suggest that SAEs capture speaker-trait information in steerable activations, while the accompanying quality degradation highlights the need to better separate trait-related information from other information."
+  },
+  {
+    "source": "arXiv",
+    "title": "A roadmap for polymer informatics super-intelligence",
+    "authors": [
+      "Akhlak Mahmood",
+      "Janhavi Nistane",
+      "Huan Tran",
+      "Chiho Kim",
+      "Rampi Ramprasad"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34051v1",
+    "abstract": "Polymer informatics has matured from isolated property-prediction studies into an integrated discipline that couples data, models, and decision-making across the polymer design cycle. Yet it still falls short of a true intelligent system capable of inverse design on demand, causal reasoning across chemistry, processing, and performance, and closed-loop autonomous experimentation. This article traces a roadmap toward that goal, grounded in experience developing two complementary agentic and informatics platforms. Central to this vision is a modular, agent-directed architecture in which a polymer super-intelligence layer interprets a researcher's design question in natural language and coordinates domain-specialized tools, matched to the available data, for neat polymers, composites and formulations, solvents, and synthesis and processing. The resulting system spans the full chain from molecular design through processing to product-level performance and human perception. Orchestrated together, its generative design, synthesis-feasibility reasoning, and practicality assessment already form the decision-making core of a self-driving polymer laboratory, leaving autonomous, closed-loop experimentation as the principal step that remains. We survey emerging capabilities along this roadmap, including automated extraction of property data from the literature, chemistry-aware representation, property prediction for membranes and sustainable plastics, solubility and green-solvent recommendation, and computer-guided retrosynthetic planning, exposing the remaining gaps and the research and infrastructure investments needed to move from today's orchestrated tool ecosystem toward a genuinely super-intelligent polymer design partner."
+  },
+  {
+    "source": "arXiv",
+    "title": "The Statistical Cost of Causal Discovery with Feedback",
+    "authors": [
+      "Sunmin Oh",
+      "Seungsu Han",
+      "Gunwoong Park"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34050v1",
+    "abstract": "What determines the unavoidable sample cost of learning cyclic causal structure? For cyclic linear non-Gaussian models, we study exact condensation recovery from observational data: identifying the strongly connected component (SCC) partition and all edges between components. We establish the first information-theoretic lower bounds on sample complexity for this target. For $p$ variables, maximum SCC size $s_{\\max}$, and maximum external-parent count $d_B$, any estimator requires order $s_{\\max}\\log(ep/s_{\\max})+d_B\\log(ep/d_B)$ samples in the worst case over a regular model class. These bounds distinguish the costs of SCC membership and external-parent selection. Under principal invertibility and without correlation faithfulness, we establish a population block-exogeneity principle that identifies unknown root SCCs through residual independence and inclusion minimality. A sparse-adjustment characterization shows that small adjustment sets suffice to identify SCCs and their direct external parents, without regressing on all previously recovered variables. These characterizations yield BlockExo, which attains a structurally matching sample bound without knowing $s_{\\max}$ or $d_B$ under suitable conditions. Simulations support the structural dependence of our sample bound and demonstrate BlockExo's sample-efficient recovery in comparisons with other methods for cyclic causal discovery."
+  },
+  {
+    "source": "arXiv",
+    "title": "Thinking Outside the Box: Retention and Transmission of Information in Sliding-Window KV Inference",
+    "authors": [
+      "Timothy DeLise",
+      "Seth Cromelin"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34049v1",
+    "abstract": "Sliding-window KV inference refers to processing a sequence incrementally while retaining only a fixed-size cache of recent key and value states. It can be applied to pretrained causal transformers at inference time without additional training, while its KV-cache memory remains fixed as more tokens are processed. Because cached states are computed in the context of earlier tokens, they may carry information from beyond the current window and transmit it to later states. This study presents a series of experiments using five open-weight models spanning Qwen, Llama, Mistral, and Muse Glimmer. We investigate whether information originating outside the immediate context window can persist through a rolling KV cache and remain useful for retrieval. Initial results show that retaining previously computed states improves retrieval across the models tested compared with recomputing the final fixed window from raw tokens. We then measure how far this effect extends and find that Muse Glimmer and Mistral 7B show the strongest \\emph{latent information relay}: they can recover information even after the relevant source tokens have left the cache. Both models incorporate sliding-window attention in their published architectures, an association that motivates testing whether training with sliding windows promotes more reliable information retention."
+  },
+  {
+    "source": "arXiv",
+    "title": "Schedule Repair for DAG Workflows under Link Disruptions",
+    "authors": [
+      "Mohammadali Khodabandehlou",
+      "Jared Coleman",
+      "Bhaskar Krishnamachari",
+      "Kevin Chan"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34048v1",
+    "abstract": "Schedules for directed acyclic graph (DAG) workflows in networked IoT systems are typically computed assuming a static or generally stable network. In contested and adversarial environments, this assumption is not valid. Links degrade and fail due to mobility, interference, and jamming. We study schedule repair: when a link disruption invalidates part of a schedule, how much of it should be rescheduled? We introduce a spectrum of repair policies that vary in repair scope, how much of the pending schedule each may move: wait out the disruption, reroute data around it, reschedule only the affected tasks locally, or reschedule all pending tasks globally. We evaluate each against an oracle and charge every repair a decision latency proportional to the extent to which it moves. Across 100 workload instances spanning synthetic task graphs, RIoTBench pipelines, and WfCommons scientific workflows, each run at five communication-to-computation ratios (CCRs) and disrupted by processes with deliberately different correlation structure, we find that no single scope wins: rerouting nearly erases isolated failures that cost waiting 30%, global repair comes within 4% of the oracle under jamming blackouts, waiting is favored under memoryless link flapping for larger and communication-heavy workloads (the scheduling analog of route-flap damping), self-healing mobility outages reward patience over reaction, and accounting for repair latency erodes large scopes first. We conclude that the scope of the repair should be adapted to the disruption process and the repair cost, rather than fixed by the scheduler."
+  },
+  {
+    "source": "arXiv",
+    "title": "ARCH-B: Architectural Representation, Comprehension and Hierarchy Benchmark",
+    "authors": [
+      "Kieran Sagar Parikh",
+      "Jose Luis Garcia del Castillo y Lopez"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34047v1",
+    "abstract": "Multimodal models increasingly interpret visual environments, but their ability to recognize the same building across photographs, floor plans, elevations, sections, and renderings remains poorly characterized. We introduce ARCH-B, a benchmark of 354 four-choice questions across 11 cross-representational archetypes, constructed from a building-linked corpus of 3.9 million architectural images using visually similar distractors, model-guided difficulty screening, and manual validation. We evaluate 25 multimodal models and collect 5,830 responses from non-expert human participants. Model accuracy ranges from 10.45% to 83.90%, compared with a human baseline of 35.35%. Models perform comparatively well on mixed-representation outlier detection and photograph matching, but remain weaker on floorplan-to-photograph correspondence. Human and model difficulty across archetypes is only weakly correlated (Spearman's (ρ=0.33)). Held-out evaluation confirms that the difficulty identified during screening generalizes beyond the curation models. ARCH-B provides a diagnostic evaluation of visual correspondence and representation transfer across architectural media."
+  },
+  {
+    "source": "arXiv",
+    "title": "Kafila: Serving Large Language Models on a Trusted Set of Heterogeneous Commodity Machines",
+    "authors": [
+      "Murtaza Rangwala",
+      "Richard O. Sinnott",
+      "Rajkumar Buyya"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34045v1",
+    "abstract": "Between them, the members of a research group or a circle of friends own several consumer computers, none large enough to run a capable large language model. Existing systems pool such capacity across open swarms anyone may join, which a group admitting only trusted machines cannot use. Bounding membership removes what they depend on: a swarm holds each part of the model on several peers and routes around a slow one. A bounded session must use every device it admits. Its pipeline advances at the pace of whichever device received a share it cannot serve quickly, so the division has to be right before serving begins. We propose Kafila, whose protocol assembles a ring from behind NATs, preferring direct paths and relaying where traversal fails, while its planner measures each device's memory bandwidth, capacity and reachability, divides the model exactly for a fixed ring order, and places the head, which holds the embedding and output projection, together with that division rather than beforehand. On machines with different capabilities across three fleets, from a shared LAN to five devices spanning two continents, Kafila shortens the slowest pipeline stage by up to $5.2\\times$ against the even split of pipeline parallelism, as in GPipe, and up to $3\\times$ against the memory-proportional split of personal-device inference, as in exo, keeps 75 to 87 per cent of the committed hardware doing work where those divisions fall below half, and serves a model no uniform split can place on the fleet at all. What that is worth to a user depends on how much of a token is computation rather than network. Where the members share a network the same division returns $1.56\\times$ the throughput of a uniform split and $1.25\\times$ of a memory-proportional one, and under four concurrent users that lead compounds to $3.2\\times$ rather than fading, each user served at almost the rate of one."
+  },
+  {
+    "source": "arXiv",
+    "title": "SCOPD: Sparse-Context On-Policy Self-Distillation for Efficient Vision-Language Models",
+    "authors": [
+      "Ahmadreza Jeddi",
+      "Enming Zhang",
+      "Jasper Gerigk",
+      "Hakki Karaimer",
+      "Mozhgan Nasr Azadani",
+      "Jiayun Luo",
+      "Minh Ngoc Le",
+      "Gholamali Aminian",
+      "Hugo Buurmeijer",
+      "Yongchao Chen",
+      "Leonid Sigal",
+      "Igor Gilitschenski",
+      "Konstantinos G. Derpanis",
+      "Marco Pavone",
+      "Babak Taati"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34044v1",
+    "abstract": "Reasoning vision-language models (VLMs) process images and videos as long sequences of visual tokens, making inference expensive. Training-free token pruning reduces this cost, but aggressive compression can sharply degrade performance, often attributed to irreversible loss of task-relevant visual information. We show that this explanation is incomplete. In a fixed-context Pass@K analysis, repeated sampling from the same pruned visual representation recovers many examples missed by greedy decoding, indicating that useful visual evidence can remain accessible but be used unreliably. We call this the representation-utilization gap. Motivated by this observation, we introduce SCOPD, a sparse-context on-policy self-distillation framework in which a student generates reasoning trajectories from pruned visual tokens while a privileged full-context teacher supervises the same on-policy prefixes. SCOPD requires no ground-truth responses, architectural changes, or additional inference-time computation. We further introduce SCOPD+, which uses a small visual-budget intervention to identify visually sensitive response positions and selectively distill them. At 10% visual-token retention, the Vanilla model retains 86.37% of its unpruned performance across 13 benchmarks. SCOPD raises this to 90.49%, while SCOPD+ further improves it to 92.43%. Across token budgets, benchmarks, and pruning operators, our results show that efficient reasoning depends not only on which visual information survives pruning, but also on how reliably the model learns to use it."
+  },
+  {
+    "source": "arXiv",
+    "title": "Singularities of Non-negative Matrix Factorization and their application to Bayesian inference",
+    "authors": [
+      "Naoki Hayashi",
+      "Yota Maeda",
+      "Yasushi Esaki"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34043v1",
+    "abstract": "Non-negative matrix factorization (NMF) is a singular statistical model whose Bayesian asymptotics are governed by the real log canonical threshold (RLCT). We study the local geometry of the factorization map and derive an upper bound for the RLCT of NMF. Let $H$ be the model inner dimension and $H_0$ the non-negative rank of the true $M\\times N$ matrix. Assuming that the true matrix admits a strictly positive factorization of inner dimension $H_0$ in the interior of the parameter domain, we prove, for smooth positive priors, that $λ\\leq \\{(H-H_0)\\min(M,N)+H_0(M+N-H_0)\\}/2$. This bound strictly improves the previous bound when $H_0\\geq3$. The proof uses a local analytic normal form that separates independent linear coordinates from a residual matrix product. When $H=H_0$ also equals the ordinary rank of the true matrix, we obtain the exact value $λ=H_0(M+N-H_0)/2$. Under the standard assumptions of singular learning theory, these results bound the leading coefficients of the expected Bayesian generalization error and the Bayesian free energy."
+  },
+  {
+    "source": "arXiv",
+    "title": "Vision--Language Signals in Constrained RL: Safety Gains Without Anticipation",
+    "authors": [
+      "Samuel Tetteh",
+      "Cody Fleming"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34041v1",
+    "abstract": "Safe reinforcement learning seeks policies that maximise task performance while satisfying safety constraints. In driving benchmarks, however, collision costs typically appear only at the time of collision, providing no advance warning of an approaching hazard. Frozen vision--language models can provide dense semantic feedback, yet it remains unclear whether their scores anticipate collisions and which component drives an observed safety improvement. Episodic cost can also favour policies that make little task progress. To address these gaps, we propose VLM-Safe-RL, a framework that integrates frozen CLIP signals into PPO-Lagrangian through reward shaping and an augmented multiplier update. On MetaDrive Hard, which combines the densest traffic with the largest map, the catastrophe rate falls from 31.6\\% to 19.4\\%. FormulaOne-L2 analysis finds no evidence that the CLIP signals anticipate collisions and shows that the VLM term has a negligible effect on the Lagrange multiplier. These findings show a conditional reduction in observed catastrophe rate without evidence of collision anticipation."
+  },
+  {
+    "source": "arXiv",
+    "title": "Large Language Models for Structured Clinical Data Analysis: Dual-Agent Grounding and Validation",
+    "authors": [
+      "Erfan D. Dehkalani",
+      "Seetha Shankaran",
+      "Abbot R. Laptook",
+      "C. Michael Cotten",
+      "P. Ellen Grant",
+      "Yangming Ou"
+    ],
+    "published": "2026-09-28",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34039v1",
+    "abstract": "Objective: To develop and characterize CLEAR-Med, a dual-agent framework for natural-language analysis of structured clinical data that separates SQL-based invocation from independent validation. Methods: CLEAR-Med uses one agent to translate a question into executable Structured Query Language (SQL), retain the executed query and database result, and produce a draft. Deterministic checks and a separately invoked cross-provider Validation Agent then accept the draft, request one bounded repair, or abstain. We formalized the system as a bounded selective pipeline and evaluated CLEAR-Med's configuration and scalability, and the Invocation Agent's accuracy and consistency on a 25-query development benchmark, using a harmonized 21-site neonatal hypoxic-ischemic encephalopathy table containing 532 de-identified infant records and approximately 1,300 variables. Results: CLEAR-Med completed all six nominal scalability configurations, including 500x1300. Across 25 development-benchmark queries repeated five times, the Invocation Agent answered 83 of 125 responses correctly (66.4%; query-cluster bootstrap 95% CI, 48.0-83.2%), compared with 15 of 125 (12.0%; 95% CI, 3.2-22.4%) for the ungrounded ChatGPT baseline, a paired improvement of 54.4 percentage points (95% CI, 36.8-72.0%). Conclusion: CLEAR-Med provides a general architecture for traceable analysis of structured clinical data: numerical claims remain linked to executed SQL, and unresolved cases can fail closed. The reported experiments characterize CLEAR-Med's configuration and scalability and the Invocation Agent's accuracy, while the formal analysis establishes the encoded-property guarantee of the complete control flow; a prospective full-pipeline evaluation of the validation and abstention stages is the next stage of this work."
+  },
+  {
+    "source": "arXiv",
+    "title": "3D Point Tracking with State Space Models",
+    "authors": [
+      "Masahiro Ogawa",
+      "Qi An",
+      "Atsushi Yamashita"
+    ],
+    "published": "2026-09-27",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34035v1",
+    "abstract": "Tracking any point of a dynamic scene in metric 3D - in absolute meters, not up to an unknown scale - underpins 3D and 4D reconstruction, robot navigation, and autonomous driving, where decisions are made in meters, not pixels. Our objective is a 3D point tracker accurate in those absolute terms and operating within a single commodity GPU, pose-free, monocular budget. Our method rests on one observation: once a point's 2D image trajectory is fixed, the quantity that governs its metric accuracy is the depth along its pixel ray. Rather than learning tracking end-to-end, we therefore compose two frozen front-ends - dense optical flow for 2D correspondence and a monocular metric-depth network for the third dimension - and learn only the residual they cannot supply: that depth, refined by a compact state space model (Mamba-3) conditioned on appearance features (DINOv3). A state space model rather than the transformers the strongest 3D trackers adopt is what makes a single-GPU budget attainable: it summarises a track in a fixed-size recurrent state whose memory cost is constant in the number of frames, whereas attention requires a key-value cache that grows linearly with them. On the TAPVid-3D minival benchmark our best configuration attains the highest absolute metric accuracy among methods evaluated under identical conditions (mean metric Average Jaccard, 0.256), exceeding strong feed-forward trackers, while a companion analysis, reproduced with each competitor's own evaluator, explains why several published trackers lose most of their accuracy under this budget."
+  },
+  {
+    "source": "arXiv",
+    "title": "ADPTNet: Adaptive with Prescriptive Timescales Non-Linear SSM for Sequence Modelling",
+    "authors": [
+      "Matei-Ioan Stan",
+      "Oliver Rhodes"
+    ],
+    "published": "2026-09-27",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2609.34034v1",
+    "abstract": "A central aim of neuromorphic computing is to provide a viable alternative to highly energy-intensive Transformer-based AI. However, efficient alternatives struggle to capture the set of qualities that have secured the Transformer's status as the de facto standard in sequence modelling. Any realistic contender must be data-adaptive, able to capture long-range dependencies, and GPU-parallelisable, but also non-linearly recurrent to enable complex reasoning. Based on evidence suggesting the auditory cortex operates on fixed timescales, this work proposes the ADaptive with Prescriptive Timescales Network (ADPTNet) as a potential solution to achieving all four properties simultaneously. ADPTNet is built around local topological conjugates, obtained by a novel combination of linear attention and Riemannian optimisation, applied to static global dynamics. This enables non-linear yet predictable long-term behaviour. Dynamical systems theory proofs provide theoretical guarantees for the parametric control of ADPTNet's timescales (its Lyapunov spectrum). ADPTNet improves performance on Selective Copying over Hawk, the existing method balancing long-range memory and adaptability, while also improving state tracking over linear SSMs like Mamba. On sequential CIFAR-10, ADPTNet matches linear SSM accuracy and outperforms existing selective models (incl. the Transformer), using fewer parameters. We also introduce a neuromorphic SpikingADPTNet, which achieves a new state-of-the-art accuracy on the Spiking Speech Commands dataset ($83.56\\%\\pm0.15$). Finally, ADPTNet's constant timescales enable two efficient, Jacobian-free extensions to the DEER parallel simulation algorithm (Conv and Forward DEER) that retain the same average convergence. Conv DEER adds no computational overhead beyond the network's forward pass and enables non-linear RNN parallelisation via iterated convolutions for the first time."
+  }
+]
