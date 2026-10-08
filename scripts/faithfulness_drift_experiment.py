@@ -19,7 +19,7 @@ from openai import OpenAI
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from utils.config import get_openai_api_key
-from utils.models import get_best_available_model, patch_client_compat
+from utils.models import get_best_available_model, get_small_models, patch_client_compat
 
 client = OpenAI(api_key=get_openai_api_key())
 patch_client_compat(client)
@@ -127,17 +127,8 @@ Return ONLY valid JSON:
 
 
 def find_small_models():
-    """Pick small-model candidates that actually exist on this account."""
-    try:
-        ids = sorted(m.id for m in client.models.list().data)
-    except Exception as e:
-        print(f"Could not list models: {e}")
-        return []
-    keys = ("mini", "nano", "small", "4o-mini", "o1-mini", "o3-mini", "o4-mini",
-            "3.5-turbo", "haiku", "8b", "7b", "flash")
-    cand = [m for m in ids if any(k in m.lower() for k in keys)]
-    # drop obviously non-chat models
-    cand = [m for m in cand if not any(x in m.lower() for x in ("embedding", "whisper", "tts", "audio", "image", "realtime", "moderation"))]
+    """Pick comparison models under the book's budget-only policy."""
+    cand = get_small_models(client, exclude=[STRONG])
     print(f"\nAvailable small-model candidates ({len(cand)}): {cand}")
     return cand
 

@@ -26,7 +26,11 @@ You can sign up with Google, Microsoft, or email. OpenAI requires phone verifica
 
 **Step 3: Add Billing Information**
 
-Unlike free-tier services, OpenAI requires a payment method, but you only pay for what you use. The pricing is very reasonable - typically $0.002 per 1K tokens for GPT-4.1. For this book's examples, expect to spend less than $5 total. 
+OpenAI API usage is billed separately from ChatGPT subscriptions. The book's shared model selector discovers and tests approved low-cost models at runtime, preferring GPT-4o-mini and GPT-4.1-mini. It never automatically falls back to premium or unpriced models, including choices left in an older cache. If no budget model works, it stops with a clear error instead.
+
+Allow **$5 in API credit for one pass through the bundled examples** using this budget policy. This is a planning estimate, not a hard spending cap: reruns, reasoning tokens, retries, and evaluation-library calls can increase usage. Chapter 7 trains locally and has no OpenAI training charge. Check [current OpenAI pricing](https://developers.openai.com/api/docs/pricing) and monitor your API usage. Model prices and availability can change.
+
+`BASE_MODEL` can express a preference among approved budget families when using `utils.notebook_setup.setup`; it cannot enable premium models. The curated family list lives in `utils/models.py` so notebooks continue to discover available models rather than pinning a model name.
 
 **Important**: **You will have to add money to your credit balance to be able to run the examples in this book. If you did not add credit, you will receive an error when you call the APIs.** 
 https://platform.openai.com/settings/organization/billing/overview 

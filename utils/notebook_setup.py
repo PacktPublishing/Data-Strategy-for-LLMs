@@ -115,37 +115,21 @@ def best_available_model(client) -> str:
 
 def select_and_test_model(
     client,
-    preferred=("gpt-4o", "gpt-4.1", "gpt-4o-mini", "gpt-4-turbo", "gpt-4", "gpt-3.5-turbo"),
+    preferred=None,
 ) -> str:
-    """Discover the latest valid model at runtime, TEST it, and self-heal.
+    """Discover and verify a model under the shared budget-only policy."""
+    from utils.models import get_best_available_model
 
-    Like ``best_available_model`` but proves the choice with a one-token call and
-    falls back to the next candidate if the key cannot actually use it. Never
-    hardcode a model name (see the notebook-model self-heal rule).
-    """
-    available = {m.id for m in client.models.list()}
-    ordered = [m for m in preferred if m in available]
-    ordered += sorted(
-        (m for m in available if m.startswith("gpt-") and m not in ordered), reverse=True
-    )
-    for name in ordered:
-        try:
-            client.chat.completions.create(
-                model=name, messages=[{"role": "user", "content": "ping"}], max_tokens=1
-            )
-            print(f"Selected and tested model: {name}")
-            return name
-        except Exception as err:
-            print(f"Skipping {name} ({type(err).__name__})")
-    raise RuntimeError("No usable chat model found for this API key.")
+    return get_best_available_model(client, preferred=preferred)
 
 
 def setup(packages=("openai",), need_openai: bool = True, pick_model: bool = False):
     """Install packages into the kernel, load the API key, and return ``(client, model)``.
 
     Returns ``(None, None)`` when ``need_openai`` is False (data-only chapters).
-    When ``pick_model`` is True the model is discovered from the API; otherwise it
-    is taken from ``BASE_MODEL`` (default ``gpt-4o-mini``).
+    Models are always discovered and verified under the budget-only policy.
+    ``BASE_MODEL`` can prefer an approved budget family, not enable a premium model.
+    ``pick_model`` is retained for compatibility with existing notebooks.
     """
     quiet_warnings()
     install_packages(list(packages))
@@ -164,6 +148,7 @@ def setup(packages=("openai",), need_openai: bool = True, pick_model: bool = Fal
         patch_client_compat(client)
     except Exception:
         pass
-    model = best_available_model(client) if pick_model else os.getenv("BASE_MODEL", "gpt-4o-mini")
+    preferred = [os.environ["BASE_MODEL"]] if os.getenv("BASE_MODEL") else None
+    model = select_and_test_model(client, preferred=preferred)
     print("Setup complete.")
     return client, model

@@ -5,10 +5,10 @@ Every notebook in this book calls get_best_available_model() instead of
 hardcoding a model name. The function:
 
   1. Queries the OpenAI API for available models
-  2. Ranks them by newest family first
+    2. Ranks a curated set of budget models, never falling back to premium models
   3. Saves the result to data/last_known_models.json
-  4. On API failure, falls back to the cache from the last successful run
-  5. After one successful call, no hardcoded name is ever used again
+    4. On discovery failure, revalidates budget candidates from the cache
+    5. Stops if no eligible model can be verified
 
 Usage (in any notebook):
     from utils.models import get_best_available_model
@@ -16,26 +16,16 @@ Usage (in any notebook):
 """
 
 import json
+import re
 from pathlib import Path
 from datetime import datetime
 
 
-# Model families ordered newest first. Add new families at the top.
 MODEL_PRIORITY = [
-    "gpt-5.6-sol", "gpt-5.6-terra",         # 5.6 family (Aug 2026)
-    "gpt-5.5", "gpt-5.5-mini",              # 5.5 family (May 2026)
-    "gpt-5.4-mini", "gpt-5.4",              # 5.4 family (Mar 2026)
-    "gpt-5.3",                                # 5.3 family (Mar 2026)
-    "o4-mini", "o4",                          # reasoning family (2025)
-    "gpt-4.1-mini", "gpt-4.1",              # 4.1 family (2025)
-    "gpt-4o-mini", "gpt-4o",                # 4o family (2024)
+    "gpt-4o-mini", "gpt-4.1-mini", "gpt-6-luna",
+    "gpt-4.1-nano", "gpt-5-nano", "gpt-5-mini",
+    "gpt-5.4-nano", "gpt-5.4-mini", "gpt-5.6-luna",
 ]
-
-# Patterns for discovering models not yet in the priority list
-DISCOVERY_PATTERNS = ["gpt-5", "gpt-6", "gpt-7", "o5", "o4", "gpt-4.1", "gpt-4o"]
-
-# Bootstrap seed -- only used on the very first run if the API also fails.
-_BOOTSTRAP_MODEL = "gpt-5.5"
 
 
 def patch_client_compat(client):
@@ -148,15 +138,22 @@ def _cache_path():
     return _find_repo_root() / "data" / "last_known_models.json"
 
 
-def _rank_models(available_ids):
-    """From a set of model IDs, return a ranked list (best first)."""
-    ranked = [m for m in MODEL_PRIORITY if m in available_ids]
-    discovered = sorted(
-        [m for m in available_ids
-         if any(p in m for p in DISCOVERY_PATTERNS) and m not in ranked],
-        reverse=True,
-    )
-    return ranked + discovered
+def _rank_models(available_ids, preferred=None):
+    """Rank approved budget aliases and dated snapshots; omit unpriced models."""
+    families = list(dict.fromkeys(
+        [model for model in (preferred or []) if model in MODEL_PRIORITY]
+        + MODEL_PRIORITY
+    ))
+    ranked = []
+    for family in families:
+        if family in available_ids:
+            ranked.append(family)
+        ranked.extend(sorted(
+            (model for model in available_ids
+             if re.fullmatch(re.escape(family) + r"-\d{4}-\d{2}-\d{2}", model)),
+            reverse=True,
+        ))
+    return ranked
 
 
 def _save_cache(ranked, selected):
@@ -193,7 +190,7 @@ def _model_responds(client, model_id):
     the whole tiny budget thinking) still counts as responding -- only an
     exception means "not usable".
     """
-    for params in ({"max_completion_tokens": 16}, {"max_tokens": 16}):
+    for params in ({"max_tokens": 1}, {"max_completion_tokens": 1}):
         try:
             client.chat.completions.create(
                 model=model_id,
@@ -202,13 +199,13 @@ def _model_responds(client, model_id):
             )
             return True
         except Exception:
-            continue  # older models reject max_completion_tokens -> retry legacy param
+            continue
     return False
 
 
-def get_best_available_model(client, verify=True, max_probes=6):
+def get_best_available_model(client, verify=True, max_probes=6, preferred=None):
     """
-    Find the best available OpenAI model. Fully self-updating.
+    Discover an approved low-cost model without escalating to premium models.
 
     Args:
         client:     An initialized openai.OpenAI client instance.
@@ -217,45 +214,38 @@ def get_best_available_model(client, verify=True, max_probes=6):
                     listed but not invocable (e.g. just deprecated) is skipped
                     instead of being handed back and crashing the notebook on
                     the next call. Set False for the old list-only behaviour.
-        max_probes: How many top-ranked candidates to probe before giving up
-                    and returning the highest-ranked name (keeps a broken
-                    account from probing dozens of models).
+        max_probes: Maximum number of budget candidates to test before stopping.
+        preferred: Optional ordering of approved budget model families.
 
     Returns:
-        str: The model ID to use (e.g. "gpt-5.5", "o4-mini").
+        str: A discovered budget model ID.
+
+    Raises:
+        RuntimeError: No eligible model is available or passes verification.
     """
-    # Step 1: Live discovery
     try:
         available = {m.id for m in client.models.list()}
-        ranked = _rank_models(available)
-        if ranked:
-            selected = ranked[0]
-            if verify:
-                # Prefer the highest-ranked model that truly answers. If none of
-                # the top candidates do, fall back to ranked[0] so behaviour
-                # matches the old default and the caller's error handling can
-                # surface the real problem (billing, auth, outage).
-                for candidate in ranked[:max_probes]:
-                    if _model_responds(client, candidate):
-                        selected = candidate
-                        break
-            _save_cache(ranked, selected)
-            print(f"Selected model: {selected}  (live, {len(ranked)} candidates)")
-            return selected
-        print("  No known model families found in account")
+        origin = "live"
     except Exception as e:
         print(f"  Live discovery failed: {e}")
+        cached_ranked, cached_selected, cached_date = _load_cache()
+        available = set(cached_ranked)
+        if cached_selected:
+            available.add(cached_selected)
+        origin = f"cached from {cached_date}"
 
-    # Step 2: Cache from last successful connection
-    cached_ranked, cached_selected, cached_date = _load_cache()
-    if cached_selected:
-        print(f"Selected model: {cached_selected}  (cached from {cached_date})")
-        return cached_selected
-
-    # Step 3: Bootstrap seed (first run + API failure). Written to cache immediately.
-    print(f"Selected model: {_BOOTSTRAP_MODEL}  (bootstrap seed, first run)")
-    _save_cache([_BOOTSTRAP_MODEL], _BOOTSTRAP_MODEL)
-    return _BOOTSTRAP_MODEL
+    ranked = _rank_models(available, preferred=preferred)
+    candidates = ranked[:max(0, max_probes)] if verify else ranked[:1]
+    for candidate in candidates:
+        if not verify or _model_responds(client, candidate):
+            _save_cache(ranked, candidate)
+            print(f"Selected budget model: {candidate}  ({origin})")
+            return candidate
+    raise RuntimeError(
+        "No usable budget chat model found. Check API credit and model access. "
+        "Premium and unpriced models are intentionally excluded; "
+        "no unverified bootstrap model will be used."
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -328,11 +318,10 @@ def get_smallest_available_model(client, exclude=None):
     Find the smallest/cheapest available chat model. Self-updating.
 
     Strategy (mirrors get_best_available_model, but aims low instead of high):
-      1. List models live, keep only chat-capable ids
+    1. List models live, keep only approved budget chat ids
       2. Prefer ids carrying a size marker (nano < mini < small < ... < turbo)
-      3. If none are marked, fall back to the OLDEST known family available
-         (the tail of the newest-first ranking), which is the cheapest tier
-      4. On API failure, use the cached last-good pick
+        3. Never broaden to premium or unpriced families
+        4. On API failure, revalidate an eligible cached pick
       5. Return None only if discovery fails and there is no cache
 
     Args:
@@ -346,7 +335,7 @@ def get_smallest_available_model(client, exclude=None):
     exclude = set(exclude or [])
 
     try:
-        available = [m.id for m in client.models.list() if _is_chat_model(m.id)]
+        available = _rank_models({m.id for m in client.models.list()})
         candidates = [m for m in available if m not in exclude]
 
         marked = [m for m in candidates if _smallness_rank(m) < len(SIZE_MARKERS)]
@@ -354,24 +343,24 @@ def get_smallest_available_model(client, exclude=None):
             # Smallest marker first; alphabetical tie-break keeps it deterministic
             # and tends to favor older, cheaper families.
             marked.sort(key=lambda m: (_smallness_rank(m), m))
-            selected = marked[0]
-            _save_cache_key("smallest", selected)
-            print(f"Smallest model: {selected}  (live, {len(marked)} small candidates)")
-            return selected
+            for selected in marked[:6]:
+                if _model_responds(client, selected):
+                    _save_cache_key("smallest", selected)
+                    print(f"Smallest model: {selected}  (live, {len(marked)} small candidates)")
+                    return selected
 
-        # No size-marked model in the account -> oldest known family is cheapest.
-        ranked = _rank_models(set(candidates))
-        if ranked:
-            selected = ranked[-1]
-            _save_cache_key("smallest", selected)
-            print(f"Smallest model: {selected}  (live, oldest known family)")
-            return selected
+        if not marked:
+            for selected in candidates[:6]:
+                if _model_responds(client, selected):
+                    _save_cache_key("smallest", selected)
+                    print(f"Smallest model: {selected}  (live, budget family)")
+                    return selected
         print("  No small-model candidates found in account")
     except Exception as e:
         print(f"  Live discovery failed: {e}")
 
     cached = _load_cache_key("smallest")
-    if cached:
+    if cached and cached not in exclude and _rank_models({cached}) and _model_responds(client, cached):
         print(f"Smallest model: {cached}  (cached)")
         return cached
 
@@ -397,7 +386,7 @@ def get_small_models(client, exclude=None):
     """
     exclude = set(exclude or [])
     try:
-        available = [m.id for m in client.models.list() if _is_chat_model(m.id)]
+        available = _rank_models({m.id for m in client.models.list()})
         candidates = [m for m in available if m not in exclude]
         marked = [m for m in candidates if _smallness_rank(m) < len(SIZE_MARKERS)]
         marked.sort(key=lambda m: (_smallness_rank(m), m))
