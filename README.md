@@ -140,6 +140,21 @@ Each chapter contains:
 - OpenAI API key (required for most chapters)
 - Optional: OpenRouter, Anthropic API keys for advanced features
 
+## What changed since the book was printed
+
+The book is fixed on paper, but the notebooks are not. Models get renamed or retired, prices move, and libraries change their APIs, so we keep updating the notebooks to keep them running. When the notebook and the printed page disagree, the notebook is the current version. This section lists every change that affects what you see on the page, newest first, so a mismatch has an explanation instead of looking like a bug.
+
+<!-- Maintainers: add new entries at the top. Give the date, the chapter and notebook part, what the notebook does now, and what the reader will see differently from the printed page. -->
+
+**October 2026 - All chapters: how the notebooks choose a model.** The notebooks pick a model at runtime from a short list of approved low-cost models (`MODEL_PRIORITY` in `utils/models.py`) and never fall back to a premium model. Many printed outputs came from runs with other models, so the wording, the scores, and the occasional refusal will differ in your run. That is expected. The method is the lesson, not my exact numbers. Two places where you will notice it most:
+
+- **Chapter 9, Part 3, Step 4 (Compare generators):** the printed table shows `gpt-5.5` as the strong control. In your run, the control is the low-cost model the notebook selected, so the gap between it and the older models may be smaller than the one in the book.
+- **Chapter 1, the "Who is Rany ElHousieny?" example:** the printed output came from an older model, and the chapter explains why I kept it. Whether your run knows the name depends on which model the notebook selected.
+
+**October 2026 - Chapter 9, Part 1 (RAG evaluation).** The `book_collection` this part evaluates is built by the **Chapter 3** notebook. If your copy of the book says to run Chapter 4 first for this section, run Chapter 3 instead. The notebook now loads `book_collection` only when it holds Chapter 3's `id_0` to `id_3` documents. Otherwise it builds a small stand-in collection from the same four documents, so the section always runs. Your listing will show either your Chapter 3 store or those four documents, not the 24 entries printed in the book.
+
+**October 2026 - Chapter 4, the LangChain example.** The notebook's LangChain cell reads the shared store at `data/chroma_db` and uses the model the notebook selected at runtime. If your printed copy shows `persist_directory="db"` or a fixed model name, use the notebook version.
+
 ## Troubleshooting
 - **Kernel not showing**: Reload VS Code/Jupyter and reopen notebooks
 - **API key errors**: Ensure `.env` file is in repository root with valid keys
