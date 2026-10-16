@@ -18,13 +18,12 @@ Usage (in any notebook):
 import json
 import re
 from pathlib import Path
-from datetime import datetime
+from datetime import date, datetime
 
 
 MODEL_PRIORITY = [
-    "gpt-4o-mini", "gpt-4.1-mini", "gpt-6-luna",
-    "gpt-4.1-nano", "gpt-5-nano", "gpt-5-mini",
-    "gpt-5.4-nano", "gpt-5.4-mini", "gpt-5.6-luna",
+    "gpt-6-luna", "gpt-5.4-nano", "gpt-5-nano",
+    "gpt-5-mini", "gpt-5.4-mini", "gpt-5.6-luna",
 ]
 
 
@@ -138,6 +137,26 @@ def _cache_path():
     return _find_repo_root() / "data" / "last_known_models.json"
 
 
+def _list_model_ids(client):
+    """Model ids from ``client.models.list()``, minus models past their shutdown date.
+
+    OpenAI keeps a retired model in the list after it stops answering (for
+    example gpt-3.5-turbo-1106, shut down 2026-09-28, still listed in October
+    2026 and returning 404 "has been deprecated"). Each entry carries an
+    optional ``shutdown_date`` (YYYY-MM-DD, or null when no shutdown is
+    announced), so anything dated today or earlier is dropped here. Models with
+    a future shutdown date are kept; they still work until that day.
+    """
+    today = date.today().isoformat()
+    ids = set()
+    for m in client.models.list():
+        shutdown = getattr(m, "shutdown_date", None) or (getattr(m, "model_extra", None) or {}).get("shutdown_date")
+        if shutdown and str(shutdown)[:10] <= today:
+            continue
+        ids.add(m.id)
+    return ids
+
+
 def _rank_models(available_ids, preferred=None):
     """Rank approved budget aliases and dated snapshots; omit unpriced models."""
     families = list(dict.fromkeys(
@@ -224,7 +243,7 @@ def get_best_available_model(client, verify=True, max_probes=6, preferred=None):
         RuntimeError: No eligible model is available or passes verification.
     """
     try:
-        available = {m.id for m in client.models.list()}
+        available = _list_model_ids(client)
         origin = "live"
     except Exception as e:
         print(f"  Live discovery failed: {e}")
@@ -335,7 +354,7 @@ def get_smallest_available_model(client, exclude=None):
     exclude = set(exclude or [])
 
     try:
-        available = _rank_models({m.id for m in client.models.list()})
+        available = _rank_models(_list_model_ids(client))
         candidates = [m for m in available if m not in exclude]
 
         marked = [m for m in candidates if _smallness_rank(m) < len(SIZE_MARKERS)]
@@ -368,7 +387,7 @@ def get_smallest_available_model(client, exclude=None):
     return None
 
 
-def get_small_models(client, exclude=None):
+def get_small_models(client, exclude=None, verify=True):
     """
     Return a ranked list of small/cheap chat models available on the account.
 
@@ -380,16 +399,21 @@ def get_small_models(client, exclude=None):
     Args:
         client:  An initialized openai.OpenAI client instance.
         exclude: Optional iterable of model ids to skip.
+        verify:  When True (default), keep only models that answer a one-token
+                 probe, the same check get_best_available_model uses, so a
+                 listed-but-retired model never reaches the caller's loop.
 
     Returns:
         list[str]: Small model ids, smallest/cheapest first. Empty on failure.
     """
     exclude = set(exclude or [])
     try:
-        available = _rank_models({m.id for m in client.models.list()})
+        available = _rank_models(_list_model_ids(client))
         candidates = [m for m in available if m not in exclude]
         marked = [m for m in candidates if _smallness_rank(m) < len(SIZE_MARKERS)]
         marked.sort(key=lambda m: (_smallness_rank(m), m))
+        if verify:
+            marked = [m for m in marked if _model_responds(client, m)]
         return marked
     except Exception as e:
         print(f"  Live discovery failed: {e}")

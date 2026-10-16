@@ -146,6 +146,12 @@ The book is fixed on paper, but the notebooks are not. Models get renamed or ret
 
 <!-- Maintainers: add new entries at the top. Give the date, the chapter and notebook part, what the notebook does now, and what the reader will see differently from the printed page. -->
 
+**October 2026 - All chapters: the gpt-4 models are out of the model list.** OpenAI has announced shutdown dates for the gpt-4 low-cost models (`gpt-4.1-nano` on October 23, 2026, `gpt-4o-mini` and `gpt-4.1-mini` on January 14, 2027), so the notebooks no longer pick them. The first choice is now `gpt-6-luna`, and `gpt-5.4-nano` is the first fallback. Two more changes in `utils/models.py`: the notebooks skip any model whose shutdown date has passed (OpenAI keeps listing a retired model after it stops answering), and they test a model with a one-token call before using it. What you will see differently from the printed page:
+
+- **Any printed output that names a gpt-4 model:** your run names `gpt-6-luna`, or the fallback your API key can reach.
+- **Judge scores:** `gpt-6-luna` accepts only its default temperature. Where the code sets `temperature=0` for a judge, the notebook drops that setting, so scores can move a little between runs.
+- **Chapter 9, Part 3, Step 4 (Compare generators):** the control is `gpt-6-luna`, compared against the smaller gpt-5 nano models. If one of those models fails during the run (retired, not enabled on your key, or rate-limited), the cell prints "skipped" for it and finishes the table with the rest. Before this change, a retired model such as `gpt-3.5-turbo-1106` stopped the cell with a "model has been deprecated" error.
+
 **October 2026 - All chapters: how the notebooks choose a model.** The notebooks pick a model at runtime from a short list of approved low-cost models (`MODEL_PRIORITY` in `utils/models.py`) and never fall back to a premium model. Many printed outputs came from runs with other models, so the wording, the scores, and the occasional refusal will differ in your run. That is expected. The method is the lesson, not my exact numbers. Two places where you will notice it most:
 
 - **Chapter 9, Part 3, Step 4 (Compare generators):** the printed table shows `gpt-5.5` as the strong control. In your run, the control is the low-cost model the notebook selected, so the gap between it and the older models may be smaller than the one in the book.
