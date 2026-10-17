@@ -11,13 +11,135 @@
     "stack_tag": "fastapi",
     "stack_limit": 5
   },
-  "fetched_at_utc": "2026-09-29T02:56:31.221514Z",
+  "fetched_at_utc": "2026-10-17T16:12:16.496005Z",
   "sources": {
-    "github": [],
+    "github": [
+      {
+        "full_name": "fastapi/fastapi",
+        "html_url": "https://github.com/fastapi/fastapi",
+        "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+        "stars": 103166,
+        "forks": 10049,
+        "open_issues_count": 82,
+        "license": "MIT",
+        "updated_at": "2026-10-17T16:06:27Z",
+        "created_at": "2018-12-08T08:21:47Z",
+        "topics": [
+          "api",
+          "async",
+          "asyncio",
+          "fastapi",
+          "framework",
+          "json",
+          "json-schema",
+          "openapi",
+          "openapi3",
+          "pydantic",
+          "python",
+          "python-types",
+          "python3",
+          "redoc",
+          "rest",
+          "starlette",
+          "swagger",
+          "swagger-ui",
+          "uvicorn",
+          "web"
+        ],
+        "primary_language": "Python",
+        "languages_breakdown": {
+          "Python": 4175439,
+          "JavaScript": 1066,
+          "Shell": 574,
+          "HTML": 235,
+          "CSS": 25
+        }
+      },
+      {
+        "full_name": "headroomlabs-ai/headroom",
+        "html_url": "https://github.com/headroomlabs-ai/headroom",
+        "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+        "stars": 75570,
+        "forks": 5866,
+        "open_issues_count": 442,
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-17T16:09:09Z",
+        "created_at": "2026-01-07T19:58:51Z",
+        "topics": [
+          "agent",
+          "ai",
+          "anthropic",
+          "claude-code",
+          "compression",
+          "context-engineering",
+          "context-window",
+          "cursor",
+          "fastapi",
+          "langchain",
+          "llm",
+          "mcp",
+          "openai",
+          "prompt-engineering",
+          "proxy",
+          "python",
+          "rag",
+          "token-optimization",
+          "tokens",
+          "typescript"
+        ],
+        "primary_language": "Python",
+        "languages_breakdown": {
+          "Python": 23184127,
+          "Rust": 3460532,
+          "TypeScript": 633653,
+          "JavaScript": 534197,
+          "HTML": 270346,
+          "Shell": 98761,
+          "PowerShell": 70285,
+          "Dockerfile": 21735,
+          "PLpgSQL": 11669,
+          "C": 7497,
+          "Makefile": 6962,
+          "HCL": 1887,
+          "CSS": 1845
+        }
+      },
+      {
+        "full_name": "mouredev/Hello-Python",
+        "html_url": "https://github.com/mouredev/Hello-Python",
+        "description": "Curso para aprender el lenguaje de programación Python desde cero y para principiantes. 100 clases, 44 horas en vídeo, código, proyectos y grupo de chat. Fundamentos, frontend, backend, testing, IA...",
+        "stars": 37780,
+        "forks": 2342,
+        "open_issues_count": 61,
+        "license": "Apache-2.0",
+        "updated_at": "2026-10-17T14:49:18Z",
+        "created_at": "2022-08-03T17:14:53Z",
+        "topics": [
+          "backend",
+          "chatgpt",
+          "chatgpt-api",
+          "fastapi",
+          "frontend",
+          "gpt-3",
+          "gpt-4",
+          "mongodb",
+          "openai",
+          "openai-api",
+          "python",
+          "python3",
+          "reflex",
+          "tutorial"
+        ],
+        "primary_language": "Python",
+        "languages_breakdown": {
+          "Python": 41595
+        }
+      }
+    ],
     "pypi": [
       {
         "package": "fastapi",
-        "latest_version": "0.141.1",
+        "latest_version": "0.143.3",
         "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
         "author": null,
         "license": null,
@@ -30,24 +152,24 @@
         },
         "home_page": null,
         "requires_python": ">=3.10",
-        "uploaded_at": "2026-07-29T17:18:04.364385Z"
+        "uploaded_at": "2026-10-16T14:14:11.763072Z"
       },
       {
         "package": "pydantic",
-        "latest_version": "2.13.5",
+        "latest_version": "2.14.1",
         "summary": "Data validation using Python type hints",
         "author": null,
         "license": null,
         "project_urls": {
-          "Changelog": "https://docs.pydantic.dev/latest/changelog/",
-          "Documentation": "https://docs.pydantic.dev",
+          "Changelog": "https://pydantic.dev/docs/validation/latest/get-started/changelog/",
+          "Documentation": "https://pydantic.dev/docs/validation/latest/get-started/",
           "Funding": "https://github.com/sponsors/samuelcolvin",
           "Homepage": "https://github.com/pydantic/pydantic",
           "Source": "https://github.com/pydantic/pydantic"
         },
         "home_page": null,
-        "requires_python": ">=3.9",
-        "uploaded_at": "2026-08-28T14:03:59.136157Z"
+        "requires_python": ">=3.10",
+        "uploaded_at": "2026-10-11T18:37:53.437059Z"
       },
       {
         "package": "uvicorn",
@@ -68,6 +190,64 @@
     ],
     "stack_overflow": [
       {
+        "question_id": 76328904,
+        "title": "Is there a difference between Starlette/FastAPI Background Tasks and simply using multiprocessing in Python?",
+        "link": "https://stackoverflow.com/questions/76328904/is-there-a-difference-between-starlette-fastapi-background-tasks-and-simply-usin",
+        "creation_date": "2023-05-25T04:17:53Z",
+        "score": 10,
+        "is_answered": true,
+        "tags": [
+          "python",
+          "multiprocessing",
+          "python-asyncio",
+          "fastapi"
+        ]
+      },
+      {
+        "question_id": 80010202,
+        "title": "How to express a conditionally required parameter in a Pydantic-validated tool/API schema, without losing the upfront schema validation?",
+        "link": "https://stackoverflow.com/questions/80010202/how-to-express-a-conditionally-required-parameter-in-a-pydantic-validated-tool-a",
+        "creation_date": "2026-10-15T09:52:19Z",
+        "score": 1,
+        "is_answered": true,
+        "tags": [
+          "python",
+          "fastapi",
+          "jsonschema",
+          "pydantic"
+        ]
+      },
+      {
+        "question_id": 69080122,
+        "title": "How to configure pytest for alembic migrations",
+        "link": "https://stackoverflow.com/questions/69080122/how-to-configure-pytest-for-alembic-migrations",
+        "creation_date": "2021-09-06T20:45:08Z",
+        "score": 12,
+        "is_answered": false,
+        "tags": [
+          "python",
+          "sqlalchemy",
+          "pytest",
+          "fastapi",
+          "alembic"
+        ]
+      },
+      {
+        "question_id": 69367245,
+        "title": "FastAPI equivalent to flask-migrate extension",
+        "link": "https://stackoverflow.com/questions/69367245/fastapi-equivalent-to-flask-migrate-extension",
+        "creation_date": "2021-09-28T19:04:07Z",
+        "score": 5,
+        "is_answered": false,
+        "tags": [
+          "python",
+          "database",
+          "fastapi",
+          "alembic",
+          "flask-migrate"
+        ]
+      },
+      {
         "question_id": 74933095,
         "title": "FastAPI pydantic response_model",
         "link": "https://stackoverflow.com/questions/74933095/fastapi-pydantic-response-model",
@@ -78,61 +258,6 @@
           "python",
           "fastapi",
           "uvicorn"
-        ]
-      },
-      {
-        "question_id": 77566386,
-        "title": "How can I use dynamically defined enums in FastAPI/Pydantic models run on Uvicorn?",
-        "link": "https://stackoverflow.com/questions/77566386/how-can-i-use-dynamically-defined-enums-in-fastapi-pydantic-models-run-on-uvicor",
-        "creation_date": "2023-11-28T18:39:39Z",
-        "score": 3,
-        "is_answered": true,
-        "tags": [
-          "python",
-          "dynamic",
-          "fastapi",
-          "pydantic",
-          "uvicorn"
-        ]
-      },
-      {
-        "question_id": 80004839,
-        "title": "Is there a better alternative to using os.getenv() for FastAPI settings?",
-        "link": "https://stackoverflow.com/questions/80004839/is-there-a-better-alternative-to-using-os-getenv-for-fastapi-settings",
-        "creation_date": "2026-09-22T04:54:18Z",
-        "score": -4,
-        "is_answered": true,
-        "tags": [
-          "tooling-recommendation",
-          "python",
-          "fastapi"
-        ]
-      },
-      {
-        "question_id": 79999108,
-        "title": "How can I prevent duplicate Celery tasks when a FastAPI endpoint is retried?",
-        "link": "https://stackoverflow.com/questions/79999108/how-can-i-prevent-duplicate-celery-tasks-when-a-fastapi-endpoint-is-retried",
-        "creation_date": "2026-08-29T00:12:50Z",
-        "score": 3,
-        "is_answered": true,
-        "tags": [
-          "python",
-          "postgresql",
-          "fastapi"
-        ]
-      },
-      {
-        "question_id": 75554263,
-        "title": "beanie.exceptions.CollectionWasNotInitialized error",
-        "link": "https://stackoverflow.com/questions/75554263/beanie-exceptions-collectionwasnotinitialized-error",
-        "creation_date": "2023-02-24T08:35:58Z",
-        "score": 4,
-        "is_answered": true,
-        "tags": [
-          "python",
-          "mongodb",
-          "fastapi",
-          "odm"
         ]
       }
     ]
