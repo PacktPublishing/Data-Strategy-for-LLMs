@@ -1,0 +1,2 @@
+document_id,policy_id,knowledge_type,title,version,status,owner,source_system,source_type,effective_date,last_reviewed,content,validation_reasons
+TRV-UNKNOWN,TRAVEL,travel_policy,Travel notes,unknown,,,Email Attachment,policy,not-a-date,,,invalid effective_date; invalid last_reviewed; invalid version; missing content; missing last_reviewed; missing owner; missing status; unrecognized status

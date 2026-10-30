@@ -1,0 +1,13 @@
+question,answer,source_table,context
+What is Alice Johnson's job title?,Alice Johnson works in Engineering.,employee_data,"Alice Johnson works in Engineering with a salary of $95,000 and has been employed for 3 years."
+How long has Alice Johnson been employed?,Alice Johnson has been employed for 3 years.,employee_data,"Alice Johnson works in Engineering with a salary of $95,000 and has been employed for 3 years."
+What is Bob Smith's job title?,Bob Smith works in Marketing.,employee_data,"Bob Smith works in Marketing with a salary of $72,000 and has been employed for 5 years."
+How long has Bob Smith been employed?,Bob Smith has been employed for 5 years.,employee_data,"Bob Smith works in Marketing with a salary of $72,000 and has been employed for 5 years."
+What is Carol Williams' job title?,Finance,employee_data,"Carol Williams works in Finance with a salary of $88,000 and has been employed for 2 years."
+How long has Carol Williams been employed?,2 years,employee_data,"Carol Williams works in Finance with a salary of $88,000 and has been employed for 2 years."
+What was the revenue in Q1 2024?,"$2,500,000",financial_data,"In Q1 2024, revenue was $2,500,000, expenses were $1,800,000, and profit margin was 28.0%."
+What was the profit margin in Q1 2024?,28.0%,financial_data,"In Q1 2024, revenue was $2,500,000, expenses were $1,800,000, and profit margin was 28.0%."
+What was the revenue in Q2 2024?,"$2,800,000",financial_data,"In Q2 2024, revenue was $2,800,000, expenses were $2,000,000, and profit margin was 28.6%."
+What was the profit margin in Q2 2024?,28.6%,financial_data,"In Q2 2024, revenue was $2,800,000, expenses were $2,000,000, and profit margin was 28.6%."
+What was the revenue in Q3 2024?,"$3,100,000",financial_data,"In Q3 2024, revenue was $3,100,000, expenses were $2,200,000, and profit margin was 29.0%."
+What was the profit margin in Q3 2024?,29.0%,financial_data,"In Q3 2024, revenue was $3,100,000, expenses were $2,200,000, and profit margin was 29.0%."

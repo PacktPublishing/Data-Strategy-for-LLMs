@@ -1,0 +1,98 @@
+[
+  {
+    "task":"general_knowledge",
+    "input_preview":"Q: What are people opening when they wake up?\n  choice: mouth\n  choice: brain\n  choice: freezer\n  choice: book\n  choice: legs\n  choice: ear\n  choice: nose\n  choice: foot\n  choice: eyes\n  choice: head\nA:",
+    "A":"eyes",
+    "B":"mouth",
+    "C":"freezer",
+    "D":"legs",
+    "gold_letter":"A",
+    "gold_text_preview":"eyes",
+    "_full_input":"Q: What are people opening when they wake up?\n  choice: mouth\n  choice: brain\n  choice: freezer\n  choice: book\n  choice: legs\n  choice: ear\n  choice: nose\n  choice: foot\n  choice: eyes\n  choice: head\nA:",
+    "_full_gold_text":"eyes"
+  },
+  {
+    "task":"general_knowledge",
+    "input_preview":"Q: What is the largest volcano on Earth?\n  choice: Everest\n  choice: Mauna Loa\n  choice: Elbrus\n  choice: Vesuvius\n  choice: Eyjafjallajökull\n  choice: Krakatoa\n  choice: Fagradalsfjall\n  choice: Olympus\nA:",
+    "A":"Mauna Loa",
+    "B":"Everest",
+    "C":"Eyjafjallajökull",
+    "D":"Fagradalsfjall",
+    "gold_letter":"A",
+    "gold_text_preview":"Mauna Loa",
+    "_full_input":"Q: What is the largest volcano on Earth?\n  choice: Everest\n  choice: Mauna Loa\n  choice: Elbrus\n  choice: Vesuvius\n  choice: Eyjafjallajökull\n  choice: Krakatoa\n  choice: Fagradalsfjall\n  choice: Olympus\nA:",
+    "_full_gold_text":"Mauna Loa"
+  },
+  {
+    "task":"general_knowledge",
+    "input_preview":"Q: How many tails does a cat have?\n  choice: four\n  choice: nine\n  choice: three\n  choice: none\n  choice: six\n  choice: one\n  choice: two\nA:",
+    "A":"two",
+    "B":"four",
+    "C":"six",
+    "D":"three",
+    "gold_letter":null,
+    "gold_text_preview":"one",
+    "_full_input":"Q: How many tails does a cat have?\n  choice: four\n  choice: nine\n  choice: three\n  choice: none\n  choice: six\n  choice: one\n  choice: two\nA:",
+    "_full_gold_text":"one"
+  },
+  {
+    "task":"general_knowledge",
+    "input_preview":"Q: Which is the name of the study of the heart and circulatory system?\n  choice: cardiology\n  choice: physics\n  choice: anthropology\n  choice: taxonomy\n  choice: chemistry\n  choice: mathematics\n  choice: computer science",
+    "A":"cardiology",
+    "B":"chemistry",
+    "C":"anthropology",
+    "D":"computer science",
+    "gold_letter":"A",
+    "gold_text_preview":"cardiology",
+    "_full_input":"Q: Which is the name of the study of the heart and circulatory system?\n  choice: cardiology\n  choice: physics\n  choice: anthropology\n  choice: taxonomy\n  choice: chemistry\n  choice: mathematics\n  choice: computer science\n  choice: research\nA:",
+    "_full_gold_text":"cardiology"
+  },
+  {
+    "task":"general_knowledge",
+    "input_preview":"Q: How many whiskers does a human have?\n  choice: four\n  choice: nine\n  choice: three\n  choice: none\n  choice: six\n  choice: one\n  choice: two\nA:",
+    "A":"two",
+    "B":"four",
+    "C":"six",
+    "D":"three",
+    "gold_letter":null,
+    "gold_text_preview":"none",
+    "_full_input":"Q: How many whiskers does a human have?\n  choice: four\n  choice: nine\n  choice: three\n  choice: none\n  choice: six\n  choice: one\n  choice: two\nA:",
+    "_full_gold_text":"none"
+  },
+  {
+    "task":"general_knowledge",
+    "input_preview":"Q: How many days are in a leap year?\n  choice: 123\n  choice: 364\n  choice: 1\n  choice: 366\n  choice: 29\n  choice: 31\n  choice: 30\n  choice: 365\nA:",
+    "A":"366",
+    "B":"365",
+    "C":"364",
+    "D":"31",
+    "gold_letter":"A",
+    "gold_text_preview":"366",
+    "_full_input":"Q: How many days are in a leap year?\n  choice: 123\n  choice: 364\n  choice: 1\n  choice: 366\n  choice: 29\n  choice: 31\n  choice: 30\n  choice: 365\nA:",
+    "_full_gold_text":"366"
+  },
+  {
+    "task":"general_knowledge",
+    "input_preview":"Q: What is the name of the shape with eight sides?\n  choice: square\n  choice: hexagon\n  choice: prism\n  choice: decagon\n  choice: rhomboid\n  choice: icosahedron\n  choice: triangle\n  choice: pentagon\n  choice: octagon\n  c",
+    "A":"octagon",
+    "B":"pentagon",
+    "C":"quadrilateral",
+    "D":"triangle",
+    "gold_letter":"A",
+    "gold_text_preview":"octagon",
+    "_full_input":"Q: What is the name of the shape with eight sides?\n  choice: square\n  choice: hexagon\n  choice: prism\n  choice: decagon\n  choice: rhomboid\n  choice: icosahedron\n  choice: triangle\n  choice: pentagon\n  choice: octagon\n  choice: quadrilateral\nA:",
+    "_full_gold_text":"octagon"
+  },
+  {
+    "task":"general_knowledge",
+    "input_preview":"Q: What color is the sky on a clear sunny day?\n  choice: no color\n  choice: black\n  choice: white\n  choice: yellow\n  choice: cyan\n  choice: blue\n  choice: transparent\n  choice: grey\n  choice: red\n  choice: green\n  choice",
+    "A":"red",
+    "B":"blue",
+    "C":"purple",
+    "D":"black",
+    "gold_letter":"B",
+    "gold_text_preview":"blue",
+    "_full_input":"Q: What color is the sky on a clear sunny day?\n  choice: no color\n  choice: black\n  choice: white\n  choice: yellow\n  choice: cyan\n  choice: blue\n  choice: transparent\n  choice: grey\n  choice: red\n  choice: green\n  choice: purple\nA:",
+    "_full_gold_text":"blue"
+  }
+]

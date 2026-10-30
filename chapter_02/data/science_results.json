@@ -1,0 +1,578 @@
+[
+  {
+    "source": "Crossref",
+    "title": "Event-Triggered Belief Consensus over Large Language Model-Enabled Multi-agent System with Dynamic Topologies",
+    "authors": [
+      "Zheng Tong",
+      "Yuxiang Bao"
+    ],
+    "published": "2027-01-01",
+    "doi": "10.1007/978-3-032-41960-6_29",
+    "publisher": "Springer Nature Switzerland",
+    "venue": "Lecture Notes in Computer Science",
+    "type": "book-chapter",
+    "url": "https://doi.org/10.1007/978-3-032-41960-6_29",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Comprehensive Evaluation of Embankment Safety Based on Improved Game Theory-Cloud Model",
+    "authors": [
+      "Jianwei Zhang",
+      "Weitao Wu",
+      "Ge Hou",
+      "Jinlin Huang",
+      "Biao Jia"
+    ],
+    "published": "2026-11-01",
+    "doi": "10.1007/s11269-026-04907-6",
+    "publisher": "Springer Science and Business Media LLC",
+    "venue": "Water Resources Management",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1007/s11269-026-04907-6",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "\"INTERROGATING LANGUAGE IDEOLOGIES IN ONLINECOMMUNITIES: A QUALITATIVE ANALYSIS OF DISCOURSEPRACTICES AND IDENTITY CONSTRUCTION ON SOCIAL MEDIAPLATFORMS.\"\n\t\t\t\t\t\t\t| Journal of Applied Linguistics and TESOL (JALT)",
+    "authors": [
+      "Author Contributor"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.66857/2172",
+    "publisher": "OpenGate Scholarly Press",
+    "venue": "Scholarly Journal",
+    "type": "journal-article",
+    "url": "https://doi.org/10.66857/2172",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "A phase 2 trial evaluating polysomnography outcomes and safety of lemborexant in Korean adults with insomnia disorder",
+    "authors": [
+      "Yong Won Cho",
+      "In-Young Yoon",
+      "YoungJi Pyo",
+      "Takao Takase",
+      "Naoki Kubota",
+      "Margaret Moline"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.1038/s41598-026-76172-x",
+    "publisher": "Springer Science and Business Media LLC",
+    "venue": "Scientific Reports",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1038/s41598-026-76172-x",
+    "abstract": "Abstract\n                  Lemborexant (LEM), a dual-orexin-receptor-antagonist, was evaluated in this study of Korean participants with insomnia disorder. Study E2006-J082-204 (Study 204), a 1-month, multicenter, double-blind, placebo (PBO)-controlled, parallel-group study, evaluated LEM 5 mg (LEM5) or LEM 10 mg (LEM10) in participants aged 19–80 years with insomnia disorder (sleep efficiency [SE] ≤ 85%; latency to persistent sleep [LPS] ≥ 30 min). Korean participants were randomized (2:2:1) to LEM5, LEM10, or PBO, respectively, and received study drug immediately before bedtime for 30 days. Polysomnograms were conducted during an ~ 14-day single-blind PBO run-in (baseline) and after 1 month (Day 30). Changes from baseline in LPS (min; log-transformed; primary endpoint [LEM5 only]; secondary endpoint [LEM10 only]), SE (%; secondary endpoint), wake after sleep onset (WASO; min; exploratory endpoint), and total sleep time (TST; min; exploratory endpoint) were evaluated. Safety data were collected. The full analysis set comprised 64 participants (PBO, n = 13; LEM5, n = 25; LEM10, n = 26). At Day 30, decreases (improvements) from baseline in LPS and WASO were larger with LEM versus PBO. Increases from baseline in SE and TST were larger with LEM versus PBO. LEM was well tolerated. These findings support the clinical applicability of LEM as a therapeutic option for insomnia management in South Korea.\n                  \n                    Trial Registration\n                    E2006-J082-204: A study to assess the pharmacodynamics of lemborexant in Korean participants with insomnia disorder. https://clinicaltrials.gov/study/NCT05594589. ClinicalTrials.gov NCT05594589, October 21, 2022."
+  },
+  {
+    "source": "Crossref",
+    "title": "HPLC-based organic acid profiling, safety, and functional characterization of Lacticaseibacillus casei ANNC 26 isolated from khiki cheese",
+    "authors": [
+      "Behrooz Alizadeh Behbahani",
+      "Parisa Ghasemi",
+      "Alireza Vasiee",
+      "Zeinab Mousavi"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.1007/s11694-026-04882-x",
+    "publisher": "Springer Science and Business Media LLC",
+    "venue": "Journal of Food Measurement and Characterization",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1007/s11694-026-04882-x",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Large language models for depression assessment from brief daily diaries",
+    "authors": [
+      "Whitney R. Ringwald",
+      "Aman Taxali",
+      "Mike Angstadt",
+      "Colin E. Vize",
+      "Chandra Sripada",
+      "Aidan G. C. Wright"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.1038/s41746-026-03388-6",
+    "publisher": "Springer Science and Business Media LLC",
+    "venue": "npj Digital Medicine",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1038/s41746-026-03388-6",
+    "abstract": "Abstract\n                  \n                    Closely tracking changes in depression is important for clinical research and practice. However, intensive longitudinal depression assessment relies on self-report surveys that have major limitations. Scoring depression from natural language with large language models (LLMs) could resolve these shortcomings. This study tested the validity of depression rated by LLMs from daily video diaries. We studied 108 participants selected for mental health treatment status (45% in treatment). Participants completed a clinical interview and 14-21 days of depression surveys and video diaries. Daily depression scores were estimated by LLMs from diary transcripts. LLM ratings converged with self-report depression within-person (\n                    r\n                     = .45;95% CrI[.40, .49]) and when averaged across days for an overall depression score (\n                    r\n                     = .61;95% CrI[.43,.75]). Averaged LLM ratings correlated with depression symptom severity ascertained by clinical interview (\n                    r\n                     = .53;95% CrI[.35, .68]). LLM-rated depression and self-report had similar profiles of associations with daily functioning variables (profile\n                    r\n                     = .98 within-person;\n                    r\n                     = .94 between-person). Multivariable regression results showed LLM ratings predicted daily functioning variables (partial\n                    \n                      \n                        $$\\beta s$$\n                        \n                          β\n                          s\n                        \n                      \n                    \n                    =|.12 | - | .28 | ) and interview-rated depression (partial\n                    \n                      \n                        $$\\beta$$\n                        \n                          β\n                        \n                      \n                    \n                    =.33;95% CrI[.07, .58]) over and above self-reports, suggesting LLMs capture clinically-relevant information that self-reports miss. Findings establish a strong foundation for a depression assessment approach that addresses shortcomings of self-reports while satisfying the unique demands of intensive longitudinal monitoring."
+  },
+  {
+    "source": "Crossref",
+    "title": "ENHANCING ENGLISH LANGUAGE SKILLS THROUGH LITERATURE: A STUDY OF UNIVERSITY ESL LEARNERS IN PAKISTAN\n\t\t\t\t\t\t\t| Journal of Applied Linguistics and TESOL (JALT)",
+    "authors": [
+      "Author Contributor"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.66857/1862-901a",
+    "publisher": "OpenGate Scholarly Press",
+    "venue": "Scholarly Journal",
+    "type": "journal-article",
+    "url": "https://doi.org/10.66857/1862-901a",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Validation of UQ Methods for AI Surrogate Models",
+    "authors": [
+      "Vivek Sivaraman Narayanaswamy",
+      "Kowshik Thopalli",
+      "Sohail Reddy",
+      "Boya Zhang",
+      "Amanda Muyskens",
+      "Kathleen Schmidt"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.2172/17312890",
+    "publisher": "Office of Scientific and Technical Information (OSTI)",
+    "venue": "",
+    "type": "report",
+    "url": "https://doi.org/10.2172/17312890",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Back to Work and Breastfeeding",
+    "authors": [
+      "Renae Garcia",
+      "Marie-Anne S. Rosemberg"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.1177/21650799261497752",
+    "publisher": "SAGE Publications",
+    "venue": "Workplace Health &amp; Safety",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1177/21650799261497752",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "DEVIANT LANGUAGE: A STYLISTIC ANALYSIS OF RANI IN WHAT REMAINS AFTER A FIRE (2025) BY KANZA JAVED\n\t\t\t\t\t\t\t| Journal of Applied Linguistics and TESOL (JALT)",
+    "authors": [
+      "Author Contributor"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.66857/1890",
+    "publisher": "OpenGate Scholarly Press",
+    "venue": "Scholarly Journal",
+    "type": "journal-article",
+    "url": "https://doi.org/10.66857/1890",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Model Analisis Prediksi Kebangkrutan Bank Umum Syariah dan Bank Umum Konvensional Menggunakan Model Altman Z-Score, Springate dan Zmijewski Perspektif Ekonomi Islam",
+    "authors": [
+      "Widia",
+      "Ersi Sisdianto",
+      "IS Susanto"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.24260/jkubs.v5i3.7007",
+    "publisher": "IAIN Pontianak",
+    "venue": "Jurnal Keuangan dan Perbankan Syariah",
+    "type": "journal-article",
+    "url": "https://doi.org/10.24260/jkubs.v5i3.7007",
+    "abstract": "This study aims to analyze and compare the potential for financial distress in Islamic Commercial Banks (ICBs) and conventional commercial banks during the 2021–2025 period using the Altman Z-Score, Springate S-Score, and Zmijewski X-Score models. The study employs a descriptive-comparative quantitative approach using secondary data in the form of annual financial statements of Bank Syariah Indonesia, Bank BTPN Syariah, Bank Mandiri, and Bank Rakyat Indonesia. The five-year observation period resulted in 20 observations. The data were processed using Microsoft Excel through the calculation of financial ratios, scores for each model, classification based on the respective cut-off values, and comparison of results across banks and models. The results show that Bank Syariah Indonesia, Bank Mandiri, and Bank Rakyat Indonesia exhibited relatively consistent indications of distress or potential distress based on the three models. Bank BTPN Syariah showed different results across the models, being classified within the Grey Zone based on the Altman Z-Score, as unhealthy/potentially distressed based on the Springate S-Score, and as non-distressed based on the Zmijewski X-Score. Comparatively, the Altman Z-Score and Springate S-Score produced higher average values for Islamic Commercial Banks than for conventional commercial banks, while the Zmijewski X-Score showed the opposite pattern. These findings indicate that the simultaneous use of multiple prediction models can provide a more comprehensive picture of potential financial distress, as each model has different financial ratio characteristics and sensitivities."
+  },
+  {
+    "source": "Crossref",
+    "title": "A Bayesian regression framework for circular models with INLA",
+    "authors": [
+      "Xiang Ye",
+      "Janet van Niekerk",
+      "Håvard Rue"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.1093/jrsssc/qlag056",
+    "publisher": "Oxford University Press (OUP)",
+    "venue": "Journal of the Royal Statistical Society Series C: Applied Statistics",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1093/jrsssc/qlag056",
+    "abstract": "Abstract\n                  Regression models for circular variables constitute a class of statistical models that has received comparatively little development and attention within the general statistical framework. This is largely because constructing a linear predictor through linear combinations of covariates and random effects tends to break the circular nature of the response variable, making standard regression approaches difficult to apply. In this paper, we introduce a new approach to address this issue, resulting in well-defined regression models for circular responses when the data are concentrated. The proposed framework naturally extends to joint regression settings involving multiple circular and non-circular responses, and accommodates a combination of linear covariates, circular covariates, and various random effects. This approach provides an efficient implementation for jointly modelling the complex temporal dynamics of wind speed and direction in the presence of additional covariates. Our formulation is well suited to the integrated nested Laplace approximation (INLA), enabling fast and accurate Bayesian inference. We demonstrate the performance of the approach using several simulated and real data examples."
+  },
+  {
+    "source": "Crossref",
+    "title": "THE ROLE OF CODE-SWITCHING IN ENGLISH LANGUAGE TEACHING ATATERTIARY LEVEL IN LAHORE: AN EXPLORATORY STUDY\n\t\t\t\t\t\t\t| Journal of Applied Linguistics and TESOL (JALT)",
+    "authors": [
+      "Author Contributor"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.66857/jal3-4015",
+    "publisher": "OpenGate Scholarly Press",
+    "venue": "Scholarly Journal",
+    "type": "journal-article",
+    "url": "https://doi.org/10.66857/jal3-4015",
+    "abstract": ""
+  },
+  {
+    "source": "Crossref",
+    "title": "Identity Formation and Communication Through Entrepreneurial Pitching: Butler, Spivak, Crenshaw, and Menon on Gender, Language, and Power in Shark Tank India Season 2",
+    "authors": [
+      "Neelima Singh",
+      "Ekta Singh",
+      "Nilu Choudhary"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.1177/23294906261494510",
+    "publisher": "SAGE Publications",
+    "venue": "Business and Professional Communication Quarterly",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1177/23294906261494510",
+    "abstract": "This study examines how language, identity and evaluative bias interact in female entrepreneurial pitches within a postcolonial, non-Western context and derives actionable implications for business and professional communication pedagogy. Drawing on thematic analysis of 16 broadcast-verified pitch transcripts from Shark Tank India Season 2 (January–March 2023), the study deploys an integrated four-framework theoretical architecture Butler’s gender performativity theory, Spivak’s subaltern theory, Crenshaw’s intersectional feminism, and Menon’s Indian feminist framework supplemented selectively by Fairclough’s Critical Discourse Analysis at specific pitch moments. Five saturated themes are identified: Language Hierarchy as a Gatekeeping Mechanism, Self-Translation Labor, the Structural Speech-Reception Gap, Intersectional Compounding of Identity Disadvantage, and Counter-Hegemonic Voice and Communicative Resistance; theme Negotiation a sixth, emerging and Founder Agency in Deal-Making is reported provisionally from a subset of cases and flagged as requiring further validation. The study makes four contributions: to the best of our knowledge, one of the first thematic discourse analyses of Shark Tank India Season 2 with broadcast-verified data; a postcolonial feminist analytical architecture applied to pitch communication scholarship; the speech-reception gap as a named, operationalised analytical concept applicable to high-stakes professional evaluation contexts; and four Scholarship of Teaching and Learning-grounded pedagogical propositions, offered for classroom testing, for teaching pitch communication to multilingual, intersectionally diverse student populations. Findings carry implications for women’s economic empowerment, compound glass ceiling formation and the design of equitable business-communication curricula."
+  },
+  {
+    "source": "Crossref",
+    "title": "<i>Yandangshan Dendrobium officinale</i>\n                    flower flavonoids alleviate dextran sulfate sodium (DSS)-induced colitis in association with local intestinal ecological remodeling",
+    "authors": [
+      "Xiangdong Wang",
+      "Yujiao Zhang",
+      "Jiahao Pan",
+      "Rong Huang",
+      "Jinou Lin",
+      "Xiaodan Zhang",
+      "Bolu Sun",
+      "Xiaojie Zheng"
+    ],
+    "published": "2026-10-17",
+    "doi": "10.1093/fqsafe/fyag086",
+    "publisher": "Oxford University Press (OUP)",
+    "venue": "Food Quality and Safety",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1093/fqsafe/fyag086",
+    "abstract": "Abstract\n                  \n                    Objectives\n                    Ulcerative colitis arises from epithelial barrier disruption, gut microbial dysbiosis, and aberrant mucosal immune activation. Given that many food-derived flavonoids achieve limited systemic exposure after oral administration, how local intestinal activity translates into host tissue protection remains a central question. Resolving this process is challenging because microbial communities, metabolite outputs, and mucosal responses operate across distinct biological levels and often yield disconnected evidence.\n                  \n                  \n                    Materials and Methods\n                    : Here, we studied chemically consistent Dendrobium officinale flower flavonoids (DOFF), validated across six independent batches by liquid chromatography-mass spectrometry (LC-MS), and integrated absorption, distribution, metabolism, and excretion (ADME) prediction, conventional and antibiotic-perturbed dextran sulfate sodium (DSS) colitis models, 16S rRNA sequencing, targeted short-chain fatty acid quantification, untargeted fecal metabolomics, host-response network analysis, single-cell virtual knockout, and whole-slide artificial intelligence (AI)-assisted spatial pathology.\n                  \n                  \n                    Results\n                    DOFF reduced dextran sulfate sodium-induced disease activity and colonic injury, restored ZO-1- and Occludin-associated barrier integrity, reconfigured gut microbial structure and fecal metabolic profiles, and suppressed TLR4/MYD88/NF-κB signaling; computational integration and single-cell virtual knockout further prioritized FFAR2/HCAR2, TLR4/RELA, and EGFR/LGR5 as candidate host targets associated with metabolite sensing, inflammatory regulation, and epithelial repair, respectively, while DOFF retained partial tissue protection after broad-spectrum antibiotic perturbation, accompanied by limited shifts in residual microbiota and AI-predicted spatial pathology features.\n                  \n                  \n                    Conclusions\n                    These findings support a local ecology-first working model in which DOFF-associated microbiota-metabolite remodeling coincides with epithelial barrier restoration and mucosal inflammatory suppression without necessarily requiring high systemic exposure or action through a single host target, although direct causal roles for the microbiota, key metabolites, and host receptors require further validation."
+  },
+  {
+    "source": "arXiv",
+    "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+    "authors": [
+      "Zhixu Li",
+      "Keqian Tang",
+      "Litian Gong",
+      "Jingyu Yao",
+      "Wenqian Zhang",
+      "Tianze Xu",
+      "Zehao Wang",
+      "Yuping Wang",
+      "Junge Zhang",
+      "Jiachen Li"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22372v1",
+    "abstract": "Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulation has been extensively studied, personalized robotic manipulation (PeRM) lacks a controlled benchmark for separating task completion from preference satisfaction. We introduce LIBERO-PeRM, a benchmark for preference learning in embodied agents. LIBERO-PeRM studies five questions: 1) how policies follow preferences in zero-shot settings; 2) how they learn single preferences from demonstrations; 3) how efficiently they acquire preferences as demonstrations increase; 4) how learned preferences generalize across layouts and tasks; and 5) how policies compose preferences and behave under conflicts. We propose a controlled formulation and taxonomy of observable preferences in simulation, covering motion, skill, and user-profile choices. This formulation is restricted to language-expressible preferences that can be instantiated in LIBERO without changing the task goal, evaluated automatically, and reused across tasks. Building on LIBERO, our procedural pipeline generates paired demonstrations with and without preferences. We create five task suites (312 tasks) with high-quality demonstrations, rich metadata, and preference-satisfaction metrics. Experiments show that current VLA policies struggle with zero-shot personalization, while SFT makes preferences learnable. Mixed training achieves better no-preference retention than sequential adaptation and improves performance with contextual prompts compared with preference-only training, but can weaken motion-preference learning; preference generalization, decomposition, and conflict handling remain difficult. The code, datasets, and demos can be found on the project website: https://libero-perm.github.io/."
+  },
+  {
+    "source": "arXiv",
+    "title": "Which Tokens to Merge? Diffusion Dynamics for Efficient Image Generation",
+    "authors": [
+      "SeungJu Cha",
+      "Ye-Chan Kim",
+      "HyunGee Kim",
+      "Sungho Koh",
+      "Dong-Jin Kim"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22370v1",
+    "abstract": "Token merging has emerged as an effective training-free strategy for accelerating diffusion models by reducing redundant token computation while minimizing generation degradation. A key challenge is determining which tokens can be safely merged and which should be preserved for subsequent computation. Existing method addresses this by preserving prompt-aligned foreground regions, thereby protecting semantically relevant structures. However, this text-relevance criterion overlooks background objects, local details that are not explicitly mentioned in the prompt, leading to degraded structural coherence. In this work, we propose Dynamics-aware Token Merging (DaTMe), a training-free framework that grounds token merging in the underlying diffusion dynamics. Our key insight is that token importance should reflect whether a token remains unresolved during denoising and whether it carries structural information. To this end, DaTMe constructs a dynamics- aware importance map from the Tweedie denoised estimate. The map combines a temporal signal, measuring inter-step changes in the predicted clean image, with a structural signal, capturing local high-frequency content such as boundaries and fine details. Using this map, DaTMe adaptively assigns tokens into merging roles under a given compression ratio: important tokens are preserved as anchors, while tokens that are both temporally stabilized and structurally homogeneous are selected as safe merge candidates. Experiments on PixArt-a and FLUX demonstrate that DaTMe maintains visual fidelity across the entire image, highlighting diffusion dynamics as an effective token-level merging decision in efficient generation. Our code is available at https://github.com/SeungJuCha/DaTMe."
+  },
+  {
+    "source": "arXiv",
+    "title": "SoftCache: Adaptive Step Size Caching for Diffusion Transformers",
+    "authors": [
+      "Shimon Malnick",
+      "Nadav Orenstein",
+      "Ohad Fried",
+      "Shai Avidan"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22369v1",
+    "abstract": "Diffusion and flow models generate a sample over iterative steps, each a full pass through a large network, and that pass dominates generation cost. Training-free caching accelerates them by reusing activations from recent evaluations instead of recomputing them. Dynamic caching methods decide when to refresh by accumulating a cheap probe of the network input into a staleness signal and spending a fresh evaluation once it crosses a threshold. They perform hard caching: the signal is a binary switch between refresh and reuse, and every step, fresh or cached, advances by the prescribed step size. We observe that the signal carries much more than this switch. How far it sits below the threshold, its headroom, predicts the error induced by reuse. We propose SoftCache, which performs soft caching: instead of a binary switch, the headroom sets how far each cached step goes. Where the headroom is large, the sampler jumps past several scheduled nodes, and as a refresh nears, its steps shrink back toward the original step. These adaptive jumps may land between the scheduled nodes, taking the sampler off its fixed grid. SoftCache requires no training and adds no per-backbone settings: on FLUX for images and on HunyuanVideo and Wan2.1 for video, at speedups from $3.5\\times$ to $6.9\\times$, it is ahead of every baseline on all four fidelity metrics."
+  },
+  {
+    "source": "arXiv",
+    "title": "Discovering state-of-the-art quantum circuits with large language models",
+    "authors": [
+      "Andi Gu",
+      "Alek H. Kemeny",
+      "Susanne F. Yelin",
+      "Mikhail D. Lukin"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22367v1",
+    "abstract": "Significant efforts are currently being directed toward the implementation of large-scale quantum information processors, but realizing useful quantum advantage also requires the development of efficient quantum algorithms. While for many practical problems the dominant resource costs are associated with a small set of computational primitives, optimizing them in the quantum setting presents unique challenges, including a reversibility constraint absent from ordinary classical computation. Here we introduce an evolutionary framework in which large language models (LLMs) propose circuit designs and an independent evaluator verifies and scores them. We apply this framework to tasks spanning numerical computation, chemistry, optimization, quantum simulation, and number theory. In seven of the eight tasks, the discovered circuits significantly reduce both Toffoli and qubit counts relative to the state of the art. In the eighth, the search discovers a new reversible architecture for prime-field modular inversion. By handling reversibility differently, the architecture makes divsteps -- a classical algorithm previously impractical for reversible integer arithmetic -- viable and substantially improves the Toffoli-qubit trade-off for modular inversion. These results open the door for evaluator-guided LLM co-design of new algorithmic structures for quantum computation."
+  },
+  {
+    "source": "arXiv",
+    "title": "$^6$He structure from semiclassical 3D models based on $\\textit{ab initio}$ spatial correlations",
+    "authors": [
+      "Mengyao Huang",
+      "Tobias Frederico",
+      "Peng Yin",
+      "James P. Vary"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22365v1",
+    "abstract": "We construct semiclassical 3D models based on $\\textit{ab initio}$ no-core shell model calculated two-body spatial correlations, which represent the preferred spatial configuration of nucleons for the ground state of $^6$He. We demonstrate that the presence of the two valence neutrons distorts and flattens the $α$ core in $^6$He, marking a clear departure from the tetrahedral configuration of free $^4$He, and that the two valence neutrons and the center of mass of the $α$ cluster ($α$-CM) are roughly located at the three distinct vertices of an equilateral triangle. We compute the geometric parameters that commonly characterize $^6$He structure, 1) $θ_{nn}$, the opening angle of the two valence neutrons with respect to $α$-CM, and 2) $r_{nn}$, the root-mean-square separation between the two valence neutrons. Refining the model with uncertainty estimation, we obtain $θ_{nn}= 58.5^{+5.4}_{-6.2}$ degrees and $r_{nn}= 4.12^{+0.37}_{-0.43}$ fm, agreeing with those calculated via a phenomenologically modified continuum-discretized coupled-channels method, while an interferometry experiment obtained a marginally higher $r_{nn}$."
+  },
+  {
+    "source": "arXiv",
+    "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+    "authors": [
+      "Chenyuan Zhou",
+      "Yining Hong",
+      "Huang Huang",
+      "Yunfan Jiang",
+      "Wenlong Huang",
+      "David Held",
+      "Vitor Campagnolo Guizilini",
+      "Yue Wang",
+      "Li Fei-Fei",
+      "Jiajun Wu",
+      "Leonidas Guibas",
+      "Yejin Choi"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22364v1",
+    "abstract": "Predicting how the world responds to an action requires more than what can be seen: robots must account for environmental factors that are neither directly observable nor explicitly specified, from physical properties such as friction and mass to human-defined environmental rules. We introduce T2-Z for test-time optimization of environment latents, which augments a robotic world model with a learnable environment latent to condition world predictions. This compact latent captures underlying environmental variation without supervision of what environmental factors exist or what values they take. During training, T2-Z alternates between two stages: a world-model optimization stage that fixes the latents and learns general action-conditioned dynamics across environments; and an environment-latent optimization stage that freezes the world model and optimizes the conditioning latents, allowing latent structure to emerge purely through world prediction. At test time, the world model remains frozen and a newly initialized environment latent is optimized from one or more test-time interactions, adapting the model to previously unseen environmental configurations. Across 7 simulated settings and 4 real-world robotic tasks, T2-Z reduces object prediction error metric from 15.20 to 7.00 and raises action success from 33.73% to 72.96%. Its emergent latents capture structured representations of individual and compounded factors across diverse visual scenes. Ablations further show that T2-Z can efficiently infer environment latents from as little as a single test-time interaction trajectory."
+  },
+  {
+    "source": "arXiv",
+    "title": "Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation",
+    "authors": [
+      "Zirui Wu",
+      "Chen Guo",
+      "Tianjian Jiang",
+      "Zeren Jiang",
+      "Zeming Li",
+      "Lingchen Yang",
+      "Longteng Duan",
+      "Ying Xue",
+      "Handi Yin",
+      "Shenyuan Gao",
+      "Martin R. Oswald",
+      "Jun Zhang",
+      "Ping Tan",
+      "Jie Song"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22363v1",
+    "abstract": "We introduce P$^{3}$-WAM, a unified world action model for egocentric dexterous manipulation that learns 3D perception, action-conditioned prediction, and goal-directed planning through three complementary modes: Perceive, which reconstructs articulated hand motion and camera trajectories from video; Predict, which generates visual futures under prescribed actions; and Plan, which jointly generates action trajectories and their anticipated visual consequences conditioned on an initial image, a language instruction, and an optional visual goal. Our model integrates a compact, structured 3D action representation into a pretrained video diffusion transformer through a mixture-of-transformers architecture with shared base weights, modality-specific adaptation, and bidirectional visual-action attention. Randomized modality visibility lets video and 3D actions serve as either conditioning context or prediction targets across the three modes. Experiments show that unified training improves all three capabilities over single-mode training, including gains in planning quality under a vision-language model evaluation. Through unified training, our model outperforms specialized baselines on 3D hand reconstruction and action-conditioned video prediction across four datasets, while producing goal-directed manipulation videos with stronger instruction adherence and action progression than video-generation baselines. Project Page: https://p3-wam.pages.dev/"
+  },
+  {
+    "source": "arXiv",
+    "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+    "authors": [
+      "Tianjiao Yu",
+      "Zhilin Ou",
+      "Yifan Shen",
+      "Xinzhuo Li",
+      "Yuanzhe Liu",
+      "Onkar Kishor Susladkar",
+      "Fan Wang",
+      "Ismini Lourentzou"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22362v1",
+    "abstract": "Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. The challenge is to identify environments that address a policy's failures and supervision that helps it overcome them. We introduce CoDA, a framework in which a simulation data engine and an action policy co-evolve through a shared heterogeneous memory of environment construction, policy failures, and learning progress. The memory compiles validated diagnoses from a vision-language critic into generation programs that recreate difficulties and training programs that help the policy overcome them. We further propose Text2potential to convert these diagnoses into staged potentials for action-chunk value learning, providing dense supervision for policy updates while preserving the task's optimal policy under standard shaping assumptions. Measured learning progress guides further generation and program refinement. Across four manipulation task families, CoDA improves out-of-distribution success from 5.3% after supervised fine-tuning to 27.6%, exceeding the strongest closed-loop baseline by 9.5 percentage points with the same generation budget. On LIBERO-Pro, 15 rounds of generation and training raise success from 25% to 84% under position perturbations and from 1% to 76% under instruction perturbations."
+  },
+  {
+    "source": "arXiv",
+    "title": "Grounding Generative Verification in 3D Content",
+    "authors": [
+      "Shuanglin Li",
+      "Jiaying Lin",
+      "Shuquan Ye"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22360v1",
+    "abstract": "Recent advances in multimodal large language models (MLLMs) and 3D generation have expanded 3D understanding and synthesis. However, beyond visual fidelity, task-specific correctness grounded in 3D evidence remains a major challenge. We argue that building reliable 3D systems requires not only stronger generation and reasoning, but also verification feedback that identifies unmet requirements and explains their violations, allowing systems to reflect on and refine their outputs. Such feedback must integrate multi-view observations and distinguish genuine inconsistencies from projection-dependent appearances. We make three contributions. First, we introduce 3DVerifierBench, a benchmark spanning 10 tasks that evaluates decisions, rejection explanations, and responses to controlled changes in specifications and candidates. A human study reveals a 21.6 percentage-point gap between humans and the strongest tested model, GPT-6 Astra, while explanation-aware analysis exposes weaknesses in rejection reliability. Second, we analyze verification across fine-grained factual categories, exposing errors in values and target binding. We develop a scalable pipeline combining multi-view fact extraction, controlled 3D editing, and native annotations to produce 14,126 training examples with contradiction explanations and linked counterfactuals. Third, we examine how verification could support 3D generation through candidate selection and recursive refinement. In human-labeled sixteen-candidate pools, oracle selection improves complete factual success from 26.7% to 90.0%. In a separate eight-input study, human-guided recursive refinement satisfies all seven requirements for every input, compared with three under parallel Oracle@8. Together, our benchmark, analysis, and data pipeline establish a foundation for models to reflect on 3D content through reliable verification feedback."
+  },
+  {
+    "source": "arXiv",
+    "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
+    "authors": [
+      "Jiachen Yao",
+      "Xiyuan Zhang",
+      "Annan Yu",
+      "Boran Han",
+      "Abdul Fatir Ansari",
+      "Shuai Zhang",
+      "Michael Bohlke-Schneider",
+      "Bernie Wang"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22358v1",
+    "abstract": "Time series foundation models are becoming increasingly popular for general-purpose forecasting. However, most leading models predict marginal quantiles, leaving the dependence structure of future trajectories unspecified. This distinction matters for trajectory-dependent quantities such as cumulative demand, peak load, and event timing, yet point and marginal scores do not reveal it. To model this dependence, we introduce PathFM, a trajectory-based forecasting model that uses flow matching to generate complete future paths. We further distill the model to one or two steps and share history attention cache across draws. Together, these enable PathFM to generate multiple paths for a single series in roughly the time needed for one query to a quantile model. The distilled sampler also makes it practical to optimize a calibration loss directly. PathFM achieves competitive marginal accuracy on the established forecasting benchmarks fev-bench and TIME. To complement these evaluations, we introduce Forecast Path Score Bench (fps-bench), which augments fev-bench tasks with energy and variogram scores and downstream metrics. PathFM achieves a higher aggregate path score on fps-bench than all evaluated external baselines. Experiments on chaotic systems further show that our flow model sustains long-run variability, while strong baselines rapidly collapse. PathFM makes generative time series forecasting both competitive and practical, enabling diverse downstream applications."
+  },
+  {
+    "source": "arXiv",
+    "title": "DK-VLM: Geometry as Position for Spatial Reasoning in Vision-Language Models",
+    "authors": [
+      "Han Su",
+      "Meng Tian",
+      "Tianyu Huang",
+      "Mingyu Gao",
+      "Lennox Wei",
+      "Dongxu Li",
+      "Jianhua Han",
+      "Hang Xu",
+      "Xiaohe Wu",
+      "Wangmeng Zuo"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22356v1",
+    "abstract": "Vision-language models still struggle to understand 3D spatial relations across views and update spatial judgments as the observer moves. A common approach fuses 3D reconstruction features into visual tokens, but aligning these features with pretrained semantic representations remains challenging under limited spatial supervision. We propose DK-VLM with Dual-Kernel Attention, which computes attention from both a visual token's input position and its geometric position in the scene. A semantic kernel retains the pretrained model's native attention and positional encoding, while a separate geometric kernel uses estimated 3D points and camera poses to directly modulate attention through point displacements and relative view transformations. Then, a learned gate fuses their outputs. Geometry thus enters attention as position rather than as fused reconstruction features. We further introduce Reference-Frame Composition (RC) supervision to train the model to update its reference frame across successive judgments. It provides stepwise turn and heading targets derived from verified single-step annotations. Among the compared methods, DK-VLM-8B achieves the highest average score across six spatial benchmarks and the highest overall scores on VSI-Bench (74.33) and ReVSI-32 (58.28). RC supervision further improves multi-step spatial reasoning, while the full model preserves general video understanding. Project page: https://sumuru789.github.io/DK-VLM-website/."
+  },
+  {
+    "source": "arXiv",
+    "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
+    "authors": [
+      "Bowei Liu",
+      "Xinchen Zhang",
+      "Xuhuan Li",
+      "Tianlin Zhang",
+      "Kaian Jiang",
+      "Jingwei Liu",
+      "Congyang Zhao",
+      "Yifei Qian",
+      "Junhong Liu",
+      "Zhiheng Li",
+      "Yujiu Yang",
+      "Yang Cai",
+      "Ling Yang"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22355v1",
+    "abstract": "Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenarios involving compositional requirements, we move beyond conventional binary verifiers that produce only True/False discrete judgments and introduce a verifier that automatically decomposes complex prompts or environmental rules into fine-grained components and assigns pointwise scores to provide a continuous and more informative critique signal. Our experiments further demonstrate that these structured and interpretable outputs improve the verifier's generalization to out-of-domain multimodal critic tasks. To train this verifier, we introduce a Decoupled RL training strategy that jointly optimizes sub-question-level binary judgment and global alignment scoring, using precise local feedback to develop fine-grained verification capabilities that provide a foundation for reliable continuous scoring at the global level. Under a general reinforcement learning framework, we first empirically demonstrate that the proposed pointwise graded verifier significantly outperforms binary verifiers in traditional text-to-image scenarios. We then extend our investigation to rule-governed generative world modeling where generative models are leveraged for world simulation and world reasoning under explicit rules. From a theoretical standpoint, we further show that a pairwise verification paradigm yields more accurate critiques than the pointwise formulation when ground-truth images are available, with empirical results on diverse structured world-modeling tasks such as Maze and Sudoku further validating the effectiveness of our approach. Overall, our findings suggest a key insight: the transition from generative models to structured world-modeling agents critically hinges on the availability of accurate pairwise graded visual verifiers."
+  },
+  {
+    "source": "arXiv",
+    "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
+    "authors": [
+      "Bingcong Li",
+      "Hao Ma",
+      "Michael Muehlebach",
+      "Niao He",
+      "Yi Ma"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22353v1",
+    "abstract": "Mixture-of-experts (MoE) models have become an important approach for scaling model parameters. Modern MoE architectures increasingly combine two design choices: fine-grained expert segmentation and shared experts. The former increases expressiveness by enabling more expert combinations at a fixed activation ratio, and the latter introduces experts that are active for every token. We identify an exploration dilemma between these designs: shared experts can make routing less exploratory by reducing the variability of token representations. This conflicts with the greater need for exploration induced by fine-grained expert segmentation due to the combinatorially enlarged routing space. Consequently, the additional expressiveness offered by fine-grained segmentation may not be fully realized in practice. MirrorMoE is proposed to reconcile this exploration dilemma by shrinking the exploration space through token-adaptive suppression of unnecessary experts. MirrorMoE consistently improves performance across model scales."
+  },
+  {
+    "source": "arXiv",
+    "title": "SUPRA-TEX: 3D Generation with Super-Aligned Texture",
+    "authors": [
+      "Chen Yang",
+      "Jiemin Fang",
+      "Fanpeng Meng",
+      "Zihao Huang",
+      "Jichen Pang",
+      "Guanjun Wu",
+      "Zhikuan Bao",
+      "Qi Tian"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22352v1",
+    "abstract": "Single image 3D generation aims to dress a given 3D mesh with relightable materials while faithfully preserving the visual details of a reference image. Existing methods either introduce artifacts when fusing inconsistent multi-view predictions or struggle to preserve fine details through implicit image-feature conditioning. To resolve these challenges, we introduce SUPRA-Tex, built on the principle of decoupling visible-material estimation, surface alignment, and observation-guided 3D completion. This division of labor allows the 3D generator, trained on limited 3D data, to focus its capacity on preserving visible evidence and completing unobserved surfaces. Specifically, we first train an MLLM-based image editing model to predict lighting-separated PBR maps in the reference view. We then project these maps onto the visible surface and encode them with the pretrained material VAE encoder into native observation latents that share the generation target's latent space. An interleaved flow transformer holds these latents as fixed, read-only anchors while alternating unobserved-region and full-surface updates to generate complete material latents. This design achieves super-alignment with the reference, delivering What You See Is What You Get fidelity on visible regions and coherent completion on unobserved surfaces. Trained solely on public datasets, SUPRA-Tex achieves SOTA performance in both geometry-conditioned texturing and end-to-end asset generation, matching or even exceeding leading commercial systems on in-the-wild images. Project page: https://supra-3d.github.io/supratex/"
+  },
+  {
+    "source": "arXiv",
+    "title": "FDE-Gym: The Last Mile of AI Delivery",
+    "authors": [
+      "Dongxu Yang",
+      "Hongda Yan",
+      "Renxin Wang",
+      "Baoli Zhang",
+      "Haojia Zuo",
+      "Ying Zhao",
+      "Youmin Chen",
+      "Xiaojian Liao",
+      "Congming Gao",
+      "Tianyang Jiang",
+      "Yixiao Chen",
+      "Qing Wang",
+      "Zhiguo Yu",
+      "Xiaqing Li",
+      "Yuhao Zhang",
+      "Jiawen Sun",
+      "Renzhe Xu",
+      "De Mi",
+      "Tiancheng Wu",
+      "Xianya Fu",
+      "Xuanlu Zhao",
+      "Bo Feng",
+      "Meixuan Ren",
+      "Guanming Lin",
+      "Ziheng Zhou",
+      "Xinhua Wang"
+    ],
+    "published": "2026-10-15",
+    "doi": null,
+    "publisher": "arXiv",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://arxiv.org/pdf/2610.22350v1",
+    "abstract": "Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engineers (FDEs) must clarify ambiguous requirements, work in live systems, and uncover unstated constraints. We introduce FDE-Gym, a benchmark of 95 end-to-end delivery tasks from 20 customer scenarios across 18 sectors, each adapted by industry experts from real-world delivery projects. In simulated customer environments with scripted stakeholders and modifiable customer systems, agents interact with stakeholders and operate on production-like systems to deliver working solutions. FDE-Gym scores a delivery by how much it improves the customer's own success metric, normalized between 0 (unchanged system) and 1 (reference solution), with penalties for stakeholder interactions (messages, trial runs, and waiting time). An online platform lets humans practice FDE skills under the same grading criteria. We evaluate 13 model configurations from seven providers. In the realistic setting, where unstated constraints must be discovered, the best configuration achieves a mean FDE-Gym score of 0.56 and resolves only 14 of the 95 tasks (a score of at least 0.8 with no incident). Discovering unstated constraints is the primary bottleneck: performance drops sharply when models must uncover them without explicit guidance. Yet information discovery alone does not account for the gap: even on the 23 tasks where the best configuration obtains every key fact from stakeholders, it reaches a normalized business uplift of 0.8 or above on only 10. These results reveal a substantial gap between solving well-specified tasks and delivering effective AI systems for real customers."
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "metrics": {
+    "knowledge_evidence_recall": 0.7272727272727273,
+    "prompt_readiness_rate": 1.0
+  },
+  "thresholds": {
+    "knowledge_evidence_recall": 0.9,
+    "prompt_readiness_rate": 0.95
+  },
+  "generated_case_count": 12,
+  "held_out_case_count": 7,
+  "pipeline_ready": false,
+  "deployment_decision": "HOLD: ANALYZE REMAINING FAILURES",
+  "remaining_failures": [
+    "Review the retrieval corpus, metadata, and index."
+  ]
+}

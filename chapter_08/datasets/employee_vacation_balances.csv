@@ -1,0 +1,3 @@
+employee_id,vacation_balance_days,as_of_date,status,owner,source_system
+E001,8.5,2026-07-15,current,HR Systems,HRIS
+E002,12.0,2026-07-15,current,HR Systems,HRIS

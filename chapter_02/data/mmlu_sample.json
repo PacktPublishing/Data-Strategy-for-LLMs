@@ -1,0 +1,82 @@
+[
+  {
+    "subject":"abstract_algebra",
+    "question":"Find all c in Z_3 such that Z_3[x]\/(x^2 + c) is a field.",
+    "A":"0",
+    "B":"1",
+    "C":"2",
+    "D":"3",
+    "correct_letter":"B",
+    "correct_choice_text":"1"
+  },
+  {
+    "subject":"abstract_algebra",
+    "question":"Statement 1 | If aH is an element of a factor group, then |aH| divides |a|. Statement 2 | If H and K are subgroups of G then HK is a subgroup of G.",
+    "A":"True, True",
+    "B":"False, False",
+    "C":"True, False",
+    "D":"False, True",
+    "correct_letter":"B",
+    "correct_choice_text":"False, False"
+  },
+  {
+    "subject":"abstract_algebra",
+    "question":"Statement 1 | Every element of a group generates a cyclic subgroup of the group. Statement 2 | The symmetric group S_10 has 10 elements.",
+    "A":"True, True",
+    "B":"False, False",
+    "C":"True, False",
+    "D":"False, True",
+    "correct_letter":"C",
+    "correct_choice_text":"True, False"
+  },
+  {
+    "subject":"abstract_algebra",
+    "question":"Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.",
+    "A":"True, True",
+    "B":"False, False",
+    "C":"True, False",
+    "D":"False, True",
+    "correct_letter":"A",
+    "correct_choice_text":"True, True"
+  },
+  {
+    "subject":"abstract_algebra",
+    "question":"Find the characteristic of the ring 2Z.",
+    "A":"0",
+    "B":"3",
+    "C":"12",
+    "D":"30",
+    "correct_letter":"A",
+    "correct_choice_text":"0"
+  },
+  {
+    "subject":"professional_law",
+    "question":"A state legislature has recently enacted a statute making it a misdemeanor to curse or revile or use obscene or opprobrious language toward or in reference to a police officer perfonning his duties. A student at a state university organized a demonstration on campus to protest the war. The rally was attended by a group of 50 students who shouted anti-war messages at cars passing by. To show his contempt for the United States, the student sewed the American flag to the rear of his jeans. When a police officer saw the flag sown on the student's jeans, he approached and told him to remove the flag or he would be placed under arrest. The student became angered and shouted at the police officer, \"Listen, you bastard, I'll wear this rag anywhere I please. \" The student was subsequently placed under arrest and charged with violating the state statute. The student subsequently brings suit in state court challenging the constitutionality of the statute. The strongest constitutional argument for the student is that",
+    "A":"the statute is void for vagueness under the Fourteenth Amendment's due process clause.",
+    "B":"the statute is invalid because it violates the petitioner's freedom of speech under the First Amendment.",
+    "C":"the statute is an abridgment of freedom of speech under the First Amendment because less restrictive means are available for achieving the same purpose.",
+    "D":"the statute is overbroad and consequently invalid under the First and FourteenthAmendments.",
+    "correct_letter":"D",
+    "correct_choice_text":"the statute is overbroad and consequently invalid under the First and FourteenthAmendments."
+  },
+  {
+    "subject":"professional_law",
+    "question":"A state has recently enacted a statute prohibiting the disposal of any nuclear wastes within the state. This law does not contravene or conflict with any federal statutes. A man operates a company in the state that is engaged in the disposal of nuclear wastes. Subsequent to the passage of the state statute, the man, not yet aware of the new law, entered into contracts with many out-of-state firms to dispose of their nuclear wastes in the state. On account of this new law, however, the man will be unable to perform these contracts. Assume that the man has standing to challenge this state law. Which of the following presents his strongest constitutional grounds to challenge the state law prohibiting the disposal of nuclear wastes within the state?",
+    "A":"The commerce clause.",
+    "B":"The equal protection clause of the Fourteenth Amendment.",
+    "C":"The privileges and immunities clause of Article IV, Section 2. ",
+    "D":"The contract clause.",
+    "correct_letter":"A",
+    "correct_choice_text":"The commerce clause."
+  },
+  {
+    "subject":"professional_law",
+    "question":"Judge took judicial notice of some facts at the beginning of the trial. Which of the following is not an appropriate kind of fact for judicial notice?",
+    "A":"Indisputable facts.",
+    "B":"Facts that have been asserted by individual political organizations.",
+    "C":"Facts recognized to be true by common knowledge.",
+    "D":"Facts capable of scientific verification.",
+    "correct_letter":"B",
+    "correct_choice_text":"Facts that have been asserted by individual political organizations."
+  }
+]

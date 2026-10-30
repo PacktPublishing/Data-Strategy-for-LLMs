@@ -1,0 +1,73 @@
+[
+  {
+    "pubmed_id": "42805817",
+    "title": "Nonspecific ECG Abnormalities in Syncope: Causal Mechanism or Incidental Finding?",
+    "abstract": "Nonspecific electrocardiographic (ECG) abnormalities are common in patients presenting with syncope, but their presence does not necessarily establish the mechanism of transient loss of consciousness. The frontal QRS-T angle has recently been proposed as a marker for identifying cardiac syncope in the emergency department. However, it may reflect structural and electrical abnormalities and coexist with syncope without being mechanistically related to the event. In the reported cohort, most patients classified as having cardiac syncope had structural cardiac conditions, while only a minority were assigned an arrhythmic etiology; among the latter, atrial fibrillation with rapid ventricular response predominated, with no ventricular tachyarrhythmias reported. These findings highlight a broader limitation in the interpretation of nonspecific ECG abnormalities in syncope: association with cardiac disease or cardiovascular risk does not establish causation of the syncopal event. Distinguishing ECG findings that are incidental to the event from those that identify a plausible mechanism of transient cerebral hypoperfusion is essential for etiological diagnosis of syncope.",
+    "authors": [
+      "Bellicini MG"
+    ],
+    "journal": "Heart & lung : the journal of critical care",
+    "year": "2026",
+    "doi": "10.1016/j.hrtlng.2026.102957"
+  },
+  {
+    "pubmed_id": "42805766",
+    "title": "Mortality and risk factors associated with death in patients with obesity hypoventilation syndrome and of predominantly Afro-Caribbean origin in Martinique.",
+    "abstract": "BACKGROUND: Obesity hypoventilation syndrome (OHS) is a respiratory complication of obesity. Mortality from OHS is non-negligible. Risk factors for OHS-related mortality are not well established and vary in the literature. This study aimed to assess mortality from OHS in patients in Martinique and to identify risk factors for death. METHODS: We performed a single-centre, observational study from 1 January 2019 to 31 December 2024, including patients with OHS. RESULTS: Among 167 included patients, 44 (26.4%) died as of 31 December 2024. 5-year mortality was 12.6%.In multivariable Cox regression, independent predictors of mortality were: OHS diagnosed during acute respiratory failure (HR 6.60, 95% CI 1.50 to 29.10), irregular follow-up (HR 5, 95% CI 1.82 to 14.29), left heart disease (HR 3.63, 95% CI 1.51 to 8.70), lower haematocrit (HR 1.12 per percentage point, 95% CI 1.03 to 1.22) and older age at diagnosis (HR 1.04 per year, 95% CI 1.01 to 1.08). CONCLUSION: Mortality among patients with OHS in Martinique remains high. Strategies to improve early diagnosis, cardiovascular risk management and long-term follow-up are essential to improving outcomes in this high-risk population.",
+    "authors": [
+      "Agossou M",
+      "Monfort-Brafine A",
+      "Fagour C",
+      "Awanou B",
+      "Metanmo S",
+      "Jean-Charles-Catan ME",
+      "L'heveder O",
+      "Inamo J",
+      "Dufeal M",
+      "Provost M",
+      "Ahouansou N",
+      "Andreu M",
+      "Arnal JM",
+      "Raherison-Semjen C 7",
+      "Drame M"
+    ],
+    "journal": "BMJ open respiratory research",
+    "year": "2026",
+    "doi": "10.1136/bmjresp-2025-003819"
+  },
+  {
+    "pubmed_id": "42805721",
+    "title": "Clinical Performance and Reproducibility of the LIRA Method for TAVR in Bicuspid Anatomy: The SUBLIME Study.",
+    "abstract": "BACKGROUND: Transcatheter aortic valve replacement (TAVR) in bicuspid aortic valve (BAV) anatomy remains challenging, with heterogeneous outcomes and no standardized sizing strategy. The LIRA (level of implantation at the raphe) method is a bicuspid-dedicated approach that complements standard annular sizing with a single perimeter measurement at the raphe level. A previous single-center experience suggested favorable results. OBJECTIVES: The aim of this study was to evaluate clinical performance and reproducibility of the LIRA method for TAVR sizing in a large BAV multicenter cohort. METHODS: A total of 215 BAV patients undergoing TAVR with the LIRA method at 6 centers were retrospectively analyzed. Procedural and clinical outcomes were adjudicated according to Valve Academic Research Consortium 3 criteria and assessed at 30 days and 1 year. Available full-cycle computed tomographic data sets from external centers were reanalyzed in a blinded centralized core laboratory to assess reproducibility of the LIRA method. RESULTS: The application of the LIRA method led to prosthesis downsizing in 74.4% of cases. At 30 days, device success was 93%, and moderate or greater paravalvular leak had occurred in 4.6% of patients, new permanent pacemaker implantation in 10.7%, and stroke in 1.9%. At 1 year, all-cause mortality was 5.7%, and clinical efficacy was observed in 92.8% of patients. Clinical outcomes were consistent across centers. Prosthesis sizing agreement was excellent (kappa = 0.85; 95% CI: 0.74-0.96), and perimeter concordance was good (intraclass correlation coefficient = 0.76; 95% CI: 0.63-0.85). CONCLUSIONS: In this large multicenter cohort, the LIRA method demonstrated good reproducibility across centers and was associated with favorable procedural and clinical outcomes in BAV patients undergoing TAVR. These findings support its clinical applicability as a bicuspid-dedicated sizing strategy.",
+    "authors": [
+      "Bellini B",
+      "Romano V",
+      "Iannopollo G",
+      "Gorla R",
+      "Moccetti F",
+      "De Felice F",
+      "Buono A",
+      "Massussi M",
+      "Zanda G",
+      "Davanzo RH",
+      "Manzo C",
+      "Chin D",
+      "Cattaneo G",
+      "Ricchetti G",
+      "Vella C",
+      "Napoli F",
+      "Ferri LA",
+      "Russo F",
+      "Ancona MB",
+      "Adamo M",
+      "Toggweiler S",
+      "Bedogni F",
+      "Agricola E",
+      "Esposito A",
+      "Montorfano M"
+    ],
+    "journal": "JACC. Cardiovascular interventions",
+    "year": "2026",
+    "doi": "10.1016/j.jcin.2026.06.018"
+  }
+]

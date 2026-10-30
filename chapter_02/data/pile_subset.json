@@ -1,0 +1,102 @@
+[
+  {
+    "pile_set_name": "Pile-CC",
+    "chars": 13274,
+    "snippet": "It is done, and submitted. You can play “Survival of the Tastiest” on Android, and on the web. Playing on the web works, but you have to simulate multi-touch for table moving and that can be a bit confusing.  There’s a lot I’d like to talk about. I’ll go through every topic, insted of making the typ"
+  },
+  {
+    "pile_set_name": "Github",
+    "chars": 4278,
+    "snippet": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>  <segment>      <name>PD1</name>      <description>Patient Additional Demographic</description>      <elements>          <field minOccurs=\"0\" maxOccurs=\"0\">              <name>PD1.1</name>              <description>Living Dependency</description>              <"
+  },
+  {
+    "pile_set_name": "Pile-CC",
+    "chars": 384,
+    "snippet": "Topic: reinvent midnight madness  Amazon announced a new service at the AWS re:Invent Midnight Madness event. Amazon Sumerian is a solution that aims to make it easier for developers to build virtual reality, augmented reality, and 3D applications. It features a user friendly editor, which can be us"
+  },
+  {
+    "pile_set_name": "Pile-CC",
+    "chars": 1754,
+    "snippet": "About Grand Slam Fishing Charters  As a family owned business we know how important it is that your trip becomes the best memory of your vacation, we are proud of our islands, our waters and our crew and we are desperate show you the best possible time during your stay. We can not guarantee fish eve"
+  },
+  {
+    "pile_set_name": "StackExchange",
+    "chars": 2016,
+    "snippet": "Q:  Why was Mundungus banned from the Hog's Head?  In Order of the Phoenix while the trio were in the Hogs Head for the first time plotting the start of Dumbledore's Army, it transpires that ol' Dung was lurking in the pub in a disguise, having been banned 20 years previously according to Sirius.  F"
+  },
+  {
+    "pile_set_name": "Pile-CC",
+    "chars": 4468,
+    "snippet": "Working Women, Special Provision and the Debate on Equality  There has been considerable coverage in the media recently about the possibility of offering women in employment paid leave from work during their menstrual period. This has generated a broad range of responses relating to long-standing di"
+  },
+  {
+    "pile_set_name": "StackExchange",
+    "chars": 709,
+    "snippet": "Q:  Using M-Test to show you can differentiate term by term.  I have the series $\\sum_{n=1}^\\infty \\frac{\\lambda^{n-1}n}{n!}=\\sum_{n=1}^\\infty \\frac{d}{d\\lambda}\\big(\\frac{\\lambda^n}{n!} \\big)$ and I would like it to be $\\frac{d}{d\\lambda}\\big(\\sum_{n=1}^\\infty \\frac{\\lambda^n}{n!})$. I'm trying to "
+  },
+  {
+    "pile_set_name": "Pile-CC",
+    "chars": 1075,
+    "snippet": "Jeanette Sawyer Cohen, PhD, clinical assistant professor of psychology in pediatrics at Weill Cornell Medical College in New York City  Pediatric Psychologist  How to Teach Independence?  How can I teach my toddler to do things independently?  You’ve probably become more patient since you started th"
+  },
+  {
+    "pile_set_name": "StackExchange",
+    "chars": 1107,
+    "snippet": "Q:  What's the simplest way to pass a file as an argument in a simple shell script?  The following works fine on Mac OS X: #!/bin/bash R CMD Sweave myfile.Rnw pdflatex myfile.tex open myfile.pdf  Now, I realize that these 3 lines of code are really helpful for my work – independently of some particu"
+  },
+  {
+    "pile_set_name": "Wikipedia (en)",
+    "chars": 2665,
+    "snippet": "Major League Baseball All-Century Team  In 1999, the Major League Baseball All-Century Team was chosen by popular vote of fans. To select the team, a panel of experts first compiled a list of the 100 greatest Major League Baseball players from the past century. Over two million fans then voted on th"
+  },
+  {
+    "pile_set_name": "Github",
+    "chars": 179,
+    "snippet": "{   \"fpsLimit\": 60,   \"preset\": \"basic\",   \"background\": {     \"color\": \"#0d47a1\",     \"image\": \"\",     \"position\": \"50% 50%\",     \"repeat\": \"no-repeat\",     \"size\": \"cover\"   } }"
+  },
+  {
+    "pile_set_name": "PubMed Abstracts",
+    "chars": 1798,
+    "snippet": "PCI Alternative Using Sustained Exercise (PAUSE): Rationale and trial design. Cardiovascular disease (CVD) currently claims nearly one million lives yearly in the US, accounting for nearly 40% of all deaths. Coronary artery disease (CAD) accounts for the largest number of these deaths. While efforts"
+  },
+  {
+    "pile_set_name": "StackExchange",
+    "chars": 2341,
+    "snippet": "Q:  ¿Porqué en este loop de JavaScript la impresión de la variable es desde counter y no desde counter-1?  en mi búsqueda por aprender programación por mis propios medios, me he topado con el tema de recursividad y este simple código... mi pregunta ya que la variable counter comienza desde 10 y dent"
+  },
+  {
+    "pile_set_name": "Pile-CC",
+    "chars": 666,
+    "snippet": "Running  Stat  Dinner with people is always better than eating alone, especially when the food is good. Good food tastes even better when enjoyed with people. Tonight Amy came over to try my second attempt at the Brussels Sprouts Veggie Soup to which I have made some changes (see recipe below in pre"
+  },
+  {
+    "pile_set_name": "PubMed Abstracts",
+    "chars": 848,
+    "snippet": "TiO2 nanotubes for bone regeneration. Nanostructured materials are believed to play a fundamental role in orthopedic research because bone itself has a structural hierarchy at the first level in the nanometer regime. Here, we report on titanium oxide (TiO(2)) surface nanostructures utilized for orth"
+  },
+  {
+    "pile_set_name": "USPTO Backgrounds",
+    "chars": 1711,
+    "snippet": "In general, absorbent articles should comfortably fit the body of a wearer. Most absorbent articles include an absorbent pad formed by an absorbent core contained in a wrap comprising a barrier tissue and/or a forming tissue. The subject invention discloses an absorbent article generally having exte"
+  },
+  {
+    "pile_set_name": "Pile-CC",
+    "chars": 8376,
+    "snippet": "jOOQ on The ORM Foundation?  I am the developer of jOOQ, a Java database abstraction framework. I was wondering whether jOOQ might be an interesting tool for discussion on your website, even if it is not exactly an ORM in the classic meaning (as in mapping objects to the relational world > ORM). Ins"
+  },
+  {
+    "pile_set_name": "PubMed Abstracts",
+    "chars": 543,
+    "snippet": "Standardised protocol for primate faecal analysis. Macroscopic analysis of primate faeces as a way to study diet is well established, but lack of standardisation of methods may handicap comparative studies of the resulting data. Here we present a proven technique, including equipment and supplies, p"
+  },
+  {
+    "pile_set_name": "PubMed Abstracts",
+    "chars": 1580,
+    "snippet": "Examination of factors affecting gait properties in healthy older adults: focusing on knee extension strength, visual acuity, and knee joint pain. Gait properties change with age because of a decrease in lower limb strength and visual acuity or knee joint disorders. Gait changes commonly result from"
+  },
+  {
+    "pile_set_name": "Pile-CC",
+    "chars": 19844,
+    "snippet": "I've learned the nitrogen vacancies used in Memristors are for \"switching\", between excited states and inhibited states, akin to our neurons and SYNAPSES abilities to generate EPSPs and IPSPs, this is the entire point to Memristors and DARPAs SyNAPSE program, emulating Neurons..  So in the memristor"
+  }
+]
