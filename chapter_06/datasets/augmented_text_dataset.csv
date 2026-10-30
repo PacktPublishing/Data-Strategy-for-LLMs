@@ -1,0 +1,26 @@
+original_text,augmented_text,augmentation_type
+Employees must submit vacation requests at least two weeks in advance.,Employees must submit vacation requests at least two weeks in advance.,original
+Employees must submit vacation requests at least two weeks in advance.,Workers need to give notice of their vacation plans at least fourteen days before their intended time off.,paraphrase
+Employees must submit vacation requests at least two weeks in advance.,Employees must submit their leave requests at least two weeks in advance.,back_translation
+Employees must submit vacation requests at least two weeks in advance.,Employees must submit vacation rquests at least two weeksin advance.,noise_light
+Employees must submit vacation requests at least two weeks in advance.,Empl0yees must sdumit vacagion requests at least two weeks in advance.,noise_medium
+Remote work is permitted up to three days per week with manager approval.,Remote work is permitted up to three days per week with manager approval.,original
+Remote work is permitted up to three days per week with manager approval.,Employees can work remotely for up to three days a week with the permission of their manager.,paraphrase
+Remote work is permitted up to three days per week with manager approval.,Remote work is allowed up to three days per week with manager approval.,back_translation
+Remote work is permitted up to three days per week with manager approval.,Remote w0r kis permitted up to three days per week with manager approval.,noise_light
+Remote work is permitted up to three days per week with manager approval.,Remote work is permigted up t othee days per wqek with manager approval,noise_medium
+All expenses must be documented with receipts and submitted within 30 days.,All expenses must be documented with receipts and submitted within 30 days.,original
+All expenses must be documented with receipts and submitted within 30 days.,You must provide receipts for all expenses and submit them within 30 days.,paraphrase
+All expenses must be documented with receipts and submitted within 30 days.,All expenses must be documented with receipts and submitted within 30 days.,back_translation
+All expenses must be documented with receipts and submitted within 30 days.,All expeness must be documented with receip7s and submitted within 30 days.,noise_light
+All expenses must be documented with receipts and submitted within 30 days.,All expenses must be docmuented wth rece1pts anc submitetd within 30 days.,noise_medium
+Professional conduct is expected in all workplace communications.,Professional conduct is expected in all workplace communications.,original
+Professional conduct is expected in all workplace communications.,It is important to conduct oneself professionally in all forms of communication within the workplace.,paraphrase
+Professional conduct is expected in all workplace communications.,Professional behavior is expected in all communications in the workplace.,back_translation
+Professional conduct is expected in all workplace communications.,Professional conduct is expeted in all workplace communications.,noise_light
+Professional conduct is expected in all workplace communications.,Professional conduct is expected in al1w orkplace communicationq.,noise_medium
+Health insurance benefits are available to full-time employees after 90 days.,Health insurance benefits are available to full-time employees after 90 days.,original
+Health insurance benefits are available to full-time employees after 90 days.,Full-time employees can access health insurance benefits after a 90-day waiting period.,paraphrase
+Health insurance benefits are available to full-time employees after 90 days.,The benefits of health insurance are available for full-time employees after 90 days.,back_translation
+Health insurance benefits are available to full-time employees after 90 days.,Health insurance 6enefits are available to full-time employees after 90 days.,noise_light
+Health insurance benefits are available to full-time employees after 90 days.,Health insurnce benefits re avalable to ful-time emploeyes after 90 days.,noise_medium

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://arxiv.org/pdf/1706.03762",
+  "pdf_meta": {
+    "title": "",
+    "author": "",
+    "pages": 15,
+    "producer": "pdfTeX-1.40.25"
+  },
+  "extracted": {
+    "scanned_pages": 5,
+    "num_words_in_scanned_pages": 2344,
+    "first_page_preview": "3\n2\n0\n2\n\ng\nu\nA\n2\n\n]\nL\nC\n.\ns\nc\n[\n\n7\nv\n2\n6\n7\n3\n0\n.\n6\n0\n7\n1\n:\nv\ni\nX\nr\na\n\nProvided proper attribution is provided, Google hereby grants permission to\nreproduce the tables and figures in this paper solely for use in journalistic or\nscholarly works.\n\nAttention Is All You Need\n\nAshish Vaswani∗\nGoogle Brain\navaswani@google.com\n\nNoam Shazeer∗\nGoogle Brain\nnoam@google.com\n\nNiki Parmar∗\nGoogle Research\nnikip@google.com\n\nJakob Uszkoreit∗\nGoogle Research\nusz@google.com\n\nLlion Jones∗\nGoogle Research\nllion@google.com\n\nAidan N. Gomez∗ †\nUniversity of Toronto\naidan@cs.toronto.edu\n\nŁukasz Kaiser∗\nGoogle Brain\nlukaszkaiser@google.com\n\nIllia Polosukhin∗ ‡\nillia.polosukhin@gmail.com\n\nAbstract\n\nThe dominant sequence transduction models are based on complex recurrent or\nconvolutional neural networks that include an encoder and a decoder. The best\nperforming models also connect the encoder and decoder through an attention\nmechanism. We propose a new simple network architecture, the Transformer,\nbased solely on attention mechanisms, dispensing with recurrence and convolutions\nentirely. Experiments on two machine translation tasks show these models to\nbe superior in quality while being more parallelizable a"
+  },
+  "links_found": []
+}

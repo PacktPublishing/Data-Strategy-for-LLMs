@@ -1,0 +1,13 @@
+image_path,caption,augmentation_type
+../sample_images/image1.jpg,"A tranquil forest scene with vibrant colors, enhanced by a dreamy, ethereal glow that illuminates the trees and creates a magical atmosphere.",original
+../augmented_images/image1_rotated.jpg,"A serene landscape of a forest clearing with sunlight filtering through the trees, the image has been rotated to create a unique and dynamic perspective.",rotation
+../augmented_images/image1_flipped.jpg,"A mirrored reflection of a serene forest scene with tall trees and a calm river, creating a symmetrical and mesmerizing effect.",flip
+../augmented_images/image1_noisy.jpg,"A serene landscape of a mountain range covered in a light dusting of snow, with the details slightly obscured by a gentle haze created by Gaussian noise.",noise
+../sample_images/image2.jpg,"A serene landscape with vibrant colors enhanced by digital art, showcasing a dreamy, surreal atmosphere.",original
+../augmented_images/image2_rotated.jpg,"A stunning view of a city skyline at sunset, with the buildings appearing to twist and turn in a mesmerizing display of rotation. The vibrant colors of the sky reflect off the glass windows, creating a dynamic and captivating scene.",rotation
+../augmented_images/image2_flipped.jpg,"A mirrored reflection of a serene lake surrounded by lush green trees and a clear blue sky, creating a symmetrical and tranquil landscape.",flip
+../augmented_images/image2_noisy.jpg,"An abstract, dream-like scene with blurred shapes and distorted colors, created by adding Gaussian noise to the original image.",noise
+../sample_images/image3.jpg,"A serene beach scene with crystal clear blue waters and palm trees swaying in the gentle breeze, creating a peaceful tropical paradise.",original
+../augmented_images/image3_rotated.jpg,"A stunning view of a mountain landscape with trees and a clear blue sky, enhanced by a subtle rotation effect that adds a dynamic and artistic touch.",rotation
+../augmented_images/image3_flipped.jpg,"A stunning sunset over the ocean, now mirrored in a horizontal flip creating a mesmerizing and symmetrical view of the colorful sky reflecting on the water.",flip
+../augmented_images/image3_noisy.jpg,"An abstract, distorted image with a grainy texture due to Gaussian noise, creating a dreamlike and surreal effect. Shapes and colors blend together in a hazy, atmospheric composition.",noise

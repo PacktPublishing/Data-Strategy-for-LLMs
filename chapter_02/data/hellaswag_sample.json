@@ -1,0 +1,82 @@
+[
+  {
+    "category":"Roof shingle removal",
+    "context":"A man is sitting on a roof. he",
+    "A":"is using wrap to wrap a pair of skis.",
+    "B":"is ripping level tiles off.",
+    "C":"is holding a rubik's cube.",
+    "D":"starts pulling up roofing on a roof.",
+    "correct_letter":"D",
+    "correct_ending_text":"starts pulling up roofing on a roof."
+  },
+  {
+    "category":"Clean and jerk",
+    "context":"A lady walks to a barbell. She bends down and grabs the pole. the lady",
+    "A":"swings and lands in her arms.",
+    "B":"pulls the barbell forward.",
+    "C":"pulls a rope attached to the barbell.",
+    "D":"stands and lifts the weight over her head.",
+    "correct_letter":"D",
+    "correct_ending_text":"stands and lifts the weight over her head."
+  },
+  {
+    "category":"Canoeing",
+    "context":"Two women in a child are shown in a canoe while a man pulls the canoe while standing in the water, with other individuals visible in the background. the child and a different man",
+    "A":"are then shown paddling down a river in a boat while a woman talks.",
+    "B":"are driving the canoe, they go down the river flowing side to side.",
+    "C":"sit in a canoe while the man paddles.",
+    "D":"walking go down the rapids, while the man in his helicopter almost falls and goes out of canoehood.",
+    "correct_letter":"C",
+    "correct_ending_text":"sit in a canoe while the man paddles."
+  },
+  {
+    "category":"High jump",
+    "context":"A boy is running down a track. the boy",
+    "A":"runs into a car.",
+    "B":"gets in a mat.",
+    "C":"lifts his body above the height of a pole.",
+    "D":"stands on his hands and springs.",
+    "correct_letter":"C",
+    "correct_ending_text":"lifts his body above the height of a pole."
+  },
+  {
+    "category":"High jump",
+    "context":"The boy lifts his body above the height of a pole. The boy lands on his back on to a red mat. the boy",
+    "A":"turns his body around on the mat.",
+    "B":"gets up from the mat.",
+    "C":"continues to lift his body over the pole.",
+    "D":"wiggles out of the mat.",
+    "correct_letter":"B",
+    "correct_ending_text":"gets up from the mat."
+  },
+  {
+    "category":"High jump",
+    "context":"The boy lands on his back on to a red mat. The boy gets up from the mat. the boy",
+    "A":"starts doing spins.",
+    "B":"celebrates by clapping and flexing both arms.",
+    "C":"is dancing on the mat.",
+    "D":"does jump jacks on his stick.",
+    "correct_letter":"B",
+    "correct_ending_text":"celebrates by clapping and flexing both arms."
+  },
+  {
+    "category":"Playing harmonica",
+    "context":"A man is standing in front of a camera. He starts playing a harmonica for the camera. he",
+    "A":"begins to play the harmonica with his body while looking at the camera.",
+    "B":"seems to be singing while playing the harmonica.",
+    "C":"rocks back and forth to the music as he goes.",
+    "D":"painted a fence in front of the camera.",
+    "correct_letter":"C",
+    "correct_ending_text":"rocks back and forth to the music as he goes."
+  },
+  {
+    "category":"Sumo",
+    "context":"A cartoon animation video is shown with people wandering around and rockets being shot. two men",
+    "A":"fight robots of evil and ends with a to be continued.",
+    "B":"are then shown in closeups shooting a shot put.",
+    "C":"push a child in a speedboat in the water.",
+    "D":"look in the cameraman's eye and smile.",
+    "correct_letter":"A",
+    "correct_ending_text":"fight robots of evil and ends with a to be continued."
+  }
+]
